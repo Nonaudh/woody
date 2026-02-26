@@ -60,13 +60,15 @@ int	print_section_text(t_elf64 *e)
 {
 	Elf64_Shdr	*textHeader = get_section_header_by_name_64(e, ".text");
 	unsigned char	*text = (unsigned char *)get_section_by_header_64(e, textHeader);
+		printf("Je suis ici connards");
 
 	for (int i = 0; i < textHeader->sh_size; i++)
 	{
-		// printf("%02x ", text[i]);
-		// if ((i + 1) % 16 == 0)
-		// 	printf("\n");
-		text[i] = 42;
+		printf("%02x ", text[i]);
+		if ((i + 1) % 16 == 0)
+			printf("\n");
+		printf("Je suis ici connards");
+		// text[i] = 42;
 	}
 	printf("\n");
 

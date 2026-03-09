@@ -28,7 +28,7 @@ LIB = $(DLIB)/libft.a
 
 SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c
 
-NAME = woody
+NAME = woody_woodpacker
 
 all : $(NAME)
 

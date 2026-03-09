@@ -56,31 +56,44 @@ int	init_elf_64(t_elf64 *e, char *filename)
 	return (0);
 }
 
-int	print_section_text(t_elf64 *e)
+// int	print_section_text(t_elf64 *e)
+// {
+// 	Elf64_Shdr	*textHeader = get_section_header_by_name_64(e, ".text");
+// 	unsigned char	*text = (unsigned char *)get_section_by_header_64(e, textHeader);
+
+// 	for (int i = 0; i < textHeader->sh_size; i++)
+// 	{
+// 		// printf("%02x ", text[i]);
+// 		// if ((i + 1) % 16 == 0)
+// 		// 	printf("\n");
+// 		text[i] = 42;
+// 	}
+// 	printf("\n");
+
+// 	return (0);
+// }
+
+int	copy_elf_64(t_elf64 *e, char *filename)
 {
-	Elf64_Shdr	*textHeader = get_section_header_by_name_64(e, ".text");
-	unsigned char	*text = (unsigned char *)get_section_by_header_64(e, textHeader);
-
-	for (int i = 0; i < textHeader->sh_size; i++)
-	{
-		// printf("%02x ", text[i]);
-		// if ((i + 1) % 16 == 0)
-		// 	printf("\n");
-		text[i] = 42;
-	}
-	printf("\n");
-
+	int woody_fd = open("woody", O_CREAT | O_RDWR);
+	if (woody_fd == -1)
+		return (1);
+	write(woody_fd, e->file_map, e->file_size);
+	close(woody_fd);
 	return (0);
 }
 
-int	woody64(char *filename)
+int	woody_64(char *filename)
 {
 	t_elf64 e;
 
 	if (init_elf_64(&e, filename))
 		return (1);
 	
-	print_section_text(&e);
+	// print_section_text(&e);
+
+	if (copy_elf_64(&e, filename))
+		return (1);
 
 	return (0);
 }

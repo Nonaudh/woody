@@ -15,7 +15,7 @@ typedef struct s_elf64
 } t_elf64;
 
 int	find_class(char *filename);
-int	woody64(char *filename);
+int	woody_64(char *filename);
 
 void	*get_file_in_a_map_64(int fd, int page_size);
 Elf64_Ehdr	*get_elf_header_64(t_elf64 *e);

@@ -8,6 +8,6 @@ int main(int argc, char **argv)
 	int elf_class = find_class(argv[1]);
 	if (elf_class == ELFCLASS64)
 	{
-		woody64(argv[1]);
+		woody_64(argv[1]);
 	}
 }

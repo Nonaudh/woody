@@ -2,6 +2,7 @@
 #include "fcntl.h"
 #include <sys/stat.h>
 #include "stdio.h"
+#include <sys/mman.h>
 
 long	size_of_file_64(int fd, char *filename)
 {
@@ -21,7 +22,7 @@ int	init_elf_64(t_elf64 *e, char *filename)
 {
 	e->file_map = NULL;
 
-	int fd = open(filename, O_RDONLY);
+	int fd = open(filename, O_RDWR);
 	if (fd == -1)
 	{
 		perror(filename);
@@ -75,10 +76,34 @@ int	init_elf_64(t_elf64 *e, char *filename)
 
 int	copy_elf_64(t_elf64 *e, char *filename)
 {
-	int woody_fd = open("woody", O_CREAT | O_RDWR);
+	e->file_map = NULL;
+
+	int fd = open(filename, O_RDONLY);
+	if (fd == -1)
+	{
+		perror(filename);
+		return (1);
+	}
+	e->filename = filename;
+
+	e->file_size = size_of_file_64(fd, filename);
+	if (e->file_size == -1)
+	{
+		close (fd);
+		return (1);
+	}
+	e->file_map = get_file_in_a_map_64(fd, e->file_size);
+	if (!e->file_map)
+	{
+		close (fd);
+		return (1);
+	}
+	close (fd);
+	int woody_fd = open("woody", O_CREAT | O_RDWR | O_TRUNC, 0755);
 	if (woody_fd == -1)
 		return (1);
 	write(woody_fd, e->file_map, e->file_size);
+	munmap(e->file_map, e->file_size);
 	close(woody_fd);
 	return (0);
 }
@@ -86,14 +111,12 @@ int	copy_elf_64(t_elf64 *e, char *filename)
 int	woody_64(char *filename)
 {
 	t_elf64 e;
-
-	if (init_elf_64(&e, filename))
-		return (1);
 	
-	// print_section_text(&e);
-
 	if (copy_elf_64(&e, filename))
 		return (1);
 
+	if (init_elf_64(&e, "woody"))
+		return (1);
+	
 	return (0);
 }

@@ -9,6 +9,14 @@ void	*get_file_in_a_map_64(int fd, int file_size)
 	return (map);
 }
 
+void	*get_file_in_a_map_write_64(int fd, int file_size)
+{
+	void	*map = mmap(NULL, file_size, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_PRIVATE, fd, 0);
+	if (map == MAP_FAILED)
+		return (NULL);
+	return (map);
+}
+
 Elf64_Ehdr	*get_elf_header_64(t_elf64 *e)
 {
 	Elf64_Ehdr	*elf_header;

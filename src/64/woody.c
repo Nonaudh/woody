@@ -59,7 +59,21 @@ int	init_elf_64(t_elf64 *e, char *filename)
 	while(i < nbr_Pht)
 	{
 		Elf64_Phdr test = *(Elf64_Phdr *)(map + e->elf_header->e_phoff + (i * e->elf_header->e_phentsize));
-		printf("\nI=%d, et le type est %d et le flag%d", i, test.p_type, test.p_flags);
+		printf("\nI=%d, et le type est %d et le flag%d\n", i, test.p_type, test.p_flags);
+		if(test.p_type == 1 && test.p_flags == 5)
+		{
+			unsigned char *test1 = (unsigned char *)(map + test.p_offset);
+			int x = 0;
+			while(x < test.p_filesz)
+			{
+				printf("%02x", test1[x] );//Permet de verifier si ou non possible le zero padding
+				if((x + 1) % 16 == 0)
+					printf("\n");
+				x++;
+			}
+			printf("\nJe dois commencer la lecture a partir %lu sur %d", test.p_offset, e->elf_header->e_phentsize);
+			//Je dois afficher tout ces octect et voir son zero padding
+		}
 		i++; 
 	}
 	munmap(map, e->file_size);

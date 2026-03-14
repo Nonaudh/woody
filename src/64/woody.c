@@ -66,7 +66,7 @@ int	init_elf_64(t_elf64 *e, char *filename)
 // 	{
 // 		// printf("%02x ", text[i]);
 // 		// if ((i + 1) % 16 == 0)
-// 		// 	printf("\n");
+// 		// 	printf("i\n");
 // 		text[i] = 42;
 // 	}
 // 	printf("\n");

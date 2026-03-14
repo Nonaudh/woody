@@ -36,7 +36,7 @@ int	init_elf_64(t_elf64 *e, char *filename)
 		close (fd);
 		return (1);
 	}
-	e->file_map = get_file_in_a_map_64(fd, e->file_size);
+	e->file_map = get_file_in_a_map_write_64(fd, e->file_size);
 	if (!e->file_map)
 	{
 		close (fd);
@@ -108,6 +108,21 @@ int	copy_elf_64(t_elf64 *e, char *filename)
 	return (0);
 }
 
+int look_for_zero_padding(t_elf64 *e)
+{
+	int k;
+	for (int i = 0; i <= e->elf_header->e_shnum; i++)
+	{
+		if (e->sectionsHeader[i].sh_flags & SHF_EXECINSTR)
+		{
+			printf("%s\n", e->sectionsHeader[i].sh_name + e->shstrtab);
+
+			printf("offset; %lu  size; %lu  entsize; %lu\n", e->sectionsHeader[i].sh_offset, e->sectionsHeader[i].sh_size, e->sectionsHeader[i].sh_entsize);
+		}
+	}
+	return (0);
+}
+
 int	woody_64(char *filename)
 {
 	t_elf64 e;
@@ -117,6 +132,8 @@ int	woody_64(char *filename)
 
 	if (init_elf_64(&e, "woody"))
 		return (1);
+
+	look_for_zero_padding(&e);
 	
 	return (0);
 }

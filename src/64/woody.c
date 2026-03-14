@@ -42,7 +42,7 @@ int	init_elf_64(t_elf64 *e, char *filename)
 		close (fd);
 		return (1);
 	}
-	close (fd);
+	// close (fd);//J'en ai besoin 
 	e->elf_header = get_elf_header_64(e);
 	if (!e->elf_header)	
 		return (1);
@@ -51,6 +51,22 @@ int	init_elf_64(t_elf64 *e, char *filename)
 	if (!e->sectionsHeader)
 		return (1);
 
+	//Il faut commencer a chercher a  partir d'ici 	
+	int nbr_Pht =  e->elf_header->e_phnum;
+	printf("Je suis le nombre de programme header e->elf_header->e_phnum %d", e->elf_header->e_phnum);
+	int i = 0;
+	void	*map = mmap(NULL,e->file_size, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
+	while(i < nbr_Pht)
+	{
+		Elf64_Phdr test = *(Elf64_Phdr *)(map + e->elf_header->e_phoff + (i * e->elf_header->e_phentsize));
+		printf("\nI=%d, et le type est %d et le flag%d", i, test.p_type, test.p_flags);
+		i++; 
+	}
+	munmap(map, e->file_size);
+	close(fd);//Recupere ici
+	
+
+	printf("Je suis le nombre de Programme header %d", e->elf_header->e_phnum);//Mise en place d'une conditions ca le nombre peux se trouver a un autre endroits
 	e->shstrtab = get_section_by_header_64(e, &e->sectionsHeader[e->elf_header->e_shstrndx]);
 	if (!e->shstrtab)
 		return (1);

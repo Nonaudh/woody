@@ -29,4 +29,9 @@ char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader);
 char	*get_section_by_name_64(t_elf64 *e, const char *name);
 Elf64_Shdr	*get_section_header_by_name_64(t_elf64 *e, const char *name);
 
+//Antoine
+int insert_payload(t_elf64 *e);
+int insert_p_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i);
+
+
 #endif

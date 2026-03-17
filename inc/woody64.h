@@ -12,6 +12,9 @@ typedef struct s_elf64
 	Elf64_Ehdr	*elf_header;
 	Elf64_Shdr	*sectionsHeader;
 	char	*shstrtab;
+	//C'est antoine
+	int elf_entre;
+	int fd;
 } t_elf64;
 
 int	find_class(char *filename);

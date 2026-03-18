@@ -111,21 +111,39 @@ int	copy_elf_64(t_elf64 *e, char *filename)
 	close(woody_fd);
 	return (0);
 }
-int insert_p_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i)
+int insert_pt_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i)
 {
 	uint64_t fin_segment = Phdr[i].p_offset + Phdr[i].p_filesz;
 	uint64_t padding = Phdr[i + 1].p_offset - fin_segment;
 	uint64_t new_entry_point = Phdr[i].p_vaddr + Phdr[i].p_filesz;
-	
+	if (padding < (int64_t)lencode)//Il faur verifier cette conditions 
+		return(1);
 	Phdr[i].p_filesz += lencode;	
 	Phdr[i].p_memsz  += lencode;	
-	
 	printf("Segement |%d|Padding |%lu| Lencode|%d|\n",i,  padding, lencode);
+	
 	lseek(e->fd, fin_segment, SEEK_SET);
 	write(e->fd, code, lencode);			
 	lseek(e->fd, 0x18, SEEK_SET);
 	write(e->fd, &new_entry_point, 8);
 	return(0);	
+}
+
+int insert_pt_note(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i)//Il fauut mettre une conditions sur la len
+{
+	Phdr[i].p_type = PT_LOAD;
+	Phdr[i].p_flags = PF_R | PF_X; 
+	uint64_t fin_segment = Phdr[i].p_offset + Phdr[i].p_filesz;
+	uint64_t padding = Phdr[i + 1].p_offset - fin_segment;
+	uint64_t new_entry_point = Phdr[i].p_vaddr + Phdr[i].p_filesz;
+	Phdr[i].p_filesz += lencode;	
+	Phdr[i].p_memsz  += lencode;	
+	lseek(e->fd, Phdr[i].p_offset, SEEK_SET);
+	write(e->fd, code, lencode);			
+	lseek(e->fd, 0x18, SEEK_SET);
+	write(e->fd, &Phdr[i].p_vaddr , 8);
+	return(0);
+	
 }
 
 int insert_payload(t_elf64 *e)
@@ -140,11 +158,19 @@ int insert_payload(t_elf64 *e)
 	i = 0;
 	while(i < e->elf_header->e_phnum - 1)
 	{
-		if(Phdr[i].p_type == PT_LOAD && Phdr[i].p_flags &  PF_X)
-		{
-			insert_p_load(e, Phdr, code, lencode, i);
-			return(0);
-		}
+		printf("i |%d|NameType |%d|\n", i, Phdr[i].p_type);
+		// if(Phdr[i].p_type == PT_LOAD && Phdr[i].p_flags &  PF_X)
+		// {
+		// 	if(insert_pt_load(e, Phdr, code, lencode, i) == 0)
+		// 	return(0);
+		// }
+		// if(Phdr[i].p_type == PT_NOTE)//Il faut faire attention que le premier pt_load soit bien le premier entre les 2
+		// {
+		// 	if(insert_pt_note(e, Phdr, code, lencode, i)==0)
+		// 		return(0);
+		// }
+		// printf("\nOffset |%lu| Offset +1 |%lu| filesZ|%lu|\n ", Phdr[i].p_offset, Phdr[i + 1].p_offset , Phdr[i].p_filesz);
+		// printf("i |%d| Le padding |%lu| lecode |%d|Fin segegment |%lu|\n",i ,padding, lencode, fin_segment);
 		i++;
 	}
 	close(e->fd);//si break attention 

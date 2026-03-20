@@ -26,7 +26,7 @@ DSRCSHARED = src/shared
 
 LIB = $(DLIB)/libft.a
 
-SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c
+SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c src/asm/xor.s
 
 NAME = woody_woodpacker
 
@@ -34,11 +34,17 @@ all : $(NAME)
 
 DBUILD = build/
 
-OBJ = $(addprefix $(DBUILD),$(SRC:%.c=%.o))
+OBJ = $(addprefix $(DBUILD),$(SRC))
+OBJ := $(OBJ:.c=.o)
+OBJ := $(OBJ:.s=.o)
 
 $(DBUILD)%.o : %.c
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+
+$(DBUILD)%.o : %.s
+	@mkdir -p $(dir $@)
+	nasm -f elf64 $< -o $@
 
 $(NAME) : $(LIB) $(OBJ)
 	$(CC) $(CFLAGS) $(INCLUDE) $(OBJ) $(LIBRARIES) -o $(NAME)

@@ -123,17 +123,44 @@ int look_for_zero_padding(t_elf64 *e)
 	return (0);
 }
 
+// void	xor(char *str, int str_len, char *key, int key_len)
+// {
+// 	int j = 0;
+// 	int i = 0;
+
+// 	while (i < str_len)
+// 	{
+// 		if (j == key_len)
+// 			j = 0;
+// 		str[i] = str[i] ^ key[j];
+// 		j++;
+// 		i++;
+// 	}
+// }
+
 int	woody_64(char *filename)
 {
-	t_elf64 e;
-	
-	if (copy_elf_64(&e, filename))
-		return (1);
+	// t_elf64 e;
 
-	if (init_elf_64(&e, "woody"))
-		return (1);
+	// if (copy_elf_64(&e, filename))
+	// 	return (1);
 
-	look_for_zero_padding(&e);
+	// if (init_elf_64(&e, "woody"))
+	// 	return (1);
+
+	// look_for_zero_padding(&e);
+
+	char str[] = "Hi guys it's me !";
+	int str_len = ft_strlen(str);
+	char *key = "TheKey";
+	int key_len = ft_strlen(key);
+
+	xor(str, str_len, key, key_len);
+
+	ft_printf("%s\n", str);
+	xor(str, str_len, key, key_len);
+
+	ft_printf("\n---\n%s\n", str);
 	
 	return (0);
 }

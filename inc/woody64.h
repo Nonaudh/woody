@@ -26,4 +26,6 @@ char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader);
 char	*get_section_by_name_64(t_elf64 *e, const char *name);
 Elf64_Shdr	*get_section_header_by_name_64(t_elf64 *e, const char *name);
 
+void	xor(char *str, int str_len, char *key, int key_len);
+
 #endif

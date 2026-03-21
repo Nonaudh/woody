@@ -26,7 +26,9 @@ DSRCSHARED = src/shared
 
 LIB = $(DLIB)/libft.a
 
-SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c src/asm/xor.s
+SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c
+
+SRCPAYLOAD = src/asm/xor.s
 
 NAME = woody_woodpacker
 
@@ -68,5 +70,12 @@ copy :
 	cp inc/nm64.h inc/nm32.h
 	sed -i "s/64/32/g" src/32/*
 	sed -i "s/64/32/g" inc/nm32.h
+
+payload :
+	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
+	objcopy -O binary payload.o payload.bin
+	xxd -p payload.bin | tr -d '\n' | sed 's/../\\x&/g' > payload.txt
+	rm payload.o payload.bin
+
 
 .PHONY: all clean fclean re

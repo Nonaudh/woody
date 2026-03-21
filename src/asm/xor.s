@@ -4,9 +4,13 @@ BITS 64
 ; %rdi, %rsi, %rdx, %rcx
 
 section .text
-global xor
+global _start
 
-xor:
+_start:
+	mov rdi, 0x42DEAD4242DEAD42
+	mov rsi, 0x69CAFE6969CAFE69
+	mov rdx, 0x21BABE2121BABE21
+	mov rcx, 0x99FEED9999FEED99
 	xor r8, r8 ; int i = 0
 	xor r9, r9 ; int j = 0
 

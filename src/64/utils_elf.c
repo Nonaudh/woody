@@ -3,7 +3,7 @@
 
 void	*get_file_in_a_map_64(int fd, int file_size)
 {
-	void	*map = mmap(NULL, file_size, PROT_READ, MAP_PRIVATE, fd, 0);
+	void	*map = mmap(NULL, file_size, PROT_READ, MAP_SHARED, fd, 0);
 	if (map == MAP_FAILED)
 		return (NULL);
 	return (map);

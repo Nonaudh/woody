@@ -32,6 +32,10 @@ Elf64_Shdr	*get_section_header_by_name_64(t_elf64 *e, const char *name);
 //Antoine
 int insert_payload(t_elf64 *e);
 int insert_p_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i);
+int add_program_header(t_elf64 *e, int lencode, Elf64_Phdr *phdr);
+int change_all(t_elf64 *e, int lencode, Elf64_Phdr *phdr, int i);
+
+
 
 
 #endif

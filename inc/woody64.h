@@ -11,10 +11,10 @@ typedef struct s_elf64
 	void	*file_map;
 	Elf64_Ehdr	*elf_header;
 	Elf64_Shdr	*sectionsHeader;
-	char	*shstrtab;
 	//C'est antoine
 	int elf_entre;
 	int fd;
+
 } t_elf64;
 
 int	find_class(char *filename);
@@ -27,7 +27,6 @@ Elf64_Shdr	*get_sections_header_64(t_elf64 *e);
 
 char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader);
 char	*get_section_by_name_64(t_elf64 *e, const char *name);
-Elf64_Shdr	*get_section_header_by_name_64(t_elf64 *e, const char *name);
 
 //Antoine
 int insert_payload(t_elf64 *e);

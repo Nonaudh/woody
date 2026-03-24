@@ -11,11 +11,24 @@ typedef struct s_elf64
 	void	*file_map;
 	Elf64_Ehdr	*elf_header;
 	Elf64_Shdr	*sectionsHeader;
+	char *shstrtab;
 	//C'est antoine
 	int elf_entre;
 	int fd;
 
 } t_elf64;
+
+typedef struct s_haufman
+{
+	// int step;
+	int nbr_occurence;
+	int steps ;
+	unsigned char  type;
+	struct s_haufman *right;
+	struct s_haufman *left;
+	
+}t_haufman;
+
 
 int	find_class(char *filename);
 int	woody_64(char *filename);
@@ -32,9 +45,12 @@ char	*get_section_by_name_64(t_elf64 *e, const char *name);
 int insert_payload(t_elf64 *e);
 int insert_p_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i);
 int add_program_header(t_elf64 *e, int lencode, Elf64_Phdr *phdr);
+
+//
 int change_all(t_elf64 *e, int lencode, Elf64_Phdr *phdr, int i);
+int print_fd_bits(t_elf64 *e);
 
-
+int	print_section_text(t_elf64 *e);
 
 
 #endif

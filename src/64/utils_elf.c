@@ -36,12 +36,3 @@ Elf64_Shdr	*get_sections_header_64(t_elf64 *e)
 	return (e->file_map + e->elf_header->e_shoff);
 }
 
-char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader)
-{
-	if (!sectionHeader || sectionHeader->sh_offset + sizeof(Elf64_Shdr) > (unsigned long)e->file_size)
-		return (NULL);
-
-	char *ptr = e->file_map + sectionHeader->sh_offset;
-
-	return (ptr);
-}

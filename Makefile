@@ -12,7 +12,7 @@
 
 CC = cc
 
-CFLAGS = -g  -O0#-Werror -Wextra -Wall
+CFLAGS = -g #-Werror -Wextra -Wall
 
 DLIB = lib/libft
 
@@ -26,7 +26,7 @@ DSRCSHARED = src/shared
 
 LIB = $(DLIB)/libft.a
 
-SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c
+SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c $(DSRC64)/insert_payload.c
 
 NAME = woody_woodpacker
 

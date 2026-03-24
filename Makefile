@@ -72,10 +72,12 @@ copy :
 	sed -i "s/64/32/g" inc/nm32.h
 
 payload :
-	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
-	objcopy -O binary payload.o payload.bin
-	xxd -p payload.bin | tr -d '\n' | sed 's/../\\x&/g' > payload.txt
-	rm payload.o payload.bin
+	nasm -f bin $(SRCPAYLOAD) -o payload.bin
 
+# payload :
+# 	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
+# 	objcopy -O binary payload.o payload.bin
+# 	xxd -p payload.bin | tr -d '\n' | sed 's/../\\x&/g' > payload.txt
+# 	rm payload.o payload.bin
 
 .PHONY: all clean fclean re

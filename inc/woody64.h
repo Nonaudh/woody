@@ -29,6 +29,13 @@ typedef struct s_haufman
 	
 }t_haufman;
 
+typedef struct s_table_haufman
+{
+	int type;
+	char *code;
+	int len;
+}t_table_haufman;
+
 
 int	find_class(char *filename);
 int	woody_64(char *filename);

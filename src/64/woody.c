@@ -106,28 +106,6 @@ int insert_pt_note(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i, 
 	return(0);
 }
 
-// int printf_All(t_elf64 *e, int lencode, Elf64_Phdr *phdr)
-// {
-// 	//1 er chose il faut boucler  sur le programme header
-// 	printf("\nVoila size progheader|%d| &&Start sectionHeader|%lu| Start ProgrammeHeader|%lu| && l\n ", e->elf_header->e_phentsize, e->elf_header->e_shoff,  e->elf_header->e_phoff);
-// 	int i = 0;
-// 	printf("\nBoucle phdr\n");
-// 	while(i < e->elf_header->e_phnum)
-// 	{
-// 		printf("i = |%d| Type |%d| Voila size , filepagephdr|%lu|, start Phdr|%lu|, taillePlace|%lu|\n",i, phdr[i].p_type,  phdr[i].p_filesz, phdr[i].p_offset, phdr[i].p_memsz);
-// 		i++;
-// 	}
-// 	i = 0;
-// 	printf("\nBoucle section header\n");
-// 	while(i < e->elf_header->e_shnum)
-// 	{
-// 		printf("i = |%d|, EntrytABLEAUsi sybole==|%lu|,EntrY section|%lu|Taille de la section |%lu|Adresse de la section |%lu|\n",i, e->sectionsHeader[i].sh_entsize, e->sectionsHeader[i].sh_offset, e->sectionsHeader[i].sh_size, e->sectionsHeader[i].sh_addr);
-// 		i++;
-// 	}
-// 	return(0);
-// }
-
-
 int insert_payload(t_elf64 *e)
 {
 	char code[] ="\x31\xc0\x99\xb2\x0a\xff\xc0\x89\xc7\x48\x8d\x35\x12\x00\x00\x00\x0f\x05"
@@ -138,7 +116,7 @@ int insert_payload(t_elf64 *e)
 	Elf64_Phdr *Phdr = (Elf64_Phdr *)(e->file_map + e->elf_header->e_phoff);
 	int save ;
 	i = 0;
-	while(i < e->elf_header->e_phnum - 1)
+	while(i < e->elf_header->e_phnum - 1)//Elfique transformation n'est pas finit
 	{
 		printf("i=|%d| phadr aligndb|%lu|", i, Phdr[i].p_align);
 		if(Phdr[i].p_type == PT_LOAD && Phdr[i].p_flags &  PF_X)
@@ -148,7 +126,7 @@ int insert_payload(t_elf64 *e)
 		}
 		if(Phdr[i].p_type == PT_NOTE)
 		{
-			if(insert_pt_note(e, Phdr, code, lencode, i, save)==0)
+			if(insert_pt_note(e, Phdr, code, lencode, i, save) == 0)
 				break;
 		}
 		i++;
@@ -246,46 +224,45 @@ int search_nbr_two(t_haufman *stack, int max, int save_one, int clef_one)
 	// 	return(0);
 	return(search_nbr_two(stack, max, save_one+1, clef_one));
 }
-void print_hold(t_haufman **hold, int steps, int max)
+void print_hold(t_haufman **hold, int max)
 {
-    for (int s = 0; s < steps; s++)
+    int total_steps = max;
+    int elements = max;
+    
+    for (int s = 0; s < total_steps; s++)
     {
         printf("=== STEP %d ===\n", s);
-        for (int i = 0; i <= max; i++)
+        for (int i = 0; i < elements; i++)
         {
-            printf("i=|%d| type=|%d| occ=|%d| steps=|%d| ",
+            printf("i=|%d| type=|%d| occ=|%d|  ",
                 i,
                 hold[s][i].type,
-                hold[s][i].nbr_occurence,
-                hold[s][i].steps);
-
+                hold[s][i].nbr_occurence);
             if (hold[s][i].left)
                 printf("L=|%d| ", hold[s][i].left->type);
             else
                 printf("L=|NULL| ");
-
             if (hold[s][i].right)
                 printf("R=|%d|", hold[s][i].right->type);
             else
                 printf("R=|NULL|");
-
             printf("\n");
-			printf("SELF=%p L=%p R=%p\n",
-			(void*)&hold[s][i],
-			(void*)hold[s][i].left,
-			(void*)hold[s][i].right);
-		}
-        
+            printf("SELF=%p L=%p R=%p\n",
+                (void*)&hold[s][i],
+                (void*)hold[s][i].left,
+                (void*)hold[s][i].right);
+        }
         printf("\n");
-        max--;
+        elements--;
     }
 }
+
 void three_haufman(t_haufman **stack, int max , int x_hold)
 {
 	printf("VOila le tableau\n");
 	for (int c = 0; c< max; c++)
 	{
-		printf("i=|%d|Type=|%d|NbrOccurence|%d|\n", c, stack[x_hold][c].type,stack[x_hold][c].nbr_occurence);
+		printf("i=|%d|Type=|%d|NbrOccurence|%d|Hold|%d|\n", c, stack[x_hold][c].type,stack[x_hold][c].nbr_occurence, x_hold);
 		
 	}
 	//Sauvegarder la 1 er boucle 
@@ -327,25 +304,169 @@ void three_haufman(t_haufman **stack, int max , int x_hold)
 	}
 	else
 	{
-		printf("\nSaveOne\n");
 		stack[x_hold][save_clef].nbr_occurence = node_one->nbr_occurence + node_two->nbr_occurence;
 		stack[x_hold][save_clef].right = node_two;
 		stack[x_hold][save_clef].left = node_one;
 		stack[x_hold][save_clef].type = ' ';		
-   	 	stack[x_hold][search_two] = stack[x_hold][max - 1];
+		stack[x_hold][search_two] = stack[x_hold][max - 1];
 	}
+	
 	//Save la copie
+	ft_memcpy(stack[x_hold + 1], stack[x_hold],(max )* sizeof(t_haufman)); //Hesite a mettre le -1
+	printf("\nSaveOne\n");
 	max--;
-	ft_memcpy(stack[x_hold + 1], stack[x_hold],(max + 1)* sizeof(t_haufman)); 
 	if (max != 0 )
 		three_haufman(stack, max, x_hold + 1);
 	return;
 }
 
+void implement_code_table(int code, int depth, t_table_haufman *tabe)
+{
+    tabe->len  = depth;
+    tabe->code = malloc(depth + 1);
+    int j = 0;
+    for (int i = depth - 1; i >= 0; i--)
+    {
+        tabe->code[j] = ((code >> i) & 1) + '0';
+        j++;
+    }
+    tabe->code[j] = '\0';
+}
+
+void implement_table(t_haufman *noeuds, int step, int code, t_table_haufman *tabe_codage, int *iterateur_table)
+{
+    if (noeuds->left == NULL && noeuds->right == NULL)
+    {
+		tabe_codage[*iterateur_table].type = noeuds ->type;
+        implement_code_table(code, step, &tabe_codage[*iterateur_table]);
+		(*iterateur_table)++;
+        return;
+    }
+	if(noeuds->left != NULL)
+	{
+		implement_table(noeuds->left, step + 1, code << 1, tabe_codage, iterateur_table);	
+	}
+	if(noeuds->right != NULL)
+	{
+		implement_table(noeuds->right, step + 1, (code << 1) | 1, tabe_codage, iterateur_table);
+	}
+}
+void print_tabe(t_table_haufman *tabe, int size)
+{
+    int i = 0;
+    while (i < size)
+    {
+        printf("i=|%d| type=|%d| len=|%d| code=|%s|\n",
+               i,
+               tabe[i].type,
+               tabe[i].len,
+               tabe[i].code ? tabe[i].code : "NULL");
+        i++;
+    }
+}
+
+
+int ft_nbr_type(char *test, int i , t_haufman **stack, int nbr_max)//Probablement un free ici 
+{
+	int nbr = 0;
+	int nbr_table = 0;
+	int j;
+	
+	char table[ft_strlen(test)];
+	table[0] = '\0';
+	for(int i = 0; test[i] != '\0'; i++)
+	{ 
+		for(j = 0; j < table[j] != '\0'; j++)
+			if(test[i] == table[j])
+				break;	
+		if (table[j] == '\0')
+		{	
+			table[j] = test[i];
+			table[j + 1] = '\0';
+			nbr++;
+		}
+	}
+	if(i == 1)
+		for(int k = 0; table[k] != '\0'; k++)
+			stack[0][k].type = table[k];
+	if(i == 2)
+		for(int g = 0; test[g] != '\0';g++)
+			for(int w = 0; w < nbr_max ;w++)
+				if(test[g] == stack[0][w].type)
+					stack[0][w].nbr_occurence++;					
+	return(nbr);
+}
+
+// t_haufman  **Nbr_occurence_type(t_haufman **stack, char *test)
+// {
+// 	int nbr = 0;
+// 	int nbr_table = 0;
+// 	int j;
+// 	for(int i = 0; test[i] != '\0'; i++)
+// 	{ 
+// 		for(j = 0; j < stack[0][j] != '\0'; j++)
+// 			if(test[i] == stack[0][j])
+// 				break;	
+// 		if (stack[0][j] == '\0')
+// 		{	
+// 			stack[0][j] = test[i];
+// 			nbr++;
+// 		}
+// 	}
+// 	return(nbr);
+// }
+
+char *decompresser(t_table_haufman *table_codage, char *crypter, int nbr_type)
+{
+	char *decrypter = ft_strdup("");
+	char *save = ft_strdup("");
+	char **verif = ft_split(crypter, ' ');
+	char tmp[2];
+	for (int i = 0; verif[i] != NULL; i++)
+	{
+		for (int k = 0; k < nbr_type; k++)
+		{
+			if(ft_strncmp(table_codage[k].code, verif[i], ft_strlen(verif[i])) == 0)
+			{
+				printf("Code |%s| Verif|%s| Type|%c|", table_codage[k].code,verif[i], table_codage[k].type );
+				tmp[0] =  table_codage[k].type;
+				tmp[1] = '\0';
+				save = ft_strjoin(decrypter, tmp);
+				free(decrypter);
+				decrypter = save;
+				break;
+			}
+		}
+	}
+	return (decrypter);
+}
+
+char *compresser(t_table_haufman *table_codage, char *test, int nbr_type)
+{
+	char *save_crypter  = ft_strdup("");
+	char *tmp;
+	char *tmp1;
+	for (int i = 0; test[i] != '\0'; i++)
+	{
+		for(int k = 0; k < nbr_type ; k++)
+		{
+			if(table_codage[k].type  == test[i])
+			{
+				tmp1 = ft_strjoin(save_crypter," ");
+                tmp = ft_strjoin(tmp1, table_codage[k].code);
+                free(save_crypter);
+                save_crypter = tmp;
+                break;				
+			}
+		}		
+	}
+	return(save_crypter);
+}
+
 int	print_section_text(t_elf64 *e)
 {
 	Elf64_Shdr	*textHeader = get_section_header_by_name_64(e, ".text");
-	unsigned char	*text = (unsigned char *)get_section_by_header_64(e, textHeader);
+	char	*test = ( char *)get_section_by_header_64(e, textHeader);
 	// //Mise en place du test
 	
 	// int longueur_max = 0;
@@ -357,33 +478,52 @@ int	print_section_text(t_elf64 *e)
 	// 		stack[longueur_max].nbr_occurence = 1;
 	// 		longueur_max++;	
 	// 	}
-	// 	// printf("%02x ", text[i]);
+	// 	// printf("%s ", text[i]);
 	// 	// if ((i + 1) % 16 == 0)
 	// 	// 	printf("\n");
 	// 	// text[i] = 42;
 	// }
-	
-	int max = 10;
-	t_haufman  **stack =malloc(sizeof(t_haufman) * (max));
-	for (int i = 0; i < max; i++)
+	t_haufman  **stack;
+	// char *test = "abavshcasjlksadlkkjzy";
+	int nbr_test = ft_nbr_type(test, 0, stack, 0);//Calcule le nbr de type
+	stack = malloc(sizeof(t_haufman*) * (nbr_test + 1));//Vient d'enlver 100
+	for (int i = 0; i < nbr_test + 1	; i++)
 	{
-    	stack[i] = malloc(sizeof(t_haufman) * max);
+    	stack[i] = malloc(sizeof(t_haufman) * (nbr_test + 1));
     	if (!stack[i])
     	    return (1);
-    	ft_memset(stack[i], 0, sizeof(t_haufman) * max);
+    	ft_memset(stack[i], 0, sizeof(t_haufman) * (nbr_test + 1));
 	}
-	// ft_memset(stack, 0, sizeof(stack));
-	for (int i =0; i < 10; i++)
+	ft_nbr_type(test, 1, stack, 0);//Implement les types
+	for(int e = 0; e < nbr_test; e++)//A mettre dans une fonction nbr_codage
 	{
-		stack[0][i].type = i;
-		stack[0][i].nbr_occurence = (i % 2 + 1*2/10 + i) + 1;
-		stack[0][i].steps = 0;
-		stack[0][i].right = 0;
-		stack[0][i].left = 0;
-		printf("\type |%d| occurence|%d|\n", i, stack[0][i].nbr_occurence);
+		printf("\nType=|%c|", stack[0][e].type);
+		stack[0][e].nbr_occurence = 0;
+		stack[0][e].steps = 0;
+		stack[0][e].right = 0;
+		stack[0][e].left = 0;
 	}
-	three_haufman(stack, max , 0);
-	print_hold(stack, max -1, max -1);
+	ft_nbr_type(test, 2, stack, nbr_test);//Implementes les occurences de types
+	for(int e = 0; e < nbr_test; e++)
+	{
+		printf("\nType=|%c|Nbr occurence|%d|", stack[0][e].type, stack[0][e].nbr_occurence);
+	}
+	ft_memcpy(stack[0 + 1], stack[0],(nbr_test + 1)* sizeof(t_haufman)); //Hesite a mettre le -1
+	
+	three_haufman(stack,nbr_test ,1);
+	
+	// printf("Jesors");
+	print_hold(stack , nbr_test);
+	// //Mise en place de la table de decodage
+	t_table_haufman table_codage[nbr_test];
+	int iterateur_table_codage = 0;
+	implement_table(&stack[nbr_test][0], 0, 0, table_codage, &iterateur_table_codage );
+	print_tabe(table_codage, iterateur_table_codage);
+	char *crypter = compresser(table_codage, test, nbr_test);
+	printf("SaveCrypter = %s", crypter);
+	char  *decrypter=decompresser(table_codage, crypter, nbr_test);
+	printf("\nDecrypte = |%s|\n", decrypter);
+	printf("Original = |%s|\n", test);
 	return (0);
 }
 

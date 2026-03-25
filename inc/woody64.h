@@ -26,17 +26,11 @@ Elf64_Ehdr	*get_elf_header_64(t_elf64 *e);
 Elf64_Shdr	*get_sections_header_64(t_elf64 *e);
 
 char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader);
-char	*get_section_by_name_64(t_elf64 *e, const char *name);
+// char	*get_section_by_name_64(t_elf64 *e, const char *name);
 
 int injection(t_elf64 *e);
 
 //Antoine
-int insert_payload(t_elf64 *e);
-int insert_p_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i);
-int add_program_header(t_elf64 *e, int lencode, Elf64_Phdr *phdr);
-int change_all(t_elf64 *e, int lencode, Elf64_Phdr *phdr, int i);
-
-
-
+uint64_t  insert_payload(t_elf64 *e);
 
 #endif

@@ -89,6 +89,7 @@ int	woody_64(char *filename)
 
 	if (injection(&e))
 		return (1);
+	
 	munmap(e.file_map, e.file_size);
 	return (0);
 }

@@ -26,7 +26,7 @@ DSRCSHARED = src/shared
 
 LIB = $(DLIB)/libft.a
 
-SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c
+SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c $(DSRC64)/utils_compress_elf.c
 
 NAME = woody_woodpacker
 

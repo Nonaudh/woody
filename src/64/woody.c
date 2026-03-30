@@ -40,6 +40,7 @@ int	init_elf_64(t_elf64 *e, char *filename)
 	e->sectionsHeader = get_sections_header_64(e);
 	if (!e->sectionsHeader)
 		return (1);
+	e->entry_point = e->elf_header->e_entry;
 	// munmap(map, e->file_size);
 	return (0);
 }

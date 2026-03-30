@@ -28,7 +28,7 @@ LIB = $(DLIB)/libft.a
 
 SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c $(DSRC64)/insert_payload.c
 
-SRCPAYLOAD = src/asm/xor.s
+SRCPAYLOAD = src/asm/payload.s
 
 NAME = woody_woodpacker
 
@@ -61,8 +61,8 @@ re : fclean $(NAME)
 payload :
 	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
 	objcopy -O binary payload.o payload.bin
-	xxd -p payload.bin | tr -d '\n' | sed 's/../\\x&/g' > payload.txt
-	rm payload.o payload.bin
+	xxd -p payload.bin | tr -d '\n' | sed 's/../\\x&/g' > payload
+# rm payload.o payload.bin
 
 # copy :
 # 	mkdir -p src/32

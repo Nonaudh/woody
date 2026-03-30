@@ -310,11 +310,11 @@ void implement_one_bits(t_table_haufman *table_codage,  int nbr_test, unsigned c
 				if ((*nbr_len) == 0)
 			{
 				(*nbr_len) = table_codage[j].len;
-				i = table_codage[j].len - 1;  // ← premier appel : commence au MSB
+				i = table_codage[j].len - 1; 
 			}
 			else
 			{
-				i = (*nbr_len) - 1;           // ← continuation : reprend où on s'est arrêté
+				i = (*nbr_len) - 1;          
 			}
 
 			printf("\nTYpe = |%02x| K  |%d| I |%d| Len |%d|", table_codage[j].type, (*k), i, table_codage[j].len);
@@ -324,10 +324,10 @@ void implement_one_bits(t_table_haufman *table_codage,  int nbr_test, unsigned c
 			{
 				
 				printf("\nUNder K =|%d|\n", (*k));
-				int bit = (table_codage[j].code >> i) & 1;  // Extraire le bit
-				(*save1) = ((*save1) << 1) | bit;            // Accumuler
+				int bit = (table_codage[j].code >> i) & 1;  
+				(*save1) = ((*save1) << 1) | bit;           
 				
-				printf("Voila ce que je mets |%d|", bit);    // Afficher SEULEMENT le bit
+				printf("Voila ce que je mets |%d|", bit);   
 				
 				(*nbr_len)--;
 				(*k)++;
@@ -388,14 +388,14 @@ void encryption_text(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *text
 		printf("\nK == |%d| ", k);
 		if (k == 8)
 		{
-			dest[dest_offset] = save1;  // écrire le byte complet
-			dest_offset++;               // avancer dans dest
+			dest[dest_offset] = save1;  
+			dest_offset++;               
 			printf("\nSave\n");
 			for (int b = 7; b >= 0; b--)
 				printf("%d", (save1 >> b) & 1);
 			printf("\n");
 			
-			save1 = 0;                   // reset le buffer
+			save1 = 0;                   
 			k = 0;                       
 			
 		}

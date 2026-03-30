@@ -11,8 +11,9 @@ typedef struct s_elf64
 	void	*file_map;
 	Elf64_Ehdr	*elf_header;
 	Elf64_Shdr	*sectionsHeader;
+	uint64_t	new_entry_point;
 	//C'est antoine
-	int elf_entre;
+	// int elf_entre;
 	int fd;
 
 } t_elf64;

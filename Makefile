@@ -28,6 +28,8 @@ LIB = $(DLIB)/libft.a
 
 SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c $(DSRC64)/insert_payload.c
 
+SRCPAYLOAD = src/asm/xor.s
+
 NAME = woody_woodpacker
 
 all : $(NAME)
@@ -56,11 +58,17 @@ fclean : clean
 
 re : fclean $(NAME)
 
-copy :
-	mkdir -p src/32
-	cp src/64/* src/32/
-	cp inc/nm64.h inc/nm32.h
-	sed -i "s/64/32/g" src/32/*
-	sed -i "s/64/32/g" inc/nm32.h
+payload :
+	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
+	objcopy -O binary payload.o payload.bin
+	xxd -p payload.bin | tr -d '\n' | sed 's/../\\x&/g' > payload.txt
+	rm payload.o payload.bin
+
+# copy :
+# 	mkdir -p src/32
+# 	cp src/64/* src/32/
+# 	cp inc/nm64.h inc/nm32.h
+# 	sed -i "s/64/32/g" src/32/*
+# 	sed -i "s/64/32/g" inc/nm32.h
 
 .PHONY: all clean fclean re

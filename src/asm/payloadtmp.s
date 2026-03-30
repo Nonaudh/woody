@@ -9,8 +9,8 @@ global _start
 _start:
 	xor r8, r8 ; //int i = 0
 	xor r9, r9 ; //int j = 0
-	mov r10, 0x1060
-;	mov r10, 0xDEADBEEFCAFEBABE
+;	mov r10, 0x401050
+	mov r10, 0xDEADBEEFCAFEBABE
 ;	jmp _end
 
 ;_loop:

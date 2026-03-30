@@ -32,9 +32,9 @@ typedef struct s_haufman
 typedef struct s_table_haufman
 {
 	unsigned char type;
-	char *code;
+	uint8_t code;
 	int len;
-}t_table_haufman;
+}t_table_haufman;//Faire attention si trop de dispariter passer a 16
 
 
 int	find_class(char *filename);

@@ -1,0 +1,6203 @@
+
+000000
+000001
+00001
+00010
+00011
+0010
+001100
+001101
+00111000
+00111001
+0011101
+001111
+01
+10000000
+10000001
+10000010
+10000011
+1000010
+1000011
+10001000
+10001001
+10001010
+10001011
+10001100
+10001101
+10001110
+10001111
+1001000
+10010010
+10010011
+10010100
+10010101
+1001011
+10011000
+10011001
+1001101
+1001110
+10011110
+10011111
+10100000
+10100001
+1010001
+10100100
+10100101
+1010011
+1010100
+10101010
+10101011
+1010110
+1010111
+10110000
+10110001
+10110010
+10110011
+10110100
+10110101
+1011011
+10111
+110000
+1100010
+11000110
+11000111
+1100100
+11001010
+11001011
+110011
+110100
+110101
+11011
+1110000
+1110001
+1110010
+1110011
+111010
+111011
+1111
+Before
+f30f1efa31ed4989d15e4889e24883e4f050544531c031c9488d3dca000000ff15532f0000f4662e0f1f840000000000488d3d792f0000488d05722f00004839f87415488b05362f00004885c07409ffe00f1f8000000000c30f1f8000000000488d3d492f0000488d35422f00004829fe4889f048c1ee3f48c1f8034801c648d1fe7414488b05052f00004885c07408ffe0660f1f440000c30f1f8000000000f30f1efa803d052f000000752b5548833de22e0000004889e5740c488b3de62e0000e819ffffffe864ffffffc605dd2e0000015dc30f1f00c30f1f8000000000f30f1efae977fffffff30f1efa554889e5488d05ac0e00004889c7e8f0feffffb8000000005dc3
+TYpe = |f3| K  |0| I |5| Len |6|001100
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |0f| K  |6| I |4| Len |5|11011
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00110011
+TYpe = |0f| K  |0| I |2| Len |5|11011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |1e| K  |3| I |5| Len |6|001101
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01100110
+TYpe = |1e| K  |0| I |0| Len |6|001101
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |fa| K  |1| I |5| Len |6|001111
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |31| K  |7| I |5| Len |6|000000
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10011110
+TYpe = |31| K  |0| I |4| Len |6|000000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |ed| K  |5| I |7| Len |8|10010100
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00000100
+TYpe = |ed| K  |0| I |4| Len |8|10010100
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |49| K  |5| I |6| Len |7|1001011
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10100100
+TYpe = |49| K  |0| I |3| Len |7|1001011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |89| K  |4| I |4| Len |5|00001
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10110000
+TYpe = |89| K  |0| I |0| Len |5|00001
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |d1| K  |1| I |6| Len |7|1001101
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11001101
+TYpe = |5e| K  |0| I |7| Len |8|10010101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10010101
+TYpe = |48| K  |0| I |3| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |89| K  |4| I |4| Len |5|00001
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11110000
+TYpe = |89| K  |0| I |0| Len |5|00001
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |e2| K  |1| I |6| Len |7|1010111
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010111
+TYpe = |48| K  |0| I |3| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |83| K  |4| I |6| Len |7|1011011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11111011
+TYpe = |83| K  |0| I |2| Len |7|1011011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |e4| K  |3| I |7| Len |8|10011111
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01110011
+TYpe = |e4| K  |0| I |2| Len |8|10011111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |f0| K  |3| I |5| Len |6|000001
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11100000
+TYpe = |f0| K  |0| I |0| Len |6|000001
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |50| K  |1| I |7| Len |8|10001011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11000101
+TYpe = |50| K  |0| I |0| Len |8|10001011
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |54| K  |1| I |7| Len |8|10001111
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11000111
+TYpe = |54| K  |0| I |0| Len |8|10001111
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |45| K  |1| I |7| Len |8|11000111
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11100011
+TYpe = |45| K  |0| I |0| Len |8|11000111
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |31| K  |1| I |5| Len |6|000000
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |c0| K  |7| I |6| Len |7|1110010
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10000001
+TYpe = |c0| K  |0| I |5| Len |7|1110010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |31| K  |6| I |5| Len |6|000000
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11001000
+TYpe = |31| K  |0| I |3| Len |6|000000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |c9| K  |4| I |7| Len |8|10000001
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00001000
+TYpe = |c9| K  |0| I |3| Len |8|10000001
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |48| K  |4| I |3| Len |4|1111
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00011111
+TYpe = |8d| K  |0| I |5| Len |6|111010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |3d| K  |6| I |5| Len |6|111011
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11101011
+TYpe = |3d| K  |0| I |3| Len |6|111011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |ca| K  |4| I |7| Len |8|10000011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10111000
+TYpe = |ca| K  |0| I |3| Len |8|10000011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00110101
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |ff| K  |2| I |3| Len |4|0010
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |15| K  |6| I |6| Len |7|1010011
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01001010
+TYpe = |15| K  |0| I |4| Len |7|1010011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |53| K  |5| I |7| Len |8|11001010
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10011110
+TYpe = |53| K  |0| I |4| Len |8|11001010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |2f| K  |5| I |4| Len |5|10111
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01010101
+TYpe = |2f| K  |0| I |1| Len |5|10111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |f4| K  |6| I |7| Len |8|11001011
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010111
+TYpe = |f4| K  |0| I |5| Len |8|11001011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |66| K  |6| I |6| Len |7|1010001
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00101110
+TYpe = |66| K  |0| I |4| Len |7|1010001
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |2e| K  |5| I |5| Len |6|110000
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10001110
+TYpe = |2e| K  |0| I |2| Len |6|110000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |0f| K  |3| I |4| Len |5|11011
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00011011
+TYpe = |1f| K  |0| I |4| Len |5|00011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |84| K  |5| I |7| Len |8|10100001
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00011101
+TYpe = |84| K  |0| I |4| Len |8|10100001
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |00| K  |5| I |1| Len |2|01
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |00| K  |7| I |1| Len |2|01
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00001010
+TYpe = |00| K  |0| I |0| Len |2|01
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |00| K  |1| I |1| Len |2|01
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |00| K  |3| I |1| Len |2|01
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |00| K  |5| I |1| Len |2|01
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |48| K  |7| I |3| Len |4|1111
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10101011
+TYpe = |48| K  |0| I |2| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |8d| K  |3| I |5| Len |6|111010
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11111101
+TYpe = |8d| K  |0| I |0| Len |6|111010
+UNder K =|0|
+Voila ce que je mets |0|
+TYpe = |3d| K  |1| I |5| Len |6|111011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |79| K  |7| I |7| Len |8|10110001
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01110111
+TYpe = |79| K  |0| I |6| Len |8|10110001
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |2f| K  |7| I |4| Len |5|10111
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01100011
+TYpe = |2f| K  |0| I |3| Len |5|10111
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01110101
+TYpe = |48| K  |0| I |3| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |8d| K  |4| I |5| Len |6|111010
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11111110
+TYpe = |8d| K  |0| I |1| Len |6|111010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |05| K  |2| I |4| Len |5|00010
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |72| K  |7| I |7| Len |8|10110011
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10000101
+TYpe = |72| K  |0| I |6| Len |8|10110011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |2f| K  |7| I |4| Len |5|10111
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01100111
+TYpe = |2f| K  |0| I |3| Len |5|10111
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01110101
+TYpe = |48| K  |0| I |3| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |39| K  |4| I |7| Len |8|10101010
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11111010
+TYpe = |39| K  |0| I |3| Len |8|10101010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |f8| K  |4| I |6| Len |7|0011101
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10100011
+TYpe = |f8| K  |0| I |2| Len |7|0011101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |74| K  |3| I |5| Len |6|110101
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10111010
+TYpe = |74| K  |0| I |0| Len |6|110101
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |15| K  |1| I |6| Len |7|1010011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010011
+TYpe = |48| K  |0| I |3| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |8b| K  |4| I |6| Len |7|1110000
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11111110
+TYpe = |8b| K  |0| I |2| Len |7|1110000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |05| K  |3| I |4| Len |5|00010
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00000010
+TYpe = |36| K  |0| I |7| Len |8|10101011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10101011
+TYpe = |2f| K  |0| I |4| Len |5|10111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |00| K  |5| I |1| Len |2|01
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |00| K  |7| I |1| Len |2|01
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10111010
+TYpe = |00| K  |0| I |0| Len |2|01
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |48| K  |1| I |3| Len |4|1111
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |85| K  |5| I |6| Len |7|1001000
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11111100
+TYpe = |85| K  |0| I |3| Len |7|1001000
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |c0| K  |4| I |6| Len |7|1110010
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10001110
+TYpe = |c0| K  |0| I |2| Len |7|1110010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |74| K  |3| I |5| Len |6|110101
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01011010
+TYpe = |74| K  |0| I |0| Len |6|110101
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |09| K  |1| I |7| Len |8|10010011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11001001
+TYpe = |09| K  |0| I |0| Len |8|10010011
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |ff| K  |1| I |3| Len |4|0010
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |e0| K  |5| I |6| Len |7|1010100
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10010101
+TYpe = |e0| K  |0| I |3| Len |7|1010100
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |0f| K  |4| I |4| Len |5|11011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01001101
+TYpe = |0f| K  |0| I |0| Len |5|11011
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |1f| K  |1| I |4| Len |5|00011
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |80| K  |6| I |5| Len |6|110011
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10001111
+TYpe = |80| K  |0| I |3| Len |6|110011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00110101
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |c3| K  |4| I |5| Len |6|110100
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01011101
+TYpe = |c3| K  |0| I |1| Len |6|110100
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |0f| K  |2| I |4| Len |5|11011
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |1f| K  |7| I |4| Len |5|00011
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00110110
+TYpe = |1f| K  |0| I |3| Len |5|00011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |80| K  |4| I |5| Len |6|110011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00111100
+TYpe = |80| K  |0| I |1| Len |6|110011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010101
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |48| K  |2| I |3| Len |4|1111
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |8d| K  |6| I |5| Len |6|111010
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01111111
+TYpe = |8d| K  |0| I |3| Len |6|111010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |3d| K  |4| I |5| Len |6|111011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10101110
+TYpe = |3d| K  |0| I |1| Len |6|111011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |49| K  |2| I |6| Len |7|1001011
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11100101
+TYpe = |49| K  |0| I |0| Len |7|1001011
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |2f| K  |1| I |4| Len |5|10111
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11011101
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |48| K  |2| I |3| Len |4|1111
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |8d| K  |6| I |5| Len |6|111010
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01111111
+TYpe = |8d| K  |0| I |3| Len |6|111010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |35| K  |4| I |7| Len |8|00111001
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10100011
+TYpe = |35| K  |0| I |3| Len |8|00111001
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |42| K  |4| I |7| Len |8|10100100
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10011010
+TYpe = |42| K  |0| I |3| Len |8|10100100
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |2f| K  |4| I |4| Len |5|10111
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01001011
+TYpe = |2f| K  |0| I |0| Len |5|10111
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |00| K  |1| I |1| Len |2|01
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |00| K  |3| I |1| Len |2|01
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |48| K  |5| I |3| Len |4|1111
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10101111
+TYpe = |48| K  |0| I |0| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |29| K  |1| I |7| Len |8|10100101
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11010010
+TYpe = |29| K  |0| I |0| Len |8|10100101
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |fe| K  |1| I |6| Len |7|1110001
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11110001
+TYpe = |48| K  |0| I |3| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |89| K  |4| I |4| Len |5|00001
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11110000
+TYpe = |89| K  |0| I |0| Len |5|00001
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |f0| K  |1| I |5| Len |6|000001
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |48| K  |7| I |3| Len |4|1111
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10000011
+TYpe = |48| K  |0| I |2| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |c1| K  |3| I |6| Len |7|1100010
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11111000
+TYpe = |c1| K  |0| I |1| Len |7|1100010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |ee| K  |2| I |7| Len |8|10001100
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10100011
+TYpe = |ee| K  |0| I |1| Len |8|10001100
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |3f| K  |2| I |7| Len |8|10001101
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00100011
+TYpe = |3f| K  |0| I |1| Len |8|10001101
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |48| K  |2| I |3| Len |4|1111
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |c1| K  |6| I |6| Len |7|1100010
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01111111
+TYpe = |c1| K  |0| I |4| Len |7|1100010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |f8| K  |5| I |6| Len |7|0011101
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00010001
+TYpe = |f8| K  |0| I |3| Len |7|0011101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |03| K  |4| I |7| Len |8|10001001
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11011000
+TYpe = |03| K  |0| I |3| Len |8|10001001
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |48| K  |4| I |3| Len |4|1111
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10011111
+TYpe = |01| K  |0| I |6| Len |7|1010110
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |c6| K  |7| I |6| Len |7|1001110
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10101101
+TYpe = |c6| K  |0| I |5| Len |7|1001110
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |48| K  |6| I |3| Len |4|1111
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00111011
+TYpe = |48| K  |0| I |1| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |d1| K  |2| I |6| Len |7|1001101
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11100110
+TYpe = |d1| K  |0| I |0| Len |7|1001101
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |fe| K  |1| I |6| Len |7|1110001
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11110001
+TYpe = |74| K  |0| I |5| Len |6|110101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |14| K  |6| I |7| Len |8|10110101
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11010110
+TYpe = |14| K  |0| I |5| Len |8|10110101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |48| K  |6| I |3| Len |4|1111
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010111
+TYpe = |48| K  |0| I |1| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |8b| K  |2| I |6| Len |7|1110000
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11111000
+TYpe = |8b| K  |0| I |0| Len |7|1110000
+UNder K =|0|
+Voila ce que je mets |0|
+TYpe = |05| K  |1| I |4| Len |5|00010
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |05| K  |6| I |4| Len |5|00010
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00001000
+TYpe = |05| K  |0| I |2| Len |5|00010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |2f| K  |3| I |4| Len |5|10111
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01010111
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |48| K  |4| I |3| Len |4|1111
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01011111
+TYpe = |85| K  |0| I |6| Len |7|1001000
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |c0| K  |7| I |6| Len |7|1110010
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10010001
+TYpe = |c0| K  |0| I |5| Len |7|1110010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |74| K  |6| I |5| Len |6|110101
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11001011
+TYpe = |74| K  |0| I |3| Len |6|110101
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |08| K  |4| I |7| Len |8|10011001
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01011001
+TYpe = |08| K  |0| I |3| Len |8|10011001
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |ff| K  |4| I |3| Len |4|0010
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10010010
+TYpe = |e0| K  |0| I |6| Len |7|1010100
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |66| K  |7| I |6| Len |7|1010001
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10101001
+TYpe = |66| K  |0| I |5| Len |7|1010001
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |0f| K  |6| I |4| Len |5|11011
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01000111
+TYpe = |0f| K  |0| I |2| Len |5|11011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |1f| K  |3| I |4| Len |5|00011
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01100011
+TYpe = |44| K  |0| I |7| Len |8|10011000
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10011000
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |c3| K  |4| I |5| Len |6|110100
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01011101
+TYpe = |c3| K  |0| I |1| Len |6|110100
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |0f| K  |2| I |4| Len |5|11011
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |1f| K  |7| I |4| Len |5|00011
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00110110
+TYpe = |1f| K  |0| I |3| Len |5|00011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |80| K  |4| I |5| Len |6|110011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00111100
+TYpe = |80| K  |0| I |1| Len |6|110011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010101
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |f3| K  |2| I |5| Len |6|001100
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01001100
+TYpe = |0f| K  |0| I |4| Len |5|11011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |1e| K  |5| I |5| Len |6|001101
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11011001
+TYpe = |1e| K  |0| I |2| Len |6|001101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |fa| K  |3| I |5| Len |6|001111
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10100111
+TYpe = |fa| K  |0| I |0| Len |6|001111
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |80| K  |1| I |5| Len |6|110011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |3d| K  |7| I |5| Len |6|111011
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11100111
+TYpe = |3d| K  |0| I |4| Len |6|111011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |05| K  |5| I |4| Len |5|00010
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11011000
+TYpe = |05| K  |0| I |1| Len |5|00010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |2f| K  |2| I |4| Len |5|10111
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |00| K  |7| I |1| Len |2|01
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10101110
+TYpe = |00| K  |0| I |0| Len |2|01
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |00| K  |1| I |1| Len |2|01
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |00| K  |3| I |1| Len |2|01
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |75| K  |5| I |7| Len |8|10110100
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10101101
+TYpe = |75| K  |0| I |4| Len |8|10110100
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |2b| K  |5| I |7| Len |8|10001000
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10100100
+TYpe = |2b| K  |0| I |4| Len |8|10001000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |55| K  |5| I |6| Len |7|1000010
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01000100
+TYpe = |55| K  |0| I |3| Len |7|1000010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |48| K  |4| I |3| Len |4|1111
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00101111
+TYpe = |83| K  |0| I |6| Len |7|1011011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |3d| K  |7| I |5| Len |6|111011
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10110111
+TYpe = |3d| K  |0| I |4| Len |6|111011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |e2| K  |5| I |6| Len |7|1010111
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11011101
+TYpe = |e2| K  |0| I |3| Len |7|1010111
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |2e| K  |4| I |5| Len |6|110000
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01111100
+TYpe = |2e| K  |0| I |1| Len |6|110000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00010101
+TYpe = |48| K  |0| I |3| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |89| K  |4| I |4| Len |5|00001
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11110000
+TYpe = |89| K  |0| I |0| Len |5|00001
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |e5| K  |1| I |6| Len |7|1100100
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11100100
+TYpe = |74| K  |0| I |5| Len |6|110101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |0c| K  |6| I |7| Len |8|00111000
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11010100
+TYpe = |0c| K  |0| I |5| Len |8|00111000
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |48| K  |6| I |3| Len |4|1111
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11100011
+TYpe = |48| K  |0| I |1| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |8b| K  |2| I |6| Len |7|1110000
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11111000
+TYpe = |8b| K  |0| I |0| Len |7|1110000
+UNder K =|0|
+Voila ce que je mets |0|
+TYpe = |3d| K  |1| I |5| Len |6|111011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |e6| K  |7| I |7| Len |8|10010010
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01110111
+TYpe = |e6| K  |0| I |6| Len |8|10010010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |2e| K  |7| I |5| Len |6|110000
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00100101
+TYpe = |2e| K  |0| I |4| Len |6|110000
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+TYpe = |00| K  |5| I |1| Len |2|01
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |00| K  |7| I |1| Len |2|01
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10000010
+TYpe = |00| K  |0| I |0| Len |2|01
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |e8| K  |1| I |6| Len |7|1110011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11110011
+TYpe = |19| K  |0| I |7| Len |8|10110010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10110010
+TYpe = |ff| K  |0| I |3| Len |4|0010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |ff| K  |4| I |3| Len |4|0010
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00100010
+TYpe = |ff| K  |0| I |3| Len |4|0010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |e8| K  |4| I |6| Len |7|1110011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00101110
+TYpe = |e8| K  |0| I |2| Len |7|1110011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |64| K  |3| I |7| Len |8|10110000
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01110110
+TYpe = |64| K  |0| I |2| Len |8|10110000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |ff| K  |3| I |3| Len |4|0010
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |ff| K  |7| I |3| Len |4|0010
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00000100
+TYpe = |ff| K  |0| I |2| Len |4|0010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |ff| K  |3| I |3| Len |4|0010
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+TYpe = |c6| K  |7| I |6| Len |7|1001110
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01000101
+TYpe = |c6| K  |0| I |5| Len |7|1001110
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |05| K  |6| I |4| Len |5|00010
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00111000
+TYpe = |05| K  |0| I |2| Len |5|00010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |dd| K  |3| I |7| Len |8|10100000
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01010100
+TYpe = |dd| K  |0| I |2| Len |8|10100000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |2e| K  |3| I |5| Len |6|110000
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00011000
+TYpe = |2e| K  |0| I |0| Len |6|110000
+UNder K =|0|
+Voila ce que je mets |0|
+TYpe = |00| K  |1| I |1| Len |2|01
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |00| K  |3| I |1| Len |2|01
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |01| K  |5| I |6| Len |7|1010110
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00101101
+TYpe = |01| K  |0| I |3| Len |7|1010110
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |5d| K  |4| I |6| Len |7|1000011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01101000
+TYpe = |5d| K  |0| I |2| Len |7|1000011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |c3| K  |3| I |5| Len |6|110100
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01111010
+TYpe = |c3| K  |0| I |0| Len |6|110100
+UNder K =|0|
+Voila ce que je mets |0|
+TYpe = |0f| K  |1| I |4| Len |5|11011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |1f| K  |6| I |4| Len |5|00011
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01101100
+TYpe = |1f| K  |0| I |2| Len |5|00011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |00| K  |3| I |1| Len |2|01
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |c3| K  |5| I |5| Len |6|110100
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01101110
+TYpe = |c3| K  |0| I |2| Len |6|110100
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |0f| K  |3| I |4| Len |5|11011
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+10011011
+TYpe = |1f| K  |0| I |4| Len |5|00011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |80| K  |5| I |5| Len |6|110011
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00011110
+TYpe = |80| K  |0| I |2| Len |6|110011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |00| K  |3| I |1| Len |2|01
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |00| K  |5| I |1| Len |2|01
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |00| K  |7| I |1| Len |2|01
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01101010
+TYpe = |00| K  |0| I |0| Len |2|01
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |00| K  |1| I |1| Len |2|01
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |f3| K  |3| I |5| Len |6|001100
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10100110
+TYpe = |f3| K  |0| I |0| Len |6|001100
+UNder K =|0|
+Voila ce que je mets |0|
+TYpe = |0f| K  |1| I |4| Len |5|11011
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |1e| K  |6| I |5| Len |6|001101
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01101100
+TYpe = |1e| K  |0| I |3| Len |6|001101
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |fa| K  |4| I |5| Len |6|001111
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010011
+TYpe = |fa| K  |0| I |1| Len |6|001111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |e9| K  |2| I |7| Len |8|10000010
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11100000
+TYpe = |e9| K  |0| I |1| Len |8|10000010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |77| K  |2| I |7| Len |8|10000000
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10100000
+TYpe = |77| K  |0| I |1| Len |8|10000000
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |ff| K  |2| I |3| Len |4|0010
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |ff| K  |6| I |3| Len |4|0010
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00001000
+TYpe = |ff| K  |0| I |1| Len |4|0010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+TYpe = |ff| K  |2| I |3| Len |4|0010
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |f3| K  |6| I |5| Len |6|001100
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10001000
+TYpe = |f3| K  |0| I |3| Len |6|001100
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |0f| K  |4| I |4| Len |5|11011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11001101
+TYpe = |0f| K  |0| I |0| Len |5|11011
+UNder K =|0|
+Voila ce que je mets |1|
+TYpe = |1e| K  |1| I |5| Len |6|001101
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |fa| K  |7| I |5| Len |6|001111
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10011010
+TYpe = |fa| K  |0| I |4| Len |6|001111
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |55| K  |5| I |6| Len |7|1000010
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01111100
+TYpe = |55| K  |0| I |3| Len |7|1000010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |48| K  |4| I |3| Len |4|1111
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00101111
+TYpe = |89| K  |0| I |4| Len |5|00001
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |e5| K  |5| I |6| Len |7|1100100
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00001110
+TYpe = |e5| K  |0| I |3| Len |7|1100100
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |48| K  |4| I |3| Len |4|1111
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+01001111
+TYpe = |8d| K  |0| I |5| Len |6|111010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+TYpe = |05| K  |6| I |4| Len |5|00010
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11101000
+TYpe = |05| K  |0| I |2| Len |5|00010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |ac| K  |3| I |7| Len |8|11000110
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01011000
+TYpe = |ac| K  |0| I |2| Len |8|11000110
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |0e| K  |3| I |7| Len |8|10001110
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11010001
+TYpe = |0e| K  |0| I |2| Len |8|10001110
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |0|
+TYpe = |00| K  |3| I |1| Len |2|01
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |00| K  |5| I |1| Len |2|01
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |48| K  |7| I |3| Len |4|1111
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11001011
+TYpe = |48| K  |0| I |2| Len |4|1111
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |89| K  |3| I |4| Len |5|00001
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11100001
+TYpe = |c7| K  |0| I |7| Len |8|10001010
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+10001010
+TYpe = |e8| K  |0| I |6| Len |7|1110011
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+TYpe = |f0| K  |7| I |5| Len |6|000001
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+11100110
+TYpe = |f0| K  |0| I |4| Len |6|000001
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |0|
+UNder K =|4|
+Voila ce que je mets |1|
+TYpe = |fe| K  |5| I |6| Len |7|1110001
+UNder K =|5|
+Voila ce que je mets |1|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00001111
+TYpe = |fe| K  |0| I |3| Len |7|1110001
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |ff| K  |4| I |3| Len |4|0010
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+00010010
+TYpe = |ff| K  |0| I |3| Len |4|0010
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |0|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |b8| K  |4| I |7| Len |8|10011110
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+00101001
+TYpe = |b8| K  |0| I |3| Len |8|10011110
+UNder K =|0|
+Voila ce que je mets |1|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+UNder K =|3|
+Voila ce que je mets |0|
+TYpe = |00| K  |4| I |1| Len |2|01
+UNder K =|4|
+Voila ce que je mets |0|
+UNder K =|5|
+Voila ce que je mets |1|
+TYpe = |00| K  |6| I |1| Len |2|01
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |1|Ici save
+11100101
+TYpe = |00| K  |0| I |1| Len |2|01
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+TYpe = |00| K  |2| I |1| Len |2|01
+UNder K =|2|
+Voila ce que je mets |0|
+UNder K =|3|
+Voila ce que je mets |1|
+TYpe = |5d| K  |4| I |6| Len |7|1000011
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |0|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01011000
+TYpe = |5d| K  |0| I |2| Len |7|1000011
+UNder K =|0|
+Voila ce que je mets |0|
+UNder K =|1|
+Voila ce que je mets |1|
+UNder K =|2|
+Voila ce que je mets |1|
+TYpe = |c3| K  |3| I |5| Len |6|110100
+UNder K =|3|
+Voila ce que je mets |1|
+UNder K =|4|
+Voila ce que je mets |1|
+UNder K =|5|
+Voila ce que je mets |0|
+UNder K =|6|
+Voila ce que je mets |1|
+UNder K =|7|
+Voila ce que je mets |0|Ici save
+01111010
+TYpe = |c3| K  |0| I |0| Len |6|110100
+UNder K =|0|
+Voila ce que je mets |0|
+After
+33669e04a4b0cd95f0d7fb73e0c5c7e381c8081febb8354a9e55d72e8e1b1d0aabfd776375fe856775faa3bad3fe02abbafc8e5ac9954d8f355d363cd57faee5dd7fa39a4bafd2f1f083f8a3237f11d89fad3be6f1d6d7f808575f91cb5992a94763985d363cd54cd9a7e7d8aeada4442fb7dd7c15f0e4d4e3f8772582f3b2222e7604453854182d687a6c6e9b1e6aa66cd3e0a00888cd9a7c2f0e4fe858d1cbe18ae60f1229e5587a0000752b5548833de22e0000004889e5740c488b3de62e0000e819ffffffe864ffffffc605dd2e0000015dc30f1f00c30f1f8000000000f30f1efae977fffffff30f1efa554889e5488d05ac0e00004889c7e8f0feffffb8000000005dc3Verif_encryption
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011Bits |0|
+00110Bits |0|
+001100
+Current
+001100
+
+ Current|12|TableCode|140| TableType|243|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |1|
+1
+Current
+001101
+
+ Current|13|TableCode|13| TableType|30|
+Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011Bits |1|
+000111Bits |1|
+0001111
+Current
+001111
+
+ Current|15|TableCode|79| TableType|250|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |0|
+10100
+Current
+10010100
+
+ Current|148|TableCode|148| TableType|237|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011
+Current
+1001011
+
+ Current|75|TableCode|203| TableType|73|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |1|
+01001Bits |1|
+010011Bits |0|
+0100110Bits |1|
+01001101
+Current
+1001101
+
+ Current|77|TableCode|205| TableType|209|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |0|
+10010Bits |1|
+100101Bits |0|
+1001010Bits |1|
+10010101
+Current
+10010101
+
+ Current|149|TableCode|149| TableType|94|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010Bits |1|
+010101Bits |1|
+0101011Bits |1|
+01010111
+Current
+1010111
+
+ Current|87|TableCode|87| TableType|226|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |1|
+00001011
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1011011
+
+ Current|91|TableCode|219| TableType|131|
+Bits |1|
+0001Bits |0|
+00010Bits |0|
+000100Bits |1|
+0001001Bits |1|
+00010011
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+10011111
+
+ Current|159|TableCode|159| TableType|228|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+000001
+
+ Current|1|TableCode|1| TableType|240|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000Bits |1|
+010001Bits |0|
+0100010Bits |1|
+01000101
+Bits |1|
+1
+Current
+10001011
+
+ Current|139|TableCode|139| TableType|80|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000Bits |1|
+010001Bits |1|
+0100011Bits |1|
+01000111
+Bits |1|
+1
+Current
+10001111
+
+ Current|143|TableCode|143| TableType|84|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |0|
+011000Bits |1|
+0110001Bits |1|
+01100011
+Bits |1|
+1
+Current
+11000111
+
+ Current|199|TableCode|199| TableType|69|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |0|
+1100Bits |1|
+11001Bits |0|
+110010
+Current
+1110010
+
+ Current|114|TableCode|242| TableType|192|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001
+Current
+10000001
+
+ Current|129|TableCode|129| TableType|201|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |1|
+11101Bits |0|
+111010
+Current
+111010
+
+ Current|58|TableCode|250| TableType|141|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011
+Current
+111011
+
+ Current|59|TableCode|187| TableType|61|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+10000011
+
+ Current|131|TableCode|131| TableType|202|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |1|
+0000001Bits |0|
+00000010
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |1|
+10011
+Current
+1010011
+
+ Current|83|TableCode|211| TableType|21|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010
+Current
+11001010
+
+ Current|202|TableCode|202| TableType|83|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |1|
+1Bits |1|
+11
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010Bits |1|
+00101Bits |1|
+001011
+Current
+11001011
+
+ Current|203|TableCode|203| TableType|244|
+Bits |1|
+0000001Bits |0|
+00000010
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000Bits |1|
+10001
+Current
+1010001
+
+ Current|81|TableCode|209| TableType|102|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+110000
+
+ Current|48|TableCode|240| TableType|46|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |1|
+00011011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011
+Current
+00011
+
+ Current|3|TableCode|67| TableType|31|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001
+Current
+10100001
+
+ Current|161|TableCode|161| TableType|132|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+0001Bits |1|
+00011Bits |1|
+000111Bits |0|
+0001110Bits |1|
+00011101
+Bits |0|
+0
+Current
+111010
+
+ Current|58|TableCode|250| TableType|141|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |1|
+011101Bits |1|
+0111011
+Current
+111011
+
+ Current|59|TableCode|187| TableType|61|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |0|
+011000Bits |1|
+0110001
+Current
+10110001
+
+ Current|177|TableCode|177| TableType|121|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |1|
+1Bits |0|
+10
+Current
+111010
+
+ Current|58|TableCode|250| TableType|141|
+Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |0|
+0000010
+Current
+00010
+
+ Current|2|TableCode|34| TableType|5|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |1|
+011001Bits |1|
+0110011
+Current
+10110011
+
+ Current|179|TableCode|179| TableType|114|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |0|
+00001010
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010
+Current
+10101010
+
+ Current|170|TableCode|170| TableType|57|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101
+Current
+0011101
+
+ Current|29|TableCode|157| TableType|248|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |1|
+1
+Current
+110101
+
+ Current|53|TableCode|53| TableType|116|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010Bits |0|
+010100Bits |1|
+0101001Bits |1|
+01010011
+Current
+1010011
+
+ Current|83|TableCode|211| TableType|21|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+1110000
+
+ Current|112|TableCode|240| TableType|139|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+00010
+
+ Current|2|TableCode|34| TableType|5|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |1|
+10101Bits |0|
+101010Bits |1|
+1010101Bits |1|
+10101011
+Current
+10101011
+
+ Current|171|TableCode|171| TableType|54|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011Bits |1|
+10111
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |1|
+01111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000
+Current
+1001000
+
+ Current|72|TableCode|200| TableType|133|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+1110010
+
+ Current|114|TableCode|242| TableType|192|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |1|
+1
+Current
+110101
+
+ Current|53|TableCode|53| TableType|116|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |1|
+01001Bits |0|
+010010Bits |0|
+0100100Bits |1|
+01001001
+Bits |1|
+1
+Current
+10010011
+
+ Current|147|TableCode|147| TableType|9|
+Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |0|
+00010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100
+Current
+1010100
+
+ Current|84|TableCode|212| TableType|224|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |1|
+1
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |1|
+000011
+Current
+00011
+
+ Current|3|TableCode|67| TableType|31|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+110011
+
+ Current|51|TableCode|243| TableType|128|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |0|
+0Bits |0|
+00
+Current
+110100
+
+ Current|52|TableCode|244| TableType|195|
+Bits |1|
+001Bits |1|
+0011Bits |0|
+00110Bits |1|
+001101Bits |1|
+0011011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+00011
+
+ Current|3|TableCode|67| TableType|31|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Bits |1|
+1Bits |1|
+11
+Current
+110011
+
+ Current|51|TableCode|243| TableType|128|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |1|
+001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010
+Current
+111010
+
+ Current|58|TableCode|250| TableType|141|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |1|
+1Bits |1|
+11
+Current
+111011
+
+ Current|59|TableCode|187| TableType|61|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |1|
+001001Bits |0|
+0010010Bits |1|
+00100101
+Bits |1|
+1
+Current
+1001011
+
+ Current|75|TableCode|203| TableType|73|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |1|
+01011Bits |1|
+010111
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |1|
+001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010
+Current
+111010
+
+ Current|58|TableCode|250| TableType|141|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001
+Current
+00111001
+
+ Current|57|TableCode|57| TableType|53|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |0|
+00001010
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100
+Current
+10100100
+
+ Current|164|TableCode|164| TableType|66|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |1|
+00001011
+Bits |1|
+1
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+000001Bits |1|
+0000011Bits |1|
+00000111
+Bits |1|
+1
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010Bits |0|
+010100Bits |1|
+0101001Bits |0|
+01010010
+Bits |1|
+1
+Current
+10100101
+
+ Current|165|TableCode|165| TableType|41|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |0|
+011100Bits |0|
+0111000Bits |1|
+01110001
+Current
+1110001
+
+ Current|113|TableCode|113| TableType|254|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001
+Current
+000001
+
+ Current|1|TableCode|1| TableType|240|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |0|
+0001100Bits |0|
+00011000
+Bits |1|
+1Bits |0|
+10
+Current
+1100010
+
+ Current|98|TableCode|98| TableType|193|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |1|
+0010001Bits |1|
+00100011
+Bits |0|
+0Bits |0|
+00
+Current
+10001100
+
+ Current|140|TableCode|140| TableType|238|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |1|
+0010001Bits |1|
+00100011
+Bits |0|
+0Bits |1|
+01
+Current
+10001101
+
+ Current|141|TableCode|141| TableType|63|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |1|
+001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |0|
+00010
+Current
+1100010
+
+ Current|98|TableCode|98| TableType|193|
+Bits |0|
+000000Bits |0|
+0000000Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101
+Current
+0011101
+
+ Current|29|TableCode|157| TableType|248|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001
+Current
+10001001
+
+ Current|137|TableCode|137| TableType|3|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |1|
+10101Bits |1|
+101011Bits |0|
+1010110
+Current
+1010110
+
+ Current|86|TableCode|214| TableType|1|
+Bits |1|
+00000001
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110
+Current
+1001110
+
+ Current|78|TableCode|206| TableType|198|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |1|
+001001Bits |1|
+0010011Bits |0|
+00100110
+Bits |1|
+1
+Current
+1001101
+
+ Current|77|TableCode|205| TableType|209|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |0|
+011100Bits |0|
+0111000Bits |1|
+01110001
+Current
+1110001
+
+ Current|113|TableCode|113| TableType|254|
+
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |0|
+11010Bits |1|
+110101
+Current
+110101
+
+ Current|53|TableCode|53| TableType|116|
+Bits |1|
+0000001Bits |0|
+00000010
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |0|
+11010Bits |1|
+110101
+Current
+10110101
+
+ Current|181|TableCode|181| TableType|20|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110Bits |0|
+0011100Bits |0|
+00111000
+Bits |0|
+0
+Current
+1110000
+
+ Current|112|TableCode|240| TableType|139|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+00010
+
+ Current|2|TableCode|34| TableType|5|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+00010
+
+ Current|2|TableCode|34| TableType|5|
+Bits |1|
+0001Bits |0|
+00010Bits |1|
+000101Bits |1|
+0001011Bits |1|
+00010111
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |0|
+10010Bits |0|
+100100Bits |0|
+1001000
+Current
+1001000
+
+ Current|72|TableCode|200| TableType|133|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |0|
+1100Bits |1|
+11001Bits |0|
+110010
+Current
+1110010
+
+ Current|114|TableCode|242| TableType|192|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |1|
+0101
+Current
+110101
+
+ Current|53|TableCode|53| TableType|116|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |1|
+00001001
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001
+Current
+10011001
+
+ Current|153|TableCode|153| TableType|8|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |1|
+10101Bits |0|
+101010Bits |0|
+1010100
+Current
+1010100
+
+ Current|84|TableCode|212| TableType|224|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000Bits |1|
+010001
+Current
+1010001
+
+ Current|81|TableCode|209| TableType|102|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Current
+00011
+
+ Current|3|TableCode|67| TableType|31|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |1|
+10011Bits |0|
+100110Bits |0|
+1001100Bits |0|
+10011000
+Current
+10011000
+
+ Current|152|TableCode|152| TableType|68|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |0|
+0Bits |0|
+00
+Current
+110100
+
+ Current|52|TableCode|244| TableType|195|
+Bits |1|
+001Bits |1|
+0011Bits |0|
+00110Bits |1|
+001101Bits |1|
+0011011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+00011
+
+ Current|3|TableCode|67| TableType|31|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Bits |1|
+1Bits |1|
+11
+Current
+110011
+
+ Current|51|TableCode|243| TableType|128|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Current
+001100
+
+ Current|12|TableCode|140| TableType|243|
+
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |1|
+11011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+000000Bits |0|
+0000000Bits |1|
+00000001
+Bits |1|
+1Bits |0|
+10Bits |1|
+101
+Current
+001101
+
+ Current|13|TableCode|13| TableType|30|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |1|
+0000011Bits |1|
+00000111
+Bits |1|
+1
+Current
+001111
+
+ Current|15|TableCode|79| TableType|250|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |1|
+011001Bits |1|
+0110011
+Current
+110011
+
+ Current|51|TableCode|243| TableType|128|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |1|
+11011
+Current
+111011
+
+ Current|59|TableCode|187| TableType|61|
+Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |0|
+10
+Current
+00010
+
+ Current|2|TableCode|34| TableType|5|
+Bits |1|
+001Bits |0|
+0010Bits |1|
+00101Bits |1|
+001011Bits |1|
+0010111
+Current
+10111
+
+ Current|23|TableCode|119| TableType|47|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |0|
+10100
+Current
+10110100
+
+ Current|180|TableCode|180| TableType|117|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000
+Current
+10001000
+
+ Current|136|TableCode|136| TableType|43|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+1000010
+
+ Current|66|TableCode|194| TableType|85|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011Bits |0|
+10110Bits |1|
+101101Bits |1|
+1011011
+Current
+1011011
+
+ Current|91|TableCode|219| TableType|131|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |1|
+11011
+Current
+111011
+
+ Current|59|TableCode|187| TableType|61|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111
+Current
+1010111
+
+ Current|87|TableCode|87| TableType|226|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Bits |0|
+0Bits |0|
+00
+Current
+110000
+
+ Current|48|TableCode|240| TableType|46|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |1|
+011001Bits |0|
+0110010Bits |0|
+01100100
+Current
+1100100
+
+ Current|100|TableCode|228| TableType|229|
+
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |0|
+11010Bits |1|
+110101
+Current
+110101
+
+ Current|53|TableCode|53| TableType|116|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |0|
+11100Bits |0|
+111000
+Current
+00111000
+
+ Current|56|TableCode|56| TableType|12|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110Bits |0|
+0011100Bits |0|
+00111000
+Bits |0|
+0
+Current
+1110000
+
+ Current|112|TableCode|240| TableType|139|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |1|
+011101Bits |1|
+0111011
+Current
+111011
+
+ Current|59|TableCode|187| TableType|61|
+Bits |1|
+00000001
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |1|
+001001Bits |0|
+0010010
+Current
+10010010
+
+ Current|146|TableCode|146| TableType|230|
+Bits |1|
+00000001
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000Bits |0|
+10000
+Current
+110000
+
+ Current|48|TableCode|240| TableType|46|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |0|
+011100Bits |1|
+0111001Bits |1|
+01110011
+Current
+1110011
+
+ Current|115|TableCode|115| TableType|232|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011Bits |0|
+10110Bits |0|
+101100Bits |1|
+1011001Bits |0|
+10110010
+Current
+10110010
+
+ Current|178|TableCode|178| TableType|25|
+
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1110011
+
+ Current|115|TableCode|115| TableType|232|
+Bits |1|
+0001Bits |0|
+00010Bits |1|
+000101Bits |1|
+0001011Bits |0|
+00010110
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+10110000
+
+ Current|176|TableCode|176| TableType|100|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |0|
+0000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |0|
+0000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |1|
+00000001
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110
+Current
+1001110
+
+ Current|78|TableCode|206| TableType|198|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+00010
+
+ Current|2|TableCode|34| TableType|5|
+Bits |1|
+0001Bits |0|
+00010Bits |1|
+000101Bits |0|
+0001010Bits |0|
+00010100
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+10100000
+
+ Current|160|TableCode|160| TableType|221|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |0|
+0001100Bits |0|
+00011000
+Bits |0|
+0
+Current
+110000
+
+ Current|48|TableCode|240| TableType|46|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |0|
+0110
+Current
+1010110
+
+ Current|86|TableCode|214| TableType|1|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1000011
+
+ Current|67|TableCode|67| TableType|93|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |0|
+0
+Current
+110100
+
+ Current|52|TableCode|244| TableType|195|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |1|
+01101Bits |1|
+011011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+00011
+
+ Current|3|TableCode|67| TableType|31|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |1|
+1Bits |0|
+10Bits |0|
+100
+Current
+110100
+
+ Current|52|TableCode|244| TableType|195|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |1|
+00011011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011
+Current
+00011
+
+ Current|3|TableCode|67| TableType|31|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+110011
+
+ Current|51|TableCode|243| TableType|128|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0
+Current
+001100
+
+ Current|12|TableCode|140| TableType|243|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |1|
+01101Bits |1|
+011011
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101
+Current
+001101
+
+ Current|13|TableCode|13| TableType|30|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+001111
+
+ Current|15|TableCode|79| TableType|250|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |0|
+0010000Bits |0|
+00100000
+Bits |1|
+1Bits |0|
+10
+Current
+10000010
+
+ Current|130|TableCode|130| TableType|233|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |0|
+0010000Bits |0|
+00100000
+Bits |0|
+0Bits |0|
+00
+Current
+10000000
+
+ Current|128|TableCode|128| TableType|119|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |0|
+10
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |0|
+1100
+Current
+001100
+
+ Current|12|TableCode|140| TableType|243|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |1|
+1
+Current
+11011
+
+ Current|27|TableCode|187| TableType|15|
+Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101
+Current
+001101
+
+ Current|13|TableCode|13| TableType|30|
+Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |1|
+01111
+Current
+001111
+
+ Current|15|TableCode|79| TableType|250|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+1000010
+
+ Current|66|TableCode|194| TableType|85|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100
+Current
+1100100
+
+ Current|100|TableCode|228| TableType|229|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |1|
+11101Bits |0|
+111010
+Current
+111010
+
+ Current|58|TableCode|250| TableType|141|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+00010
+
+ Current|2|TableCode|34| TableType|5|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |0|
+0001100Bits |0|
+00011000
+Bits |1|
+1Bits |1|
+11Bits |0|
+110
+Current
+11000110
+
+ Current|198|TableCode|198| TableType|172|
+Bits |1|
+0001Bits |0|
+00010Bits |0|
+000100Bits |0|
+0001000Bits |1|
+00010001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110
+Current
+10001110
+
+ Current|142|TableCode|142| TableType|14|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+1111
+
+ Current|15|TableCode|191| TableType|72|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |1|
+00000001
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000Bits |1|
+10001Bits |0|
+100010Bits |1|
+1000101Bits |0|
+10001010
+Current
+10001010
+
+ Current|138|TableCode|138| TableType|199|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |0|
+11100Bits |1|
+111001Bits |1|
+1110011
+Current
+1110011
+
+ Current|115|TableCode|115| TableType|232|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001
+Current
+000001
+
+ Current|1|TableCode|1| TableType|240|
+Bits |1|
+000001Bits |1|
+0000011Bits |1|
+00000111
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001
+Current
+1110001
+
+ Current|113|TableCode|113| TableType|254|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+0010
+
+ Current|2|TableCode|50| TableType|255|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |1|
+00001001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110
+Current
+10011110
+
+ Current|158|TableCode|158| TableType|184|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|61| TableType|0|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1000011
+
+ Current|67|TableCode|67| TableType|93|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |0|
+0
+Current
+110100
+
+ Current|52|TableCode|244| TableType|195|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |0|
+00000000
+src: 
+f3 0f 1e fa 31 ed 49 89 d1 5e 48 89 e2 48 83 e4 f0 50 54 45 31 c0 31 c9 48 8d 3d ca 00 00 00 ff 15 53 2f 00 00 f4 66 2e 0f 1f 84 00 00 00 00 00 48 8d 3d 79 2f 00 00 48 8d 05 72 2f 00 00 48 39 f8 74 15 48 8b 05 36 2f 00 00 48 85 c0 74 09 ff e0 0f 1f 80 00 00 00 00 c3 0f 1f 80 00 00 00 00 48 8d 3d 49 2f 00 00 48 8d 35 42 2f 00 00 48 29 fe 48 89 f0 48 c1 ee 3f 48 c1 f8 03 48 01 c6 48 d1 fe 74 14 48 8b 05 05 2f 00 00 48 85 c0 74 08 ff e0 66 0f 1f 44 00 00 c3 0f 1f 80 00 00 00 00 f3 0f 1e fa 80 3d 05 2f 00 00 00 75 2b 55 48 83 3d e2 2e 00 00 00 48 89 e5 74 0c 48 8b 3d e6 2e 00 00 e8 19 ff ff ff e8 64 ff ff ff c6 05 dd 2e 00 00 01 5d c3 0f 1f 00 c3 0f 1f 80 00 00 00 00 f3 0f 1e fa e9 77 ff ff ff f3 0f 1e fa 55 48 89 e5 48 8d 05 ac 0e 00 00 48 89 c7 e8 f0 fe ff ff b8 00 00 00 00 5d c3 31 

@@ -26,9 +26,10 @@ DSRCSHARED = src/shared
 
 LIB = $(DLIB)/libft.a
 
-SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c $(DSRC64)/insert_payload.c
+SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c $(DSRC64)/insert_payload.c \
+	$(DSRC64)/get_injection_address.c
 
-SRCPAYLOAD = src/asm/payloadtmp.s
+SRCPAYLOAD = src/asm/payload.s
 
 NAME = woody_woodpacker
 
@@ -62,8 +63,7 @@ payload :
 	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
 	objcopy -O binary payload.o payload.bin
 	xxd -p payload.bin | tr -d '\n' > payload
-# 	xxd -p payload.bin | tr -d '\n' | sed 's/../\\x&/g' > payload
-# rm payload.o payload.bin
+	# rm payload.o payload.bin
 
 # copy :
 # 	mkdir -p src/32

@@ -40,7 +40,10 @@ int	init_elf_64(t_elf64 *e, char *filename)
 	e->sectionsHeader = get_sections_header_64(e);
 	if (!e->sectionsHeader)
 		return (1);
-	e->entry_point = e->elf_header->e_entry;
+	// e->shstrtab = get_section_by_header_64(e, &e->sectionsHeader[e->elf_header->e_shstrndx]);
+	// if (!e->shstrtab)
+	// 	return (1);
+	// e->entry_point = e->elf_header->e_entry;
 	// munmap(map, e->file_size);
 	return (0);
 }
@@ -78,6 +81,40 @@ int	copy_elf_64(t_elf64 *e, char *filename)
 	return (0);
 }
 
+void xor_xor(char *text, int size, unsigned char *key, int key_size)
+{
+	int j = 0;
+
+	for (int i = 0; i < size; i++)
+	{
+		if (j == key_size)
+			j = 0;
+		text[i] ^= key[j];
+		j++;
+	}
+}
+
+int	xoring_PT_LOAD(t_elf64 *e)
+{
+	Elf64_Phdr *Phdr = (Elf64_Phdr *)(e->file_map + e->elf_header->e_phoff);
+	int i;
+	int found = 0;
+	e->key = (unsigned char *)"AKEY";
+	e->key_size = ft_strlen((char *)e->key);
+
+	for (i = 0; !found && i < e->elf_header->e_phnum - 1; i++)
+	{
+		if (segment_is_PT_LOAD_and_PF_X(&Phdr[i]))
+		{
+			e->PT_LOAD_vaddr = Phdr[i].p_vaddr;
+			e->PT_LOAD_size = Phdr[i].p_filesz;
+			xor_xor(e->file_map + Phdr[i].p_offset, Phdr[i].p_filesz, e->key, e->key_size);
+			found = 1;
+		}
+	}
+	return (0);
+}
+
 int	woody_64(char *filename)
 {
 	t_elf64 e;
@@ -86,6 +123,9 @@ int	woody_64(char *filename)
 		return (1);
 
 	if (init_elf_64(&e, "woody"))
+		return (1);
+
+	if (xoring_PT_LOAD(&e))
 		return (1);
 
 	if (injection(&e))

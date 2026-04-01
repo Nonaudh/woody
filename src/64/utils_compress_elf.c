@@ -493,10 +493,13 @@ void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *tex
 			// if(search_bits()== 0)
 				
 	}	
+	printf("\nJe suis le last B =|%d|, NBR_TEST|%d|\n", b, nbr_test);
+	for (int r = j; r <= 7; r++)
+				printf("%d", (current >> (7 - r)) & 1);
 	src[b] = '\0';
 
 printf("src: \n");
-for (int i = 0; i < b; i++)
+for (int i = 0; i < b-1; i++)
     printf("%02x ", (unsigned char)src[i]);
 printf("\n");
 

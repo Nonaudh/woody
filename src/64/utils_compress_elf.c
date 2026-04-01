@@ -73,12 +73,6 @@ void three_haufman(t_haufman **stack, int max , int x_hold)
 		three_haufman(stack, max, x_hold + 1);
 	return;
 }
-void print_bits(uint8_t n)
-{
-    for (int i = 7; i >= 0; i--)
-        printf("%d", (n >> i) & 1);
-    printf("\n");
-}
 
 void implement_code_table(int code, int depth, t_table_haufman *tabe)
 {
@@ -86,7 +80,7 @@ void implement_code_table(int code, int depth, t_table_haufman *tabe)
     // tabe->code = malloc(depth + 1);
     int e = 0;
 	int add = 0;
-	char *save = malloc(9);
+	char *save = malloc(17);
 	
     for (int i = depth - 1; i >= 0; i--)
     {
@@ -103,10 +97,10 @@ void implement_code_table(int code, int depth, t_table_haufman *tabe)
 		b++;
 	}
 	tabe->code = savec;
-	printf("\n");
+	// printf("\n");
     // tabe->code[j] = '\0';
-	for (int i = tabe->len - 1; i >= 0; i--)
-	    printf("%d", (tabe->code >> i) & 1);
+	// for (int i = tabe->len - 1; i >= 0; i--)
+	//     printf("%d", (tabe->code >> i) & 1);
 	// printf("|\n");
 }
 
@@ -300,9 +294,10 @@ int init_type_and_occurence_and_three_haufman(t_haufman **stack, Elf64_Shdr *tex
 	return(0);
 }
 
-void implement_one_bits(t_table_haufman *table_codage,  int nbr_test, unsigned char *test, int len_tt1, uint8_t *save1, int *k, int *nbr_len)
+void implement_one_bits(t_table_haufman *table_codage,  int nbr_test, unsigned char *test, int len_tt1, uint16_t *save1, int *k, int *nbr_len)
 {
 	int i ;
+	// printf("Test|%2x|", test[len_tt1]);
 	for(int j = 0; j < nbr_test; j++)
 	{
 		if (test[len_tt1] == table_codage[j].type)
@@ -317,21 +312,22 @@ void implement_one_bits(t_table_haufman *table_codage,  int nbr_test, unsigned c
 				i = (*nbr_len) - 1;          
 			}
 
-			printf("\nTYpe = |%02x| K  |%d| I |%d| Len |%d|", table_codage[j].type, (*k), i, table_codage[j].len);
-			for (int Z = table_codage[j].len - 1; Z >= 0; Z--)
-				printf("%d", (table_codage[j].code >> Z) & 1);
+			// printf("\nTYpe = |%02x| K  |%d| I |%d| Len |%d|", table_codage[j].type, (*k), i, table_codage[j].len);
+			// for (int Z = table_codage[j].len - 1; Z >= 0; Z--)
+			// 	printf("%d", (table_codage[j].code >> Z) & 1);
+			
 			while(i >= 0)
 			{
 				
-				printf("\nUNder K =|%d|\n", (*k));
+				// printf("\nUNder K =|%d|\n", (*k));
 				int bit = (table_codage[j].code >> i) & 1;  
 				(*save1) = ((*save1) << 1) | bit;           
 				
-				printf("Voila ce que je mets |%d|", bit);   
+				// printf("Voila ce que je mets |%d|", bit);   
 				
 				(*nbr_len)--;
 				(*k)++;
-				if((*k) == 8)
+				if((*k) == 16)
 				{
 					(*nbr_len) = i;
 					return; 
@@ -366,75 +362,102 @@ int encryption_text(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *textH
 	printf("\nBefore\n");
 	int len_tt1 = 0;//Iterater sur .text
 	int len__tt2 = 0;
-	int k ;//
-	uint8_t save1 = 0;
+	int k  = 0;//
+	uint16_t save1 = 0;
 	int nbr_len = 0;
 	uint8_t *dest = (uint8_t *)e->file_map + textHeader->sh_offset;
+
+	// Copie de test avant d'écraser dest
+	unsigned char *original = malloc(textHeader->sh_size);
+	if (!original)
+		return (-1);
+	ft_memcpy(original, dest, textHeader->sh_size);
+	test = original; 
 	int dest_offset = 0;
 	for(int k = 0; k <textHeader->sh_size; k++)
 	{
 		printf("%02x", dest[k]);
 	}
+	printf("\n");
 	k = 0;
 	//D'abord le faire a 1
-	while(len_tt1 < (int )textHeader->sh_size)//Tant que len__tt1 != 8
+	int t5 = 0;
+	while(len_tt1 < (int)textHeader->sh_size )//Tant que len__tt1 != 8
 	{
 		// if(len_tt1 == 2)
 		// 	break;
 		implement_one_bits(table_codage,   nbr_test,   test,  len_tt1,  &save1,  &k, &nbr_len);
-		// printf("\nK == |%d| ", k);
-		if (k == 8)
+		// printf("\nK == |%d| char == |%02x|", k, test[len_tt1]);
+		
+		if (k == 16)
 		{
 			pourreturn++;
-			dest[dest_offset] = save1;  
+			dest[dest_offset] = (uint8_t)((save1 >> 8) & 0xFF);
 			dest_offset++;
-			printf("Ici save\n");               
-            for (int b = 7; b >= 0; b--)
-                printf("%d", (save1 >> b) & 1);
+			dest[dest_offset] = (uint8_t)(save1 & 0xFF);    
+			dest_offset++;
+			// printf("Ici save\n");               
+			// for (int b = 15; b >= 0; b--)
+			// 	printf("%d", (save1 >> b) & 1);
+			// printf("\n");
+			// printf("dest[%d] = %02x | ", dest_offset - 2, dest[dest_offset - 2]);
+			// for (int b = 7; b >= 0; b--)
+			// 	printf("%d", (dest[dest_offset - 2] >> b) & 1);
+			// printf("\n");
+
+			// printf("dest[%d] = %02x | ", dest_offset - 1, dest[dest_offset - 1]);
+			// for (int b = 7; b >= 0; b--)
+			// 	printf("%d", (dest[dest_offset - 1] >> b) & 1);
+			// printf("\n");
+			// Print des 2 bytes qu'on vient d'écrire
+			// printf("\ndest[%d] = %02x (%d)\n", dest_offset - 2, dest[dest_offset - 2], dest[dest_offset - 2]);
+			// printf("dest[%d] = %02x (%d)\n", dest_offset - 1, dest[dest_offset - 1], dest[dest_offset - 1]);
+			
+			
 			save1 = 0;                   
 			k = 0;                       
-			
 		}
 		if(nbr_len == 0)
 		{
 			len_tt1++;
 			nbr_len = 0 ;
 		}//Il n'est pas arriver a la fin du code il faut retourner dans la fonction 
-		if(len_tt1 == textHeader->sh_size - 1)
-		{
-			if(len__tt2== 0)
-				len__tt2= 1;
-			 else 
-			 	break;
-		}
 	}
-	if (nbr_len > 0)
+		// Finir les bytes restants apres la boucle principale
+	while(len_tt1 < (int)textHeader->sh_size)
 	{
 		implement_one_bits(table_codage, nbr_test, test, len_tt1, &save1, &k, &nbr_len);
-		pourreturn++;
+		if(nbr_len == 0)
+			len_tt1++;
+		if(k == 16)
+		{
+			dest[dest_offset++] = (uint8_t)((save1 >> 8) & 0xFF);
+			dest[dest_offset++] = (uint8_t)(save1 & 0xFF);
+			save1 = 0;
+			k = 0;
+		}
 	}
 
-	// Flush le byte partiel restant
+// printf("\nFlush final k=|%d| save1=|%04x|\n", k, save1);
 	if (k > 0)
 	{
-		uint8_t final_byte = save1 << (8 - k);
-		dest[dest_offset] = final_byte;
-		dest_offset++;
+		save1 = save1 << (16 - k);
+		dest[dest_offset++] = (uint8_t)((save1 >> 8) & 0xFF);
+		if (k > 8)
+			dest[dest_offset++] = (uint8_t)(save1 & 0xFF);
 	}
-	
-	printf("\nAfter\n");
-	for(int k = 0; k < textHeader->sh_size; k++)
-	{
-		printf("%02x", dest[k]);
-	}
-	return(pourreturn);
+	ft_memset(dest + dest_offset, 0, textHeader->sh_size - dest_offset);
+	// printf("\nAfter\n");
+	// for(int k = 0; k < textHeader->sh_size; k++)
+	// 	printf("%02x", dest[k]);
+	return(dest_offset);
 }
 
 
-int search_current(uint8_t current, t_table_haufman *table_codage, int nbr_test,unsigned  char *src, int *e, int len_current)
+int search_current(uint16_t current, t_table_haufman *table_codage, int nbr_test,unsigned  char *src, int *e, int len_current)
 {
 	int bits  = 0;
-	uint8_t save =0; 
+	uint16_t save =0; 
 	for(int j = 0; j < nbr_test; j++)
 	{
 		for (int r = table_codage[j].len - 1; r >= 0; r--) {
@@ -466,12 +489,12 @@ void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *tex
 	uint8_t *dest = (uint8_t *)e->file_map + textHeader->sh_offset;
 	int iterateur_dest = 0;
 	int bits = 0;
-	unsigned char src[1000];
+	unsigned char src[1000000];
 	int len_current = 0;
 	int b = 0;
 	int j = 0;
-	uint8_t current = 0;
-	for(int k = 0;k < nbr_fort ; k++ )
+	uint16_t current = 0;
+	for(int k = 0;k < nbr_fort  ; k++ )
 	{
 			// bits = juste_one_bits()
 		for ( j = 7; j >= 0; j--)
@@ -499,8 +522,8 @@ void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *tex
 	src[b] = '\0';
 
 printf("src: \n");
-for (int i = 0; i < b-1; i++)
-    printf("%02x ", (unsigned char)src[i]);
+for (int i = 0; i < textHeader->sh_size ; i++)
+    printf("%02x", (unsigned char)src[i]);
 printf("\n");
 
 }

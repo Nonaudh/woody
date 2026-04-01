@@ -32,7 +32,7 @@ typedef struct s_haufman
 typedef struct s_table_haufman
 {
 	unsigned char type;
-	uint8_t code;
+	uint16_t code;
 	int len;
 }t_table_haufman;//Faire attention si trop de dispariter passer a 16
 

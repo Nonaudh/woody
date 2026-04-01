@@ -1,0 +1,2857 @@
+
+Before
+f30f1efa31ed4989d15e4889e24883e4f050544531c031c9488d3dca000000ff15532f0000f4662e0f1f840000000000488d3d792f0000488d05722f00004839f87415488b05362f00004885c07409ffe00f1f8000000000c30f1f8000000000488d3d492f0000488d35422f00004829fe4889f048c1ee3f48c1f8034801c648d1fe7414488b05052f00004885c07408ffe0660f1f440000c30f1f8000000000f30f1efa803d052f000000752b5548833de22e0000004889e5740c488b3de62e0000e819ffffffe864ffffffc605dd2e0000015dc30f1f00c30f1f8000000000f30f1efae977fffffff30f1efa554889e5488d05ac0e00004889c7e8f0feffffb8000000005dc3Test|f3|Test| f|Test|1e|Test|1e|Test|fa|Test|31|Test|ed|Test|ed|Test|49|Test|89|Test|89|Test|d1|Test|5e|Test|48|Test|89|Test|e2|Test|48|Test|83|Test|e4|Test|e4|Test|f0|Test|50|Test|50|Test|54|Test|45|Test|45|Test|31|Test|c0|Test|31|Test|31|Test|c9|Test|48|Test|8d|Test|3d|Test|ca|Test|ca|Test| 0|Test| 0|Test| 0|Test|ff|Test|15|Test|15|Test|53|Test|2f|Test|2f|Test| 0|Test| 0|Test|f4|Test|66|Test|66|Test|2e|Test| f|Test|1f|Test|84|Test| 0|Test| 0|Test| 0|Test| 0|Test| 0|Test| 0|Test|48|Test|8d|Test|8d|Test|3d|Test|79|Test|2f|Test|2f|Test| 0|Test| 0|Test|48|Test|8d|Test|8d|Test| 5|Test|72|Test|2f|Test|2f|Test| 0|Test| 0|Test|48|Test|39|Test|39|Test|f8|Test|74|Test|74|Test|15|Test|48|Test|8b|Test|8b|Test| 5|Test|36|Test|2f|Test| 0|Test| 0|Test|48|Test|85|Test|85|Test|c0|Test|74|Test|74|Test| 9|Test|ff|Test|e0|Test|e0|Test| f|Test|1f|Test|80|Test|80|Test| 0|Test| 0|Test| 0|Test| 0|Test|c3|Test|c3|Test| f|Test|1f|Test|80|Test|80|Test| 0|Test| 0|Test| 0|Test| 0|Test|48|Test|8d|Test|8d|Test|3d|Test|49|Test|49|Test|2f|Test| 0|Test| 0|Test|48|Test|8d|Test|8d|Test|35|Test|42|Test|42|Test|2f|Test| 0|Test| 0|Test|48|Test|48|Test|29|Test|fe|Test|48|Test|89|Test|f0|Test|48|Test|48|Test|c1|Test|ee|Test|ee|Test|3f|Test|48|Test|c1|Test|c1|Test|f8|Test| 3|Test| 3|Test|48|Test| 1|Test|c6|Test|c6|Test|48|Test|d1|Test|d1|Test|fe|Test|74|Test|14|Test|14|Test|48|Test|8b|Test|8b|Test| 5|Test| 5|Test|2f|Test| 0|Test| 0|Test|48|Test|85|Test|c0|Test|c0|Test|74|Test| 8|Test| 8|Test|ff|Test|e0|Test|66|Test|66|Test| f|Test|1f|Test|44|Test| 0|Test| 0|Test|c3|Test|c3|Test| f|Test|1f|Test|80|Test|80|Test| 0|Test| 0|Test| 0|Test| 0|Test|f3|Test| f|Test|1e|Test|fa|Test|fa|Test|80|Test|3d|Test| 5|Test| 5|Test|2f|Test| 0|Test| 0|Test| 0|Test|75|Test|75|Test|2b|Test|55|Test|55|Test|48|Test|83|Test|3d|Test|3d|Test|e2|Test|2e|Test|2e|Test| 0|Test| 0|Test| 0|Test|48|Test|89|Test|89|Test|e5|Test|74|Test| c|Test| c|Test|48|Test|8b|Test|8b|Test|3d|Test|e6|Test|2e|Test|2e|Test| 0|Test| 0|Test|e8|Test|19|Test|ff|Test|ff|Test|ff|Test|e8|Test|64|Test|64|Test|ff|Test|ff|Test|ff|Test|c6|Test|c6|Test| 5|Test|dd|Test|dd|Test|2e|Test| 0|Test| 0|Test| 1|Test| 1|Test|5d|Test|c3|Test|c3|Test| f|Test|1f|Test| 0|Test|c3|Test|c3|Test| f|Test|1f|Test|80|Test|80|Test| 0|Test| 0|Test| 0|Test| 0|Test|f3|Test|f3|Test| f|Test|1e|Test|fa|Test|fa|Test|e9|Test|77|Test|77|Test|ff|Test|ff|Test|ff|Test|f3|Test|f3|Test| f|Test|1e|Test|fa|Test|fa|Test|55|Test|48|Test|89|Test|e5|Test|48|Test|8d|Test| 5|Test|ac|Test|ac|Test| e|Test| 0|Test| 0|Test|48|Test|48|Test|89|Test|c7|Test|e8|Test|f0|Test|fe|Test|fe|Test|ff|Test|ff|Test|b8|Test|b8|Test| 0|Test| 0|Test| 0|Test| 0|Test|5d|Test|5d|Test|c3|Verif_encryption
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011Bits |0|
+00110Bits |0|
+001100
+Current
+001100
+
+ Current|12|TableCode|3212| TableType|243|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |1|
+1
+Current
+001101
+
+ Current|13|TableCode|8973| TableType|30|
+Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011Bits |1|
+000111Bits |1|
+0001111
+Current
+001111
+
+ Current|15|TableCode|10063| TableType|250|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |0|
+10100
+Current
+10010100
+
+ Current|148|TableCode|37780| TableType|237|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011
+Current
+1001011
+
+ Current|75|TableCode|19147| TableType|73|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |1|
+01001Bits |1|
+010011Bits |0|
+0100110Bits |1|
+01001101
+Current
+1001101
+
+ Current|77|TableCode|19661| TableType|209|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |0|
+10010Bits |1|
+100101Bits |0|
+1001010Bits |1|
+10010101
+Current
+10010101
+
+ Current|149|TableCode|38037| TableType|94|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010Bits |1|
+010101Bits |1|
+0101011Bits |1|
+01010111
+Current
+1010111
+
+ Current|87|TableCode|60247| TableType|226|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |1|
+00001011
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1011011
+
+ Current|91|TableCode|23259| TableType|131|
+Bits |1|
+0001Bits |0|
+00010Bits |0|
+000100Bits |1|
+0001001Bits |1|
+00010011
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+10011111
+
+ Current|159|TableCode|40607| TableType|228|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+000001
+
+ Current|1|TableCode|1| TableType|240|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000Bits |1|
+010001Bits |0|
+0100010Bits |1|
+01000101
+Bits |1|
+1
+Current
+10001011
+
+ Current|139|TableCode|35467| TableType|80|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000Bits |1|
+010001Bits |1|
+0100011Bits |1|
+01000111
+Bits |1|
+1
+Current
+10001111
+
+ Current|143|TableCode|36495| TableType|84|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |0|
+011000Bits |1|
+0110001Bits |1|
+01100011
+Bits |1|
+1
+Current
+11000111
+
+ Current|199|TableCode|50887| TableType|69|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |0|
+1100Bits |1|
+11001Bits |0|
+110010
+Current
+1110010
+
+ Current|114|TableCode|14578| TableType|192|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001
+Current
+10000001
+
+ Current|129|TableCode|32897| TableType|201|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |1|
+11101Bits |0|
+111010
+Current
+111010
+
+ Current|58|TableCode|23802| TableType|141|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011
+Current
+111011
+
+ Current|59|TableCode|16059| TableType|61|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+10000011
+
+ Current|131|TableCode|33411| TableType|202|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |1|
+0000001Bits |0|
+00000010
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |1|
+10011
+Current
+1010011
+
+ Current|83|TableCode|21203| TableType|21|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010
+Current
+11001010
+
+ Current|202|TableCode|58570| TableType|83|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |1|
+1Bits |1|
+11
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010Bits |1|
+00101Bits |1|
+001011
+Current
+11001011
+
+ Current|203|TableCode|51915| TableType|244|
+Bits |1|
+0000001Bits |0|
+00000010
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000Bits |1|
+10001
+Current
+1010001
+
+ Current|81|TableCode|20689| TableType|102|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+110000
+
+ Current|48|TableCode|56816| TableType|46|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |1|
+00011011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011
+Current
+00011
+
+ Current|3|TableCode|33859| TableType|31|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001
+Current
+10100001
+
+ Current|161|TableCode|41121| TableType|132|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+0001Bits |1|
+00011Bits |1|
+000111Bits |0|
+0001110Bits |1|
+00011101
+Bits |0|
+0
+Current
+111010
+
+ Current|58|TableCode|23802| TableType|141|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |1|
+011101Bits |1|
+0111011
+Current
+111011
+
+ Current|59|TableCode|16059| TableType|61|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |0|
+011000Bits |1|
+0110001
+Current
+10110001
+
+ Current|177|TableCode|45233| TableType|121|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |1|
+1Bits |0|
+10
+Current
+111010
+
+ Current|58|TableCode|23802| TableType|141|
+Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |0|
+0000010
+Current
+00010
+
+ Current|2|TableCode|1058| TableType|5|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |1|
+011001Bits |1|
+0110011
+Current
+10110011
+
+ Current|179|TableCode|45747| TableType|114|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |0|
+00001010
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010
+Current
+10101010
+
+ Current|170|TableCode|54442| TableType|57|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101
+Current
+0011101
+
+ Current|29|TableCode|7325| TableType|248|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |1|
+1
+Current
+110101
+
+ Current|53|TableCode|15669| TableType|116|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010Bits |0|
+010100Bits |1|
+0101001Bits |1|
+01010011
+Current
+1010011
+
+ Current|83|TableCode|21203| TableType|21|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+1110000
+
+ Current|112|TableCode|24048| TableType|139|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+00010
+
+ Current|2|TableCode|1058| TableType|5|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |1|
+10101Bits |0|
+101010Bits |1|
+1010101Bits |1|
+10101011
+Current
+10101011
+
+ Current|171|TableCode|43691| TableType|54|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011Bits |1|
+10111
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |1|
+01111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000
+Current
+1001000
+
+ Current|72|TableCode|18376| TableType|133|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+1110010
+
+ Current|114|TableCode|14578| TableType|192|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |1|
+1
+Current
+110101
+
+ Current|53|TableCode|15669| TableType|116|
+Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |1|
+01001Bits |0|
+010010Bits |0|
+0100100Bits |1|
+01001001
+Bits |1|
+1
+Current
+10010011
+
+ Current|147|TableCode|37523| TableType|9|
+Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |0|
+00010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100
+Current
+1010100
+
+ Current|84|TableCode|27092| TableType|224|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |1|
+1
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |1|
+000011
+Current
+00011
+
+ Current|3|TableCode|33859| TableType|31|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+110011
+
+ Current|51|TableCode|45811| TableType|128|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |0|
+0Bits |0|
+00
+Current
+110100
+
+ Current|52|TableCode|48372| TableType|195|
+Bits |1|
+001Bits |1|
+0011Bits |0|
+00110Bits |1|
+001101Bits |1|
+0011011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+00011
+
+ Current|3|TableCode|33859| TableType|31|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Bits |1|
+1Bits |1|
+11
+Current
+110011
+
+ Current|51|TableCode|45811| TableType|128|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |1|
+001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010
+Current
+111010
+
+ Current|58|TableCode|23802| TableType|141|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |1|
+1Bits |1|
+11
+Current
+111011
+
+ Current|59|TableCode|16059| TableType|61|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |1|
+001001Bits |0|
+0010010Bits |1|
+00100101
+Bits |1|
+1
+Current
+1001011
+
+ Current|75|TableCode|19147| TableType|73|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |1|
+01011Bits |1|
+010111
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |1|
+001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010
+Current
+111010
+
+ Current|58|TableCode|23802| TableType|141|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001
+Current
+00111001
+
+ Current|57|TableCode|14393| TableType|53|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |0|
+00001010
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100
+Current
+10100100
+
+ Current|164|TableCode|53668| TableType|66|
+Bits |1|
+00001Bits |0|
+000010Bits |1|
+0000101Bits |1|
+00001011
+Bits |1|
+1
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+000001Bits |1|
+0000011Bits |1|
+00000111
+Bits |1|
+1
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+01Bits |0|
+010Bits |1|
+0101Bits |0|
+01010Bits |0|
+010100Bits |1|
+0101001Bits |0|
+01010010
+Bits |1|
+1
+Current
+10100101
+
+ Current|165|TableCode|42149| TableType|41|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |0|
+011100Bits |0|
+0111000Bits |1|
+01110001
+Current
+1110001
+
+ Current|113|TableCode|63601| TableType|254|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001
+Current
+000001
+
+ Current|1|TableCode|1| TableType|240|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |0|
+0001100Bits |0|
+00011000
+Bits |1|
+1Bits |0|
+10
+Current
+1100010
+
+ Current|98|TableCode|63586| TableType|193|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |1|
+0010001Bits |1|
+00100011
+Bits |0|
+0Bits |0|
+00
+Current
+10001100
+
+ Current|140|TableCode|35724| TableType|238|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |1|
+0010001Bits |1|
+00100011
+Bits |0|
+0Bits |1|
+01
+Current
+10001101
+
+ Current|141|TableCode|35981| TableType|63|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |1|
+001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |0|
+00010
+Current
+1100010
+
+ Current|98|TableCode|63586| TableType|193|
+Bits |0|
+000000Bits |0|
+0000000Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101
+Current
+0011101
+
+ Current|29|TableCode|7325| TableType|248|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001
+Current
+10001001
+
+ Current|137|TableCode|34953| TableType|3|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |1|
+10101Bits |1|
+101011Bits |0|
+1010110
+Current
+1010110
+
+ Current|86|TableCode|21974| TableType|1|
+Bits |1|
+00000001
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110
+Current
+1001110
+
+ Current|78|TableCode|26318| TableType|198|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |1|
+001001Bits |1|
+0010011Bits |0|
+00100110
+Bits |1|
+1
+Current
+1001101
+
+ Current|77|TableCode|19661| TableType|209|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |0|
+011100Bits |0|
+0111000Bits |1|
+01110001
+Current
+1110001
+
+ Current|113|TableCode|63601| TableType|254|
+
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |0|
+11010Bits |1|
+110101
+Current
+110101
+
+ Current|53|TableCode|15669| TableType|116|
+Bits |1|
+0000001Bits |0|
+00000010
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |0|
+11010Bits |1|
+110101
+Current
+10110101
+
+ Current|181|TableCode|46261| TableType|20|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110Bits |0|
+0011100Bits |0|
+00111000
+Bits |0|
+0
+Current
+1110000
+
+ Current|112|TableCode|24048| TableType|139|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+00010
+
+ Current|2|TableCode|1058| TableType|5|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+00010
+
+ Current|2|TableCode|1058| TableType|5|
+Bits |1|
+0001Bits |0|
+00010Bits |1|
+000101Bits |1|
+0001011Bits |1|
+00010111
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |0|
+10010Bits |0|
+100100Bits |0|
+1001000
+Current
+1001000
+
+ Current|72|TableCode|18376| TableType|133|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |0|
+1100Bits |1|
+11001Bits |0|
+110010
+Current
+1110010
+
+ Current|114|TableCode|14578| TableType|192|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |1|
+0101
+Current
+110101
+
+ Current|53|TableCode|15669| TableType|116|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |1|
+00001001
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001
+Current
+10011001
+
+ Current|153|TableCode|39065| TableType|8|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |1|
+10101Bits |0|
+101010Bits |0|
+1010100
+Current
+1010100
+
+ Current|84|TableCode|27092| TableType|224|
+Bits |1|
+00000001
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000Bits |1|
+010001
+Current
+1010001
+
+ Current|81|TableCode|20689| TableType|102|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Current
+00011
+
+ Current|3|TableCode|33859| TableType|31|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |1|
+1001Bits |1|
+10011Bits |0|
+100110Bits |0|
+1001100Bits |0|
+10011000
+Current
+10011000
+
+ Current|152|TableCode|52120| TableType|68|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |0|
+0Bits |0|
+00
+Current
+110100
+
+ Current|52|TableCode|48372| TableType|195|
+Bits |1|
+001Bits |1|
+0011Bits |0|
+00110Bits |1|
+001101Bits |1|
+0011011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011
+Current
+00011
+
+ Current|3|TableCode|33859| TableType|31|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Bits |1|
+1Bits |1|
+11
+Current
+110011
+
+ Current|51|TableCode|45811| TableType|128|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Current
+001100
+
+ Current|12|TableCode|3212| TableType|243|
+
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |1|
+11011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+000000Bits |0|
+0000000Bits |1|
+00000001
+Bits |1|
+1Bits |0|
+10Bits |1|
+101
+Current
+001101
+
+ Current|13|TableCode|8973| TableType|30|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |1|
+0000011Bits |1|
+00000111
+Bits |1|
+1
+Current
+001111
+
+ Current|15|TableCode|10063| TableType|250|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |1|
+011001Bits |1|
+0110011
+Current
+110011
+
+ Current|51|TableCode|45811| TableType|128|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |1|
+11011
+Current
+111011
+
+ Current|59|TableCode|16059| TableType|61|
+Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |0|
+10
+Current
+00010
+
+ Current|2|TableCode|1058| TableType|5|
+Bits |1|
+001Bits |0|
+0010Bits |1|
+00101Bits |1|
+001011Bits |1|
+0010111
+Current
+10111
+
+ Current|23|TableCode|23415| TableType|47|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |0|
+1010Bits |0|
+10100
+Current
+10110100
+
+ Current|180|TableCode|46004| TableType|117|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100Bits |0|
+01000
+Current
+10001000
+
+ Current|136|TableCode|17288| TableType|43|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+1000010
+
+ Current|66|TableCode|16834| TableType|85|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011Bits |0|
+10110Bits |1|
+101101Bits |1|
+1011011
+Current
+1011011
+
+ Current|91|TableCode|23259| TableType|131|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |1|
+11011
+Current
+111011
+
+ Current|59|TableCode|16059| TableType|61|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111
+Current
+1010111
+
+ Current|87|TableCode|60247| TableType|226|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |0|
+00001100
+Bits |0|
+0Bits |0|
+00
+Current
+110000
+
+ Current|48|TableCode|56816| TableType|46|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |1|
+1111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |0|
+01100Bits |1|
+011001Bits |0|
+0110010Bits |0|
+01100100
+Current
+1100100
+
+ Current|100|TableCode|25572| TableType|229|
+
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101Bits |0|
+11010Bits |1|
+110101
+Current
+110101
+
+ Current|53|TableCode|15669| TableType|116|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |0|
+11100Bits |0|
+111000
+Current
+00111000
+
+ Current|56|TableCode|3384| TableType|12|
+Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110Bits |0|
+0011100Bits |0|
+00111000
+Bits |0|
+0
+Current
+1110000
+
+ Current|112|TableCode|24048| TableType|139|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |1|
+011101Bits |1|
+0111011
+Current
+111011
+
+ Current|59|TableCode|16059| TableType|61|
+Bits |1|
+00000001
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |1|
+001001Bits |0|
+0010010
+Current
+10010010
+
+ Current|146|TableCode|51346| TableType|230|
+Bits |1|
+00000001
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000Bits |0|
+10000
+Current
+110000
+
+ Current|48|TableCode|56816| TableType|46|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |0|
+01110Bits |0|
+011100Bits |1|
+0111001Bits |1|
+01110011
+Current
+1110011
+
+ Current|115|TableCode|31091| TableType|232|
+
+Bits |1|
+1Bits |0|
+10Bits |1|
+101Bits |1|
+1011Bits |0|
+10110Bits |0|
+101100Bits |1|
+1011001Bits |0|
+10110010
+Current
+10110010
+
+ Current|178|TableCode|45490| TableType|25|
+
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |0|
+00001110
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1110011
+
+ Current|115|TableCode|31091| TableType|232|
+Bits |1|
+0001Bits |0|
+00010Bits |1|
+000101Bits |1|
+0001011Bits |0|
+00010110
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+10110000
+
+ Current|176|TableCode|22448| TableType|100|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |0|
+0000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |0|
+0000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |1|
+00000001
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |1|
+0011Bits |1|
+00111Bits |0|
+001110
+Current
+1001110
+
+ Current|78|TableCode|26318| TableType|198|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+00010
+
+ Current|2|TableCode|1058| TableType|5|
+Bits |1|
+0001Bits |0|
+00010Bits |1|
+000101Bits |0|
+0001010Bits |0|
+00010100
+Bits |0|
+0Bits |0|
+00Bits |0|
+000
+Current
+10100000
+
+ Current|160|TableCode|40864| TableType|221|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |0|
+0001100Bits |0|
+00011000
+Bits |0|
+0
+Current
+110000
+
+ Current|48|TableCode|56816| TableType|46|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+000001Bits |0|
+0000010Bits |1|
+00000101
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |0|
+0110
+Current
+1010110
+
+ Current|86|TableCode|21974| TableType|1|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1000011
+
+ Current|67|TableCode|57667| TableType|93|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |0|
+0
+Current
+110100
+
+ Current|52|TableCode|48372| TableType|195|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |1|
+01101Bits |1|
+011011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+00011
+
+ Current|3|TableCode|33859| TableType|31|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |1|
+1Bits |0|
+10Bits |0|
+100
+Current
+110100
+
+ Current|52|TableCode|48372| TableType|195|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |1|
+00011011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011
+Current
+00011
+
+ Current|3|TableCode|33859| TableType|31|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+110011
+
+ Current|51|TableCode|45811| TableType|128|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00000000
+Bits |1|
+1
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+00Bits |1|
+001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000Bits |0|
+00000Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0
+Current
+001100
+
+ Current|12|TableCode|3212| TableType|243|
+Bits |1|
+01Bits |1|
+011Bits |0|
+0110Bits |1|
+01101Bits |1|
+011011
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |1|
+1101
+Current
+001101
+
+ Current|13|TableCode|8973| TableType|30|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |1|
+00000011
+Bits |1|
+1Bits |1|
+11
+Current
+001111
+
+ Current|15|TableCode|10063| TableType|250|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |0|
+0010000Bits |0|
+00100000
+Bits |1|
+1Bits |0|
+10
+Current
+10000010
+
+ Current|130|TableCode|33154| TableType|233|
+Bits |1|
+001Bits |0|
+0010Bits |0|
+00100Bits |0|
+001000Bits |0|
+0010000Bits |0|
+00100000
+Bits |0|
+0Bits |0|
+00
+Current
+10000000
+
+ Current|128|TableCode|15744| TableType|119|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |0|
+10
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |0|
+000Bits |0|
+0000Bits |1|
+00001Bits |0|
+000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |1|
+1Bits |1|
+11Bits |0|
+110Bits |0|
+1100
+Current
+001100
+
+ Current|12|TableCode|3212| TableType|243|
+Bits |1|
+00001Bits |1|
+000011Bits |0|
+0000110Bits |1|
+00001101
+Bits |1|
+1
+Current
+11011
+
+ Current|27|TableCode|42683| TableType|15|
+Bits |0|
+00Bits |0|
+000Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101
+Current
+001101
+
+ Current|13|TableCode|8973| TableType|30|
+Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011Bits |1|
+0111Bits |1|
+01111
+Current
+001111
+
+ Current|15|TableCode|10063| TableType|250|
+Bits |1|
+000001Bits |0|
+0000010Bits |0|
+00000100
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+1000010
+
+ Current|66|TableCode|16834| TableType|85|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+Bits |1|
+000001Bits |1|
+0000011Bits |0|
+00000110
+Bits |0|
+0Bits |1|
+01Bits |0|
+010Bits |0|
+0100
+Current
+1100100
+
+ Current|100|TableCode|25572| TableType|229|
+Bits |1|
+00001Bits |1|
+000011Bits |1|
+0000111Bits |1|
+00001111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |1|
+11101Bits |0|
+111010
+Current
+111010
+
+ Current|58|TableCode|23802| TableType|141|
+Bits |0|
+0000000Bits |0|
+00000000
+Bits |0|
+0Bits |1|
+01Bits |0|
+010
+Current
+00010
+
+ Current|2|TableCode|1058| TableType|5|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |0|
+0001100Bits |0|
+00011000
+Bits |1|
+1Bits |1|
+11Bits |0|
+110
+Current
+11000110
+
+ Current|198|TableCode|25286| TableType|172|
+Bits |1|
+0001Bits |0|
+00010Bits |0|
+000100Bits |0|
+0001000Bits |1|
+00010001
+Bits |1|
+1Bits |1|
+11Bits |0|
+110
+Current
+10001110
+
+ Current|142|TableCode|36238| TableType|14|
+Bits |0|
+0000Bits |1|
+00001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000000Bits |1|
+0000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+00000001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111
+Current
+1111
+
+ Current|15|TableCode|60351| TableType|72|
+Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000Bits |1|
+00000001
+Current
+00001
+
+ Current|1|TableCode|33| TableType|137|
+
+Bits |1|
+1Bits |0|
+10Bits |0|
+100Bits |0|
+1000Bits |1|
+10001Bits |0|
+100010Bits |1|
+1000101Bits |0|
+10001010
+Current
+10001010
+
+ Current|138|TableCode|35210| TableType|199|
+
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110Bits |0|
+11100Bits |1|
+111001Bits |1|
+1110011
+Current
+1110011
+
+ Current|115|TableCode|31091| TableType|232|
+Bits |0|
+00000000
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |1|
+00001
+Current
+000001
+
+ Current|1|TableCode|1| TableType|240|
+Bits |1|
+000001Bits |1|
+0000011Bits |1|
+00000111
+Bits |0|
+0Bits |0|
+00Bits |0|
+000Bits |1|
+0001
+Current
+1110001
+
+ Current|113|TableCode|63601| TableType|254|
+Bits |0|
+00000Bits |0|
+000000Bits |1|
+0000001Bits |0|
+00000010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+
+Bits |0|
+0Bits |0|
+00Bits |1|
+001Bits |0|
+0010
+Current
+0010
+
+ Current|2|TableCode|17458| TableType|255|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |1|
+00001001
+Bits |1|
+1Bits |1|
+11Bits |1|
+111Bits |0|
+1110
+Current
+10011110
+
+ Current|158|TableCode|52894| TableType|184|
+Bits |0|
+00000Bits |1|
+000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+0000000Bits |1|
+00000001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+
+Bits |0|
+0Bits |1|
+01
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |0|
+000Bits |1|
+0001
+Current
+01
+
+ Current|1|TableCode|40253| TableType|0|
+Bits |1|
+00001Bits |0|
+000010Bits |0|
+0000100Bits |0|
+00001000
+Bits |0|
+0Bits |1|
+01Bits |1|
+011
+Current
+1000011
+
+ Current|67|TableCode|57667| TableType|93|
+Bits |1|
+0001Bits |1|
+00011Bits |0|
+000110Bits |1|
+0001101Bits |0|
+00011010
+Bits |0|
+0
+Current
+110100
+
+ Current|52|TableCode|48372| TableType|195|
+Bits |0|
+00Bits |0|
+000Bits |0|
+0000Bits |0|
+00000Bits |0|
+000000Bits |0|
+0000000
+Current
+000000
+
+ Current|0|TableCode|0| TableType|49|
+Bits |0|
+00000000
+
+Je suis le last B =|264|, NBR_TEST|76|
+000000000src: 
+f30f1efa31ed4989d15e4889e24883e4f050544531c031c9488d3dca000000ff15532f0000f4662e0f1f840000000000488d3d792f0000488d05722f00004839f87415488b05362f00004885c07409ffe00f1f8000000000c30f1f8000000000488d3d492f0000488d35422f00004829fe4889f048c1ee3f48c1f8034801c648d1fe7414488b05052f00004885c07408ffe0660f1f440000c30f1f8000000000f30f1efa803d052f000000752b5548833de22e0000004889e5740c488b3de62e0000e819ffffffe864ffffffc605dd2e0000015dc30f1f00c30f1f8000000000f30f1efae977fffffff30f1efa554889e5488d05ac0e00004889c7e8f0feffffb8000000005dc3

@@ -106,7 +106,7 @@ int	xoring_PT_LOAD(t_elf64 *e)
 	{
 		if (segment_is_PT_LOAD_and_PF_X(&Phdr[i]))
 		{
-			e->PT_LOAD_vaddr = Phdr[i].p_vaddr;
+			e->PT_LOAD_vaddr= Phdr[i].p_vaddr;
 			e->PT_LOAD_size = Phdr[i].p_filesz;
 			xor_xor(e->file_map + Phdr[i].p_offset, Phdr[i].p_filesz, e->key, e->key_size);
 			found = 1;

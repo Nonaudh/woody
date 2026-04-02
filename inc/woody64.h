@@ -37,7 +37,7 @@ char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader);
 
 int injection(t_elf64 *e);
 int	segment_is_PT_LOAD_and_PF_X(Elf64_Phdr *segment);
-uint64_t get_injection_address(t_elf64 *e, unsigned char *code, int size);
+uint64_t get_injection_offset(t_elf64 *e, unsigned char *code, int size);
 int	segment_is_PT_NOTE(Elf64_Phdr *segment);
 int	enough_zero_padding_in_segment(Elf64_Phdr *segment, int size); // to check;
 

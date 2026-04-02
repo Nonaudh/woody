@@ -3,6 +3,8 @@ BITS 64
 ; str, str_len, key, key_len, entry
 ; %rdi, %rsi, %rdx, %rcx, %r10
 
+;int mprotect(void *addr, size_t size, int prot);
+
 section .text
 global _start
 
@@ -18,13 +20,27 @@ _addr:
 	xor r9, r9 ; //int j = 0
 	mov r10, 0xDEADBEEFCAFEBABE
 	add r10, rbx
-	;jmp _end
 	mov rdi, 0xCAFECAFECAFECAFE
 	add rdi, rbx
 	mov rsi, 0xBABEBABEBABEBABE
 	mov rdx, 0xBEEFBEEFBEEFBEEF
 	add rdx, rbx
 	mov rcx, 0x4242424242424242
+
+_mprotect:
+	push rdx
+	push rsi
+	mov rax, rdi
+	and rax, -4096
+	push rdi
+	mov rdi, rax
+	mov rsi, 0x1000
+	mov rax, 10
+	mov rdx, 7
+	syscall
+	pop rdi
+	pop rsi
+	pop rdx
 
 _loop:
 	cmp r8, rsi ; //if (i == str_len)

@@ -39,14 +39,14 @@ uint64_t try_PT_NOTE_address(t_elf64 *e, unsigned char *code, int size)
 	return (injection_address);
 }
 
-uint64_t get_injection_address(t_elf64 *e, unsigned char *code, int size)
+uint64_t get_injection_offset(t_elf64 *e, unsigned char *code, int size)
 {
-	uint64_t injection_adress;
+	uint64_t injection_offset;
 
-	injection_adress = try_PT_LOAD_address(e, code, size);
-	if (injection_adress)
-		return (injection_adress);
+	injection_offset = try_PT_LOAD_address(e, code, size);
+	if (injection_offset)
+		return (injection_offset);
 	
-	injection_adress = try_PT_NOTE_address(e, code, size);
-	return (injection_adress);
+	injection_offset = try_PT_NOTE_address(e, code, size);
+	return (injection_offset);
 }

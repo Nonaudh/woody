@@ -54,7 +54,7 @@ uint64_t	insert_in_PT_LOAD(t_elf64 *e, Elf64_Phdr *segment, unsigned char *code,
 	ft_memcpy((char *)e->file_map + fin_segment, code, size);
 
 	// return (injection_adress);
-	return (fin_segment);
+	return (injection_adress);
 }
 
 uint64_t	insert_in_PT_NOTE(t_elf64 *e, Elf64_Phdr *segment, unsigned char *code, int size)
@@ -69,7 +69,7 @@ uint64_t	insert_in_PT_NOTE(t_elf64 *e, Elf64_Phdr *segment, unsigned char *code,
 	
 	ft_memcpy((char *)e->file_map + segment->p_offset, code, size);
 
-	return (segment->p_vaddr);
+	return (segment->p_offset);
 }
 
 uint64_t try_PT_LOAD(t_elf64 *e, unsigned char *code, int size)
@@ -82,7 +82,7 @@ uint64_t try_PT_LOAD(t_elf64 *e, unsigned char *code, int size)
 	{
 		if (segment_is_PT_LOAD_and_PF_X(&Phdr[i]) && enough_zero_padding_in_segment(&Phdr[i], size))
 		{
-			new_entry_point = insert_in_PT_LOAD(e, &Phdr[i], code, size);
+			// new_entry_point = insert_in_PT_LOAD(e, &Phdr[i], code, size);
 		}
 	}
 	return (new_entry_point);
@@ -154,13 +154,13 @@ void	patch_payload(t_elf64 *e, unsigned char *payload)
 {
 	patch_marker(payload, e->payload_size, 0xDEADBEEFCAFEBABE, e->elf_header->e_entry);
 
-	uint64_t key_place = insert_something_in_elf(e, e->key, e->key_size);
-	uint64_t payload_injection_adress = get_injection_address(e, payload, e->payload_size);
+	uint64_t key_vaddr = insert_something_in_elf(e, e->key, e->key_size);
+	uint64_t payload_injection_offset = get_injection_offset(e, payload, e->payload_size);
 
-	patch_marker(payload, e->payload_size, 0xDEADDEADDEADDEAD, payload_injection_adress);
+	patch_marker(payload, e->payload_size, 0xDEADDEADDEADDEAD, payload_injection_offset);
 	patch_marker(payload, e->payload_size, 0xCAFECAFECAFECAFE, e->PT_LOAD_vaddr);
 	patch_marker(payload, e->payload_size, 0xBABEBABEBABEBABE, e->PT_LOAD_size);
-	patch_marker(payload, e->payload_size, 0xBEEFBEEFBEEFBEEF, key_place);
+	patch_marker(payload, e->payload_size, 0xBEEFBEEFBEEFBEEF, key_vaddr);
 	patch_marker(payload, e->payload_size, 0x4242424242424242, e->key_size);
 }
 

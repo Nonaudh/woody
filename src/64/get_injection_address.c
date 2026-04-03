@@ -15,8 +15,8 @@ uint64_t try_PT_LOAD_address(t_elf64 *e, unsigned char *code, int size)
 	{
 		if (segment_is_PT_LOAD_and_PF_X(&Phdr[i]) && enough_zero_padding_in_segment(&Phdr[i], size))
 		{
-			// injection_address = Phdr[i].p_vaddr + Phdr[i].p_filesz;
-			injection_address = Phdr[i].p_offset + Phdr[i].p_filesz;
+			injection_address = Phdr[i].p_vaddr + Phdr[i].p_filesz;
+			// injection_address = Phdr[i].p_offset + Phdr[i].p_filesz;
 		}
 	}
 	return (injection_address);

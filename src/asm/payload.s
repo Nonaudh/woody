@@ -26,6 +26,7 @@ _addr:
 	mov rdx, 0xBEEFBEEFBEEFBEEF
 	add rdx, rbx
 	mov rcx, 0x4242424242424242
+	jmp _end
 
 _mprotect:
 	push rdx

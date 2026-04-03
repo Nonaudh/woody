@@ -14,8 +14,8 @@ typedef struct s_elf64
 	uint64_t	entry_point;
 	int	payload_size;
 	char	*shstrtab;
-	uint64_t PT_LOAD_vaddr;
-	int PT_LOAD_size;
+	uint64_t text_vaddr;
+	int text_size;
 	unsigned char *key;
 	int key_size;
 	//C'est antoine
@@ -31,6 +31,7 @@ void	*get_file_in_a_map_64(int fd, int file_size);
 void	*get_file_in_a_map_write_64(int fd, int file_size);
 Elf64_Ehdr	*get_elf_header_64(t_elf64 *e);
 Elf64_Shdr	*get_sections_header_64(t_elf64 *e);
+Elf64_Shdr	*get_section_header_by_name_64(t_elf64 *e, const char *name);
 
 char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader);
 // char	*get_section_by_name_64(t_elf64 *e, const char *name);

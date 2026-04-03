@@ -56,6 +56,24 @@ char	*get_section_by_name_64(t_elf64 *e, const char *name)
 	return (ptr);
 }
 
+Elf64_Shdr	*get_section_header_by_name_64(t_elf64 *e, const char *name)
+{
+	int i = 1;
+	char *ptr;
+
+	while (i < e->elf_header->e_shnum)
+	{
+		if (!ft_strncmp(name, e->shstrtab + e->sectionsHeader[i].sh_name + 1, ft_strlen(name)) 
+			&& ft_strlen(name) == ft_strlen(e->shstrtab + e->sectionsHeader[i].sh_name + 1))
+			break ;
+		i++;
+	}
+	if (i == e->elf_header->e_shnum)
+	{
+		return (NULL);
+	}
+	return (&e->sectionsHeader[i]);
+}
 
 char	*get_section_by_header_64(t_elf64 *e, Elf64_Shdr *sectionHeader)
 {

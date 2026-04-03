@@ -1,0 +1,76 @@
+[ 0] type=0x31 ('1') code=0x0000 len=6  bits=000000
+[ 1] type=0xf0 ('.') code=0x0001 len=6  bits=000001
+[ 2] type=0x89 ('.') code=0x0001 len=5  bits=00001
+[ 3] type=0x05 ('.') code=0x0002 len=5  bits=00010
+[ 4] type=0x1f ('.') code=0x0003 len=5  bits=00011
+[ 5] type=0xff ('.') code=0x0002 len=4  bits=0010
+[ 6] type=0xf3 ('.') code=0x000c len=6  bits=001100
+[ 7] type=0x1e ('.') code=0x000d len=6  bits=001101
+[ 8] type=0x0c ('.') code=0x0038 len=8  bits=00111000
+[ 9] type=0x35 ('5') code=0x0039 len=8  bits=00111001
+[10] type=0xf8 ('.') code=0x001d len=7  bits=0011101
+[11] type=0xfa ('.') code=0x000f len=6  bits=001111
+[12] type=0x00 ('.') code=0x0001 len=2  bits=01
+[13] type=0x77 ('w') code=0x0080 len=8  bits=10000000
+[14] type=0xc9 ('.') code=0x0081 len=8  bits=10000001
+[15] type=0xe9 ('.') code=0x0082 len=8  bits=10000010
+[16] type=0xca ('.') code=0x0083 len=8  bits=10000011
+[17] type=0x55 ('U') code=0x0042 len=7  bits=1000010
+[18] type=0x5d (']') code=0x0043 len=7  bits=1000011
+[19] type=0x2b ('+') code=0x0088 len=8  bits=10001000
+[20] type=0x03 ('.') code=0x0089 len=8  bits=10001001
+[21] type=0xc7 ('.') code=0x008a len=8  bits=10001010
+[22] type=0x50 ('P') code=0x008b len=8  bits=10001011
+[23] type=0xee ('.') code=0x008c len=8  bits=10001100
+[24] type=0x3f ('?') code=0x008d len=8  bits=10001101
+[25] type=0x0e ('.') code=0x008e len=8  bits=10001110
+[26] type=0x54 ('T') code=0x008f len=8  bits=10001111
+[27] type=0x85 ('.') code=0x0048 len=7  bits=1001000
+[28] type=0xe6 ('.') code=0x0092 len=8  bits=10010010
+[29] type=0x09 ('.') code=0x0093 len=8  bits=10010011
+[30] type=0xed ('.') code=0x0094 len=8  bits=10010100
+[31] type=0x5e ('^') code=0x0095 len=8  bits=10010101
+[32] type=0x49 ('I') code=0x004b len=7  bits=1001011
+[33] type=0x44 ('D') code=0x0098 len=8  bits=10011000
+[34] type=0x08 ('.') code=0x0099 len=8  bits=10011001
+[35] type=0xd1 ('.') code=0x004d len=7  bits=1001101
+[36] type=0xc6 ('.') code=0x004e len=7  bits=1001110
+[37] type=0xb8 ('.') code=0x009e len=8  bits=10011110
+[38] type=0xe4 ('.') code=0x009f len=8  bits=10011111
+[39] type=0xdd ('.') code=0x00a0 len=8  bits=10100000
+[40] type=0x84 ('.') code=0x00a1 len=8  bits=10100001
+[41] type=0x66 ('f') code=0x0051 len=7  bits=1010001
+[42] type=0x42 ('B') code=0x00a4 len=8  bits=10100100
+[43] type=0x29 (')') code=0x00a5 len=8  bits=10100101
+[44] type=0x15 ('.') code=0x0053 len=7  bits=1010011
+[45] type=0xe0 ('.') code=0x0054 len=7  bits=1010100
+[46] type=0x39 ('9') code=0x00aa len=8  bits=10101010
+[47] type=0x36 ('6') code=0x00ab len=8  bits=10101011
+[48] type=0x01 ('.') code=0x0056 len=7  bits=1010110
+[49] type=0xe2 ('.') code=0x0057 len=7  bits=1010111
+[50] type=0x64 ('d') code=0x00b0 len=8  bits=10110000
+[51] type=0x79 ('y') code=0x00b1 len=8  bits=10110001
+[52] type=0x19 ('.') code=0x00b2 len=8  bits=10110010
+[53] type=0x72 ('r') code=0x00b3 len=8  bits=10110011
+[54] type=0x75 ('u') code=0x00b4 len=8  bits=10110100
+[55] type=0x14 ('.') code=0x00b5 len=8  bits=10110101
+[56] type=0x83 ('.') code=0x005b len=7  bits=1011011
+[57] type=0x2f ('/') code=0x0017 len=5  bits=10111
+[58] type=0x2e ('.') code=0x0030 len=6  bits=110000
+[59] type=0xc1 ('.') code=0x0062 len=7  bits=1100010
+[60] type=0xac ('.') code=0x00c6 len=8  bits=11000110
+[61] type=0x45 ('E') code=0x00c7 len=8  bits=11000111
+[62] type=0xe5 ('.') code=0x0064 len=7  bits=1100100
+[63] type=0x53 ('S') code=0x00ca len=8  bits=11001010
+[64] type=0xf4 ('.') code=0x00cb len=8  bits=11001011
+[65] type=0x80 ('.') code=0x0033 len=6  bits=110011
+[66] type=0xc3 ('.') code=0x0034 len=6  bits=110100
+[67] type=0x74 ('t') code=0x0035 len=6  bits=110101
+[68] type=0x0f ('.') code=0x001b len=5  bits=11011
+[69] type=0x8b ('.') code=0x0070 len=7  bits=1110000
+[70] type=0xfe ('.') code=0x0071 len=7  bits=1110001
+[71] type=0xc0 ('.') code=0x0072 len=7  bits=1110010
+[72] type=0xe8 ('.') code=0x0073 len=7  bits=1110011
+[73] type=0x8d ('.') code=0x003a len=6  bits=111010
+[74] type=0x3d ('=') code=0x003b len=6  bits=111011
+[75] type=0x48 ('H') code=0x000f len=4  bits=1111

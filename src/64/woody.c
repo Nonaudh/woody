@@ -47,38 +47,54 @@ int	init_elf_64(t_elf64 *e, char *filename)
 		return (1);
 	return (0);
 }
-int	copy_elf_64(t_elf64 *e, char *filename)
+int copy_elf_64(t_elf64 *e, char *filename)
 {
-	e->file_map = NULL;
+    e->file_map = NULL;
 
-	int fd = open(filename, O_RDONLY);
-	if (fd == -1)
-	{
-		perror(filename);
-		return (1);
-	}
-	e->filename = filename;
+    int fd = open(filename, O_RDONLY);
+    if (fd == -1)
+    {
+        perror(filename);
+        return (1);
+    }
+    e->filename = filename;
 
-	e->file_size =  lseek(fd, 0, SEEK_END);
-	if (e->file_size == 0)//Il faut verifier cette conditions 
-	{
-		close (fd);
-		return (1);
-	}
-	e->file_map = get_file_in_a_map_64(fd, e->file_size);
-	if (!e->file_map)
-	{
-		close (fd);
-		return (1);
-	}
-	close (fd);
-	int woody_fd = open("woody", O_CREAT | O_RDWR | O_TRUNC, 0755);
-	if (woody_fd == -1)
-		return (1);
-	write(woody_fd, e->file_map, e->file_size);
-	close(woody_fd);
-	munmap(e->file_map ,e->file_size);
-	return (0);
+    e->file_size_pre_hand = lseek(fd, 0, SEEK_END);
+e->file_size = e->file_size_pre_hand 
+             + e->size_code 
+             + sizeof(uint64_t)          // magic marker
+             + sizeof(uint32_t)          // table_count
+             + (sizeof(t_table_haufman) * 76);
+
+    if (e->file_size == 0)
+    {
+        close(fd);
+        return (1);
+    }
+
+    e->file_map = get_file_in_a_map_64(fd, e->file_size_pre_hand);
+    if (!e->file_map)
+    {
+        close(fd);
+        return (1);
+    }
+    close(fd);
+
+    int woody_fd = open("woody", O_CREAT | O_RDWR | O_TRUNC, 0755);
+    if (woody_fd == -1)
+        return (1);
+
+    // Ecrit le fichier original
+    write(woody_fd, e->file_map, e->file_size_pre_hand);
+
+    // Etend avec des zeros
+char zero[e->size_code + sizeof(uint64_t) + sizeof(uint32_t) + (sizeof(t_table_haufman) * 76)];
+ft_memset(zero, 0, sizeof(zero));
+write(woody_fd, zero, sizeof(zero));
+
+    munmap(e->file_map, e->file_size_pre_hand);
+    close(woody_fd);
+    return (0);
 }
 int insert_pt_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i)
 {
@@ -94,16 +110,27 @@ int insert_pt_load(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i)
 	ft_memcpy((char *)e->file_map  + 0x18, &new_entry_point, 8);
 	return(0);
 }
-int insert_pt_note(t_elf64 *e,Elf64_Phdr *Phdr, char *code, int lencode, int i, int page_size)//Il fauut mettre une conditions sur la len
+int insert_pt_note(t_elf64 *e, Elf64_Phdr *Phdr, int i)
 {
-	Phdr[i].p_type = PT_LOAD;
-	Phdr[i].p_flags = PF_R | PF_X; 
-	Phdr[i].p_filesz += lencode;	
-	Phdr[i].p_memsz  += lencode;
-	
-	ft_memcpy((char *)e->file_map + Phdr[i].p_offset , code, lencode);
-	ft_memcpy((char *)e->file_map + 0x18 , &Phdr[i].p_vaddr, 8);
-	return(0);
+    int lencode = e->size_code
+                + sizeof(uint64_t)           // magic
+                + sizeof(uint32_t)           // table_count
+                + (sizeof(t_table_haufman) * 76);
+
+    uint64_t offset    = e->file_size_pre_hand;
+    uint64_t new_vaddr = 0x5000 + (offset & 0xFFF);
+
+    Phdr[i].p_type   = PT_LOAD;
+    Phdr[i].p_flags  = PF_R | PF_X;
+    Phdr[i].p_offset = offset;
+    Phdr[i].p_vaddr  = new_vaddr;
+    Phdr[i].p_paddr  = new_vaddr;
+    Phdr[i].p_filesz = lencode;
+    Phdr[i].p_memsz  = lencode;
+    Phdr[i].p_align  = 0x1000;
+
+    ft_memcpy((char *)e->file_map + 0x18, &new_vaddr, 8);
+    return (0);
 }
 
 int insert_payload(t_elf64 *e)
@@ -119,14 +146,14 @@ int insert_payload(t_elf64 *e)
 	while(i < e->elf_header->e_phnum - 1)//Elfique transformation n'est pas finit
 	{
 		printf("i=|%d| phadr aligndb|%lu|", i, Phdr[i].p_align);
-		if(Phdr[i].p_type == PT_LOAD && Phdr[i].p_flags &  PF_X)
+		// if(Phdr[i].p_type == PT_LOAD && Phdr[i].p_flags &  PF_X)
+		// {
+		// 	if(insert_pt_load(e, Phdr, code, lencode, i) == 0)
+		// 		break;
+		// }
+		if (Phdr[i].p_type == PT_NOTE && Phdr[i].p_align == 0x4)
 		{
-			if(insert_pt_load(e, Phdr, code, lencode, i) == 0)
-				break;
-		}
-		if(Phdr[i].p_type == PT_NOTE)
-		{
-			if(insert_pt_note(e, Phdr, code, lencode, i, save) == 0)
+			if(insert_pt_note(e, Phdr, i) == 0)
 				break;
 		}
 		i++;
@@ -205,20 +232,53 @@ Elf64_Shdr	*get_section_header_by_name_64(t_elf64 *e, const char *name)
 	return (&e->sectionsHeader[i]);
 }
 
-int	woody_64(char *filename)
+int woody_64(char *filename)
 {
-	t_elf64 e;
-	
-	if (copy_elf_64(&e, filename))
-		return (1);
+    t_elf64 e;
+unsigned char shellcode[] = {
+    0xE8, 0x00, 0x00, 0x00, 0x00,   // call next
+    0x5B,                            // pop rbx
 
-	if (init_elf_64(&e, "woody"))
-		return (1);
+    0x44, 0x8B, 0x6B, 0x00,         // mov r13d, [rbx + offset_count]
+    0x4C, 0x8D, 0x73, 0x00,         // lea r14,  [rbx + offset_table]
 
-	// insert_payload(&e);
-	// getSearchSection64(e.elf_header->e_shnum,e.shstrtab,e.sectionsHeader, ".text", e.fd, e.file_size);
-	compression_decompression(&e);
-	close(e.fd);
-	munmap(e.file_map, e.file_size);
-	return (0);
+    0xB8, 0x01, 0x00, 0x00, 0x00,   // mov eax, 1
+    0xBF, 0x01, 0x00, 0x00, 0x00,   // mov edi, 1
+    0x4C, 0x89, 0xF6,               // mov rsi, r14
+    0xBA, 0x08, 0x00, 0x00, 0x00,   // mov edx, 8
+    0x0F, 0x05,                      // syscall
+    0x49, 0x83, 0xC6, 0x08,         // add r14, 8
+    0x41, 0xFF, 0xCD,               // dec r13d
+    0x75, 0xE3,                      // jne loop
+    0xCC,                            // int3
+};
+
+    // rbx pointe sur "pop rbx" = byte 5
+    // offset depuis rbx jusqu'a magic = sizeof(shellcode) - 5
+    // offset depuis rbx jusqu'a count = sizeof(shellcode) - 5 + sizeof(uint64_t)
+    // offset depuis rbx jusqu'a table = sizeof(shellcode) - 5 + sizeof(uint64_t) + sizeof(uint32_t)
+    int offset_count = sizeof(shellcode) - 5 + sizeof(uint64_t);
+    int offset_table = offset_count + sizeof(uint32_t);
+
+    printf("sizeof shellcode = %zu\n", sizeof(shellcode));
+    printf("offset_count     = %d\n",  offset_count);
+    printf("offset_table     = %d\n",  offset_table);
+
+    // Patch les offsets dans le shellcode
+    shellcode[9]  = (unsigned char)offset_count;
+    shellcode[13] = (unsigned char)offset_table;
+
+    e.size_code = sizeof(shellcode);
+    e.shellcode = shellcode;
+
+    if (copy_elf_64(&e, filename))
+        return (1);
+    if (init_elf_64(&e, "woody"))
+        return (1);
+
+    insert_payload(&e);
+    compression_decompression(&e);
+    close(e.fd);
+    munmap(e.file_map, e.file_size);
+    return (0);
 }

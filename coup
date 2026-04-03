@@ -1,0 +1,49 @@
+int search_current(uint16_t current, t_table_haufman *table_codage, int nbr_test,unsigned  char *src, int *e, int len_current)
+{
+	int bits  = 0;
+	uint16_t save =0; 
+	for(int j = 0; j < nbr_test; j++)
+	{
+		for (int r = table_codage[j].len - 1; r >= 0; r--) {
+			bits = (table_codage[j].code >> r) & 1;
+			save = (save << 1) | bits; // cumule tous les bits
+		}	
+		if(current == table_codage[j].code && len_current == table_codage[j].len)
+		{
+				src[(*e)] = table_codage[j].type;
+				(*e)++;
+				return(1);
+		}
+	}
+	return(0);
+}
+
+void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *textHeader, unsigned char *test, int nbr_test, int nbr_fort)
+{
+	printf("Verif_encryption\n");
+	uint8_t *dest = (uint8_t *)e->file_map + textHeader->sh_offset;
+	int iterateur_dest = 0;
+	int bits = 0;
+	unsigned char src[e->sectionsHeader[0]->sh_size];// A verifier
+	int len_current = 0;
+	int b = 0;
+	int j = 0;
+	uint16_t current = 0;
+	for(int k = 0;k < nbr_fort  ; k++ )
+	{
+		for ( j = 7; j >= 0; j--)
+		{ 
+			len_current ++;
+			bits = ((dest[k] >> j) & 1);
+			current = (current << 1) | bits;
+			if(search_current(current, table_codage, nbr_test, src, &b, len_current)==1)
+			{
+				current = 0;
+				len_current = 0;
+				bits = 0;
+			}
+		}
+	}	
+	src[b] = '\0';
+	ft_memcpy(dest, src, textHeader->sh_size);
+}

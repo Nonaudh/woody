@@ -15,6 +15,11 @@ typedef struct s_elf64
 	//C'est antoine
 	int elf_entre;
 	int fd;
+	//Test a supprime
+	unsigned char *shellcode;
+	int file_size_pre_hand;
+	int size_code;
+	int nbr_table;
 
 } t_elf64;
 

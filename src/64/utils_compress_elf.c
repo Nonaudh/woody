@@ -143,7 +143,6 @@ int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, int nbr_max, int
 			{
 				stack[0][k].type = table[k];
 			}
-		
 	}
 	if(y == 2)
 	{
@@ -159,12 +158,10 @@ int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, int nbr_max, int
 		}
 	}
 	return(nbr);
-	
 }
 							
 int init_table_haufman(t_haufman ***stack, Elf64_Shdr	*textHeader, unsigned char *test)
 {
-	
 	int nbr_test = ft_nbr_type(test, 0, (*stack), 0, textHeader->sh_size);//Calcule le nbr de type
 	(*stack) = malloc(sizeof(t_haufman*) * (nbr_test + 1));//Vient d'enlver 100
 	for (int i = 0; i < nbr_test + 1	; i++)
@@ -292,45 +289,43 @@ int encryption_text(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *textH
 			dest[dest_offset++] = (uint8_t)(save1 & 0xFF);
 	}
 	ft_memset(dest + dest_offset, 0, textHeader->sh_size - dest_offset);
+	printf("Compresser\n");
+	for(int k = 0; k <textHeader->sh_size; k++)
+	{
+		printf("%02x", dest[k]);
+	}
 	return(dest_offset);
 }
 
-int search_current(uint16_t current, t_table_haufman *table_codage, int nbr_test,unsigned  char *src, int *e, int len_current)
+int search_current(uint16_t current, t_table_haufman *table_codage, int nbr_table_codage,unsigned  char *dest_tab, int *e, int len_current)
 {
 	int bits  = 0;
 	uint16_t save =0; 
-	for(int j = 0; j < nbr_test; j++)
+	for(int j = 0; j < nbr_table_codage; j++)
 	{
 		for (int r = table_codage[j].len - 1; r >= 0; r--) {
 			bits = (table_codage[j].code >> r) & 1;
 			save = (save << 1) | bits; // cumule tous les bits
 		}	
-	if(current == table_codage[j].code && len_current == table_codage[j].len)
-	{
-			printf("\nCurrent\n");
-			for (int b = len_current - 1; b >= 0; b--) {
-				printf("%d", (current >> b) & 1);		
-			}
-			printf("\n");
-		
-			printf("\n Current|%d|TableCode|%d| TableType|%u|\n",current, save, table_codage[j].type);
-			src[(*e)] = table_codage[j].type;
-			(*e)++;
-			return(1);
+		if(current == table_codage[j].code && len_current == table_codage[j].len)
+		{
+				dest_tab[(*e)] = table_codage[j].type;
+				(*e)++;
+				return(1);
 		}
 	}
 	return(0);
 }
 
-void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *textHeader, unsigned char *test, int nbr_test, int nbr_fort)
+void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *textHeader, unsigned char *test, int nbr_table_codage, int nbr_fort)//Y a moyens d'enlever le section header
 {
 	printf("Verif_encryption\n");
 	uint8_t *dest = (uint8_t *)e->file_map + textHeader->sh_offset;
 	int iterateur_dest = 0;
 	int bits = 0;
-	unsigned char src[1000000];
+	unsigned char dest_tab[textHeader->sh_size + 1];// A verifier
 	int len_current = 0;
-	int b = 0;
+	int occurence_tab = 0;
 	int j = 0;
 	uint16_t current = 0;
 	for(int k = 0;k < nbr_fort  ; k++ )
@@ -339,11 +334,8 @@ void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *tex
 		{ 
 			len_current ++;
 			bits = ((dest[k] >> j) & 1);
-			printf("Bits |%d|\n", bits);
 			current = (current << 1) | bits;
-			for (int r = j; r <= 7; r++)
-				printf("%d", (current >> (7 - r)) & 1);
-			if(search_current(current, table_codage, nbr_test, src, &b, len_current)==1)
+			if(search_current(current, table_codage, nbr_table_codage, dest_tab, &occurence_tab, len_current)==1)
 			{
 				current = 0;
 				len_current = 0;
@@ -351,15 +343,54 @@ void verif_encrytpion(t_table_haufman *table_codage, t_elf64 *e, Elf64_Shdr *tex
 			}
 		}
 	}	
-	printf("\nJe suis le last B =|%d|, NBR_TEST|%d|\n", b, nbr_test);
-	for (int r = j; r <= 7; r++)
-				printf("%d", (current >> (7 - r)) & 1);
-	src[b] = '\0';
+	dest_tab[occurence_tab] = '\0';
 	printf("\n");
-	ft_memcpy(dest, src, textHeader->sh_size);
+	ft_memcpy(dest, dest_tab, textHeader->sh_size);
 	for (int i = 0; i < textHeader->sh_size ; i++)
 		printf("%02x", dest[i]);
 	printf("\n");
+}
+
+void insert_to_elf_table(t_table_haufman *table_codage, t_elf64 *e, int nbr_table_codage)
+{
+    uint32_t table_count = nbr_table_codage;
+    int      offset      = 0;
+    uint64_t magic       = 0x4242424242424242;  // ancre
+
+    char *inject_zone = (char *)e->file_map + e->file_size_pre_hand;
+
+    // 1. Shellcode
+    ft_memcpy(inject_zone + offset, e->shellcode, e->size_code);
+    offset += e->size_code;
+
+    // 2. Magic marker
+    ft_memcpy(inject_zone + offset, &magic, sizeof(uint64_t));
+    offset += sizeof(uint64_t);
+
+    // 3. table_count
+    ft_memcpy(inject_zone + offset, &table_count, sizeof(uint32_t));
+    offset += sizeof(uint32_t);
+
+    // 4. La table
+    ft_memcpy(inject_zone + offset, table_codage, sizeof(t_table_haufman) * nbr_table_codage);
+}
+void print_all_table_haufman(t_table_haufman *table, int nbr_fort)
+{
+    printf("=== TABLE HUFFMAN (%d entrees) ===\n", nbr_fort);
+    for (int i = 0; i < nbr_fort; i++)
+    {
+        printf("[%2d] type=0x%02x ('%c') code=0x%04x len=%d  bits=",
+            i,
+            table[i].type,
+            (table[i].type >= 32 && table[i].type < 127)
+                ? table[i].type : '.',
+            table[i].code,
+            table[i].len);
+        for (int b = table[i].len - 1; b >= 0; b--)
+            printf("%d", (table[i].code >> b) & 1);
+        printf("\n");
+    }
+    printf("=================================\n");
 }
 
 char * init_and_implement_codage_table(t_haufman **stack, Elf64_Shdr *textHeader, unsigned char *test, int nbr_test, t_table_haufman *table_codage,  t_elf64 *e)
@@ -368,6 +399,8 @@ char * init_and_implement_codage_table(t_haufman **stack, Elf64_Shdr *textHeader
 	implement_table(&stack[nbr_test][0], 0, 0, table_codage, &iterateur_table_codage );
 	
 	int nbr_for = encryption_text(table_codage, e,textHeader, test, nbr_test);
+	insert_to_elf_table(table_codage, e, nbr_test);
+	print_all_table_haufman(table_codage, nbr_test);
 	verif_encrytpion(table_codage, e, textHeader, test, nbr_test, nbr_for);
 	return(NULL);
 }

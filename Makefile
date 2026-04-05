@@ -20,16 +20,14 @@ INCLUDE = -Iinc -I$(DLIB)
 
 LIBRARIES = -L$(DLIB) -lft
 
-DSRC64 = src/64
-DSRC32 = src/32
-DSRCSHARED = src/shared
-
 LIB = $(DLIB)/libft.a
 
-SRC = src/main.c src/utils.c $(DSRC64)/woody.c $(DSRC64)/utils_elf.c $(DSRC64)/insert_payload.c \
-	$(DSRC64)/get_injection_address.c
+CDIR = src/c
 
-SRCPAYLOAD = src/asm/payload.s
+SRC = $(CDIR)/main.c $(CDIR)/utils.c $(CDIR)/payload.c $(CDIR)/utils_elf.c $(CDIR)/get_injection_address.c \
+		$(CDIR)/injection.c $(CDIR)/copy.c $(CDIR)/patch_payload.c $(CDIR)/xor.c
+
+SRCPAYLOAD = src/asm/payloadWoody.s
 
 NAME = woody_woodpacker
 
@@ -63,13 +61,6 @@ payload :
 	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
 	objcopy -O binary payload.o payload.bin
 	xxd -p payload.bin | tr -d '\n' > payload
-	# rm payload.o payload.bin
-
-# copy :
-# 	mkdir -p src/32
-# 	cp src/64/* src/32/
-# 	cp inc/nm64.h inc/nm32.h
-# 	sed -i "s/64/32/g" src/32/*
-# 	sed -i "s/64/32/g" inc/nm32.h
+	rm payload.o payload.bin
 
 .PHONY: all clean fclean re

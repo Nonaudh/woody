@@ -15,6 +15,12 @@ _addr:
 	mov r11, 0xDEADDEADDEADDEAD
 	sub rbx, r11
 
+_ifnopie:
+	mov r8, 0x6969696969696969
+	cmp r8, 0
+	je _patching
+	xor rbx, rbx
+
 _patching:
 	mov r10, 0xCAFECAFECAFECAFE
 	add r10, rbx
@@ -50,12 +56,10 @@ _no_reset:
 	jmp _dexoring
 
 _write:
-	xor     eax, eax
-	cdq
-	mov     dl, 10         ;3eme argument (rdx)
-	inc     eax            ;eax = 1 (syscall)
-	mov     edi, eax       ;1er argument rdi = 1
-	lea     rsi, [rel msg] ;2eme arg
+	mov rax, 1
+	mov rdi, 1
+	lea rsi, [rel msg]
+	mov rdx, 10
 	syscall
 
 _reset_regis:

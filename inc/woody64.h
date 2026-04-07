@@ -19,8 +19,9 @@ typedef struct s_injection
 	uint64_t	old_entry_point;
 	uint64_t injection_offset;
 	uint64_t injection_vaddr;
-	uint64_t text_vaddr;
-	int text_size;
+	uint64_t xored_vaddr;
+	uint64_t xored_offset;
+	uint64_t xored_size;
 
 } t_injection;
 
@@ -43,9 +44,6 @@ typedef struct s_woody
 
 } t_woody;
 
-int	find_class(char *filename);
-int	woody_64(char *filename);
-
 void	*get_file_in_a_map_64(int fd, int file_size);
 void	*get_file_in_a_map_write_64(int fd, int file_size);
 Elf64_Ehdr	*get_elf_header_64(t_woody *e);
@@ -66,7 +64,7 @@ int	init_elf_64(t_woody *e, char *filename);
 int injection (t_woody *e);
 int copy_into_woody(t_woody *e);
 int patch_payload(t_woody *e);
-int	xor_point_text(t_woody *w);
+int	xor_pt_load(t_woody *w);
 
 //Antoine
 uint64_t  insert_payload(t_woody *e);

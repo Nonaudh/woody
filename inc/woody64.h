@@ -46,27 +46,27 @@ typedef struct s_woody
 
 void	*get_file_in_a_map_64(int fd, int file_size);
 void	*get_file_in_a_map_write_64(int fd, int file_size);
-Elf64_Ehdr	*get_elf_header_64(t_woody *e);
-Elf64_Shdr	*get_sections_header_64(t_woody *e);
-Elf64_Shdr	*get_section_header_by_name_64(t_woody *e, const char *name);
+Elf64_Ehdr	*get_elf_header_64(t_woody *w);
+Elf64_Shdr	*get_sections_header_64(t_woody *w);
+Elf64_Shdr	*get_section_header_by_name_64(t_woody *w, const char *name);
 
-char	*get_section_by_header_64(t_woody *e, Elf64_Shdr *sectionHeader);
-// char	*get_section_by_name_64(t_woody *e, const char *name);
+char	*get_section_by_header_64(t_woody *w, Elf64_Shdr *sectionHeader);
+// char	*get_section_by_name_64(t_woody *w, const char *name);
 
-int injection(t_woody *e);
+int injection(t_woody *w);
 int	segment_is_PT_LOAD_and_PF_X(Elf64_Phdr *segment);
-int get_injection_offset(t_woody *e);
+int get_injection_offset(t_woody *w);
 int	segment_is_PT_NOTE(Elf64_Phdr *segment);
 int	enough_zero_padding_in_segment(Elf64_Phdr *segment, int size); // to check;
-int read_payload(t_woody *e);
+int read_payload(t_woody *w);
 int check_file(char *filename);
-int	init_elf_64(t_woody *e, char *filename);
-int injection (t_woody *e);
-int copy_into_woody(t_woody *e);
-int patch_payload(t_woody *e);
+int	init_elf_64(t_woody *w, char *filename);
+int injection (t_woody *w);
+int copy_into_woody(t_woody *w);
+int patch_payload(t_woody *w);
 int	xor_pt_load(t_woody *w);
 
 //Antoine
-uint64_t  insert_payload(t_woody *e);
+uint64_t  insert_payload(t_woody *w);
 
 #endif

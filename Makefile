@@ -61,6 +61,6 @@ payload :
 	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
 	objcopy -O binary payload.o payload.bin
 	xxd -p payload.bin | tr -d '\n' > payload
-	#rm payload.o payload.bin
+	rm payload.o payload.bin
 
 .PHONY: all clean fclean re

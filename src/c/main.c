@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	if (read_payload(&w))
 		return (1);
 
-	if (xor_pt_load(&w))
+	if (xor_point_text(&w))
 		return (1);
 	
 	if (get_injection_offset(&w))

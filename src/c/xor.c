@@ -13,44 +13,14 @@ void xor_xor(char *text, int size, unsigned char *key, int key_size)
 	}
 }
 
-Elf64_Phdr *get_pt_load(t_woody *w)
+int	xor_point_text(t_woody *w)
 {
-	Elf64_Phdr *Phdr = (Elf64_Phdr *)(w->elf.file_map + w->elf.elf_header->e_phoff);
-	int found = 0;
-	int i;
-
-	for (i = 0; !found && i < w->elf.elf_header->e_phnum - 1; i++)
-	{
-		if (segment_is_PT_LOAD_and_PF_X(&Phdr[i]))
-		{
-			w->injection.xored_vaddr = Phdr[i].p_vaddr;
-			w->injection.xored_size = Phdr[i].p_filesz;
-			w->injection.xored_offset = Phdr[i].p_offset;
-			found = 1;
-		}
-	}
-	if (found)
-		return (&Phdr[i]);
-	return (NULL);
-}
-
-
-
-int	xor_pt_load(t_woody *w)
-{
-	// Elf64_Phdr *pt_load = get_pt_load(w);
-	// if (!pt_load)
-	// 	return (1);
-
-	Elf64_Shdr *text = get_section_header_by_name_64(w, "text");
-	if (!text)
+	Elf64_Shdr *text_header = get_section_header_by_name_64(w, "text");
+	if (!text_header)
 		return (1);
-
-	w->injection.xored_offset = text->sh_offset;
-	w->injection.xored_vaddr = text->sh_addr;
-	w->injection.xored_size = text->sh_size;
-
-	printf("xored_vaddr; %lu  xored_size; %lu  xored_offset; %lu\n", w->injection.xored_vaddr, w->injection.xored_size,  w->injection.xored_offset);
-	// xor_xor(w->elf.file_map + w->injection.xored_offset, w->injection.xored_size, w->payload.payload + w->payload.payload_size, w->payload.key_size);
+	w->injection.text_vaddr = text_header->sh_addr;
+	w->injection.text_size = text_header->sh_size;
+	printf("text_vaddr; %lu  text_size; %d\n", w->injection.text_vaddr, w->injection.text_size);
+	xor_xor(w->elf.file_map + text_header->sh_offset, text_header->sh_size, w->payload.payload + w->payload.payload_size, w->payload.key_size);
 	return (0);
 }

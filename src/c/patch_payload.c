@@ -29,11 +29,6 @@ int patch_payload(t_woody *w)
 		w->elf.elf_header->e_entry = w->injection.injection_vaddr;
 		patch_marker(w, 0x6969696969696969, 1);
 		patch_marker(w, 0xDEADDEADDEADDEAD, w->injection.injection_offset);
-		patch_marker(w, 0xCAFECAFECAFECAFE, w->injection.old_entry_point);
-		patch_marker(w, 0xBABEBABEBABEBABE, w->injection.xored_vaddr);
-		patch_marker(w, 0xBEEFBEEFBEEFBEEF, w->injection.xored_size);
-		patch_marker(w, 0xFEEDFEEDFEEDFEED, w->injection.injection_vaddr + w->payload.payload_size);
-		patch_marker(w, 0x4242424242424242, w->payload.key_size);
 	}
 	else if (w->elf.elf_header->e_type == ET_DYN)
 	{
@@ -41,11 +36,11 @@ int patch_payload(t_woody *w)
 		w->elf.elf_header->e_entry = w->injection.injection_offset;
 		patch_marker(w, 0x6969696969696969, 0);
 		patch_marker(w, 0xDEADDEADDEADDEAD, w->injection.injection_vaddr);
-		patch_marker(w, 0xCAFECAFECAFECAFE, w->injection.old_entry_point);
-		patch_marker(w, 0xBABEBABEBABEBABE, w->injection.xored_vaddr);
-		patch_marker(w, 0xBEEFBEEFBEEFBEEF, w->injection.xored_size);
-		patch_marker(w, 0xFEEDFEEDFEEDFEED, w->injection.injection_vaddr + w->payload.payload_size);
-		patch_marker(w, 0x4242424242424242, w->payload.key_size);	
 	}
+	patch_marker(w, 0xCAFECAFECAFECAFE, w->injection.old_entry_point);
+	patch_marker(w, 0xBABEBABEBABEBABE, w->injection.xored_vaddr);
+	patch_marker(w, 0xBEEFBEEFBEEFBEEF, w->injection.xored_size);
+	patch_marker(w, 0xFEEDFEEDFEEDFEED, w->injection.injection_vaddr + w->payload.payload_size);
+	patch_marker(w, 0x4242424242424242, w->payload.key_size);	
 	return (0);
 }

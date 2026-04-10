@@ -3,19 +3,19 @@
 
 void	*get_file_in_a_map_64(int fd, int file_size)
 {
-	void	*map = mmap(NULL, file_size, PROT_READ| PROT_WRITE, MAP_PRIVATE, fd, 0);
+	void	*map = mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
 	if (map == MAP_FAILED)
 		return (NULL);
 	return (map);
 }
 
-void	*get_file_in_a_map_write_64(int fd, int file_size)
-{
-	void	*map = mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-	if (map == MAP_FAILED)
-		return (NULL);
-	return (map);
-}
+// void	*get_file_in_a_map_write_64(int fd, int file_size)
+// {
+// 	void	*map = mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+// 	if (map == MAP_FAILED)
+// 		return (NULL);
+// 	return (map);
+// }
 
 Elf64_Ehdr	*get_elf_header_64(t_woody *w)
 {

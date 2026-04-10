@@ -10,7 +10,6 @@ int	actualize_segment(t_woody *w)
 	}
 	else if (w->injection.segment->p_type == PT_NOTE)
 	{
-		printf("PT_NOTE F5\n");
 		w->injection.segment->p_type = PT_LOAD;
 		w->injection.segment->p_flags = PF_R | PF_X;
 		w->injection.segment->p_filesz += w->payload.payload_size + w->payload.key_size;

@@ -17,19 +17,37 @@ void	ft_read(int fd, unsigned char *payload, int size)
 		read(fd, nb, 2);
 		dec = strtol(nb, NULL, 16); //to recode !
 		payload[i] = dec;
-		printf("%d ", dec);
 	}
-	printf("\n");
 }
 
 unsigned char *key_gen(t_woody *w)
 {
-	w->payload.key_size = 4;
-	unsigned char *key = malloc(sizeof(unsigned char) * w->payload.key_size);
-	if (!key)
-		return (NULL);
-	ft_memcpy(key, "AKEY", w->payload.key_size);
+	unsigned char *key;
 
+	if (w->payload.payload)
+	{
+		w->payload.key_size = ft_strlen((char *)w->payload.payload);
+		return ((unsigned char *)ft_strdup((char *)w->payload.payload));
+	}
+	else
+	{
+		int fd = open("/dev/urandom", O_RDONLY);
+		if (fd == -1)
+			return (NULL);
+		w->payload.key_size = 10;
+		key = malloc(sizeof(unsigned char) * w->payload.key_size);
+		if (!key)
+		{
+			close (fd);
+			return (NULL);
+		}
+		if (read(fd, key, w->payload.key_size) != w->payload.key_size)
+		{
+			close (fd);
+			return (NULL);
+		}
+		close (fd);
+	}
 	return (key);
 }
 
@@ -49,7 +67,12 @@ int read_payload(t_woody *w)
 	w->payload.payload = malloc(w->payload.payload_size + w->payload.key_size);
 	ft_read(fd, w->payload.payload, w->payload.payload_size);
 	ft_memcpy(w->payload.payload + w->payload.payload_size, key, w->payload.key_size);
+	free (key);
 	close (fd);
+
+	for (int i = 0; i < w->payload.payload_size + w->payload.key_size; i++)
+		printf("%x ", w->payload.payload[i]);
+	printf("\n");
 
 	return (0);
 }

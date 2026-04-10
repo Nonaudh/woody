@@ -59,12 +59,14 @@ int get_injection_offset(t_woody *w);
 int	segment_is_PT_NOTE(Elf64_Phdr *segment);
 int	enough_zero_padding_in_segment(Elf64_Phdr *segment, int size); // to check;
 int read_payload(t_woody *w);
-int check_file(char *filename);
-int	init_elf_64(t_woody *w, char *filename);
+int check_args(t_woody *w, int argc, char **argv);
+int	init_elf_64(t_woody *w);
 int injection (t_woody *w);
 int copy_into_woody(t_woody *w);
 int patch_payload(t_woody *w);
 int	xor_pt_load(t_woody *w);
+void	bzero_ptr(t_woody *w);
+void	print_key(t_woody *w);
 
 //Antoine
 uint64_t  insert_payload(t_woody *w);

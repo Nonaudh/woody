@@ -4,13 +4,12 @@ int main(int argc, char **argv)
 {
 	t_woody w;
 
-	if (argc != 2)
-		return (1);
+	bzero_ptr(&w);
 
-	if (check_file(argv[1]))
+	if (check_args(&w, argc, argv))
 		return (1);
 	
-	if (init_elf_64(&w, argv[1]))
+	if (init_elf_64(&w))
 		return (1);
 
 	if (read_payload(&w))
@@ -30,4 +29,7 @@ int main(int argc, char **argv)
 
 	if (copy_into_woody(&w))	
 		return (1);
+
+	print_key(&w);
+	return (0);
 }

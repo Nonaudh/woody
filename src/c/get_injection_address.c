@@ -50,6 +50,7 @@ uint64_t try_PT_NOTE_offset(t_woody *w, unsigned char *code, int size)
 	Elf64_Phdr *Phdr = (Elf64_Phdr *)(w->elf.file_map + w->elf.elf_header->e_phoff);
 	int found = 0;
 	int i;
+	printf("paysizee; %d\n", size);
 
 	for (i = 0; !found && i < w->elf.elf_header->e_phnum; i++)
 	{
@@ -59,9 +60,9 @@ uint64_t try_PT_NOTE_offset(t_woody *w, unsigned char *code, int size)
 			w->injection.injection_vaddr = Phdr[i].p_vaddr;
 			w->injection.injection_offset = Phdr[i].p_offset;
 			w->injection.segment = &Phdr[i];
-			found = 1;
+			//found = 1;
 		}
-		printf("seg;  offset %lu  vaddr %lu  size %lu\n", Phdr[i].p_offset, Phdr[i].p_vaddr, Phdr[i].p_filesz);
+		printf("seg;  offset %lu  vaddr %lu  size %lu  type; %u  allign; %lu\n", Phdr[i].p_offset, Phdr[i].p_vaddr, Phdr[i].p_filesz, Phdr[i].p_type, Phdr[i].p_align);
 	}
 	found = 1;
 	return (found);
@@ -69,8 +70,8 @@ uint64_t try_PT_NOTE_offset(t_woody *w, unsigned char *code, int size)
 
 int get_injection_offset(t_woody *w)
 {
-	// if (try_PT_LOAD_offset(w, w->payload.payload, w->payload.payload_size + w->payload.key_size))
-	// 	return (0);
+	if (try_PT_LOAD_offset(w, w->payload.payload, w->payload.payload_size + w->payload.key_size))
+		return (0);
 	
 	if (try_PT_NOTE_offset(w, w->payload.payload, w->payload.payload_size + w->payload.key_size))
 		return (0);

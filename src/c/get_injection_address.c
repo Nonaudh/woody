@@ -60,7 +60,7 @@ uint64_t try_PT_NOTE_offset(t_woody *w, unsigned char *code, int size)
 			w->injection.injection_vaddr = Phdr[i].p_vaddr;
 			w->injection.injection_offset = Phdr[i].p_offset;
 			w->injection.segment = &Phdr[i];
-			//found = 1;
+			found = 1;
 		}
 		printf("seg;  offset %lu  vaddr %lu  size %lu  type; %u  allign; %lu\n", Phdr[i].p_offset, Phdr[i].p_vaddr, Phdr[i].p_filesz, Phdr[i].p_type, Phdr[i].p_align);
 	}

@@ -11,6 +11,7 @@ typedef struct s_payload
 	unsigned char	*payload;
 	int	payload_size;
 	int key_size;
+	int	key_as_param;
 } t_payload;
 
 typedef struct s_injection
@@ -65,7 +66,7 @@ int injection (t_woody *w);
 int copy_into_woody(t_woody *w);
 int patch_payload(t_woody *w);
 int	xor_pt_load(t_woody *w);
-void	bzero_ptr(t_woody *w);
+void	bzero_struct(t_woody *w);
 void	print_key(t_woody *w);
 
 //Antoine

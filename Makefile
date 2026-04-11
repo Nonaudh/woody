@@ -25,9 +25,9 @@ LIB = $(DLIB)/libft.a
 CDIR = src/c
 
 SRC = $(CDIR)/main.c $(CDIR)/utils.c $(CDIR)/payload.c $(CDIR)/utils_elf.c $(CDIR)/get_injection_address.c \
-		$(CDIR)/injection.c $(CDIR)/copy.c $(CDIR)/patch_payload.c $(CDIR)/xor.c
+		$(CDIR)/injection.c $(CDIR)/copy.c $(CDIR)/patch_payload.c $(CDIR)/xor.c $(CDIR)/init_elf.c
 
-SRCPAYLOAD = src/asm/payloadWoody.s
+SRCPAYLOAD = src/asm/payload.s
 
 NAME = woody_woodpacker
 
@@ -41,7 +41,7 @@ $(DBUILD)%.o : %.c
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
-$(NAME) : $(LIB) $(OBJ)
+$(NAME) : payload $(LIB) $(OBJ)
 	$(CC) $(CFLAGS) $(INCLUDE) $(OBJ) $(LIBRARIES) -o $(NAME)
 
 $(LIB) :
@@ -54,6 +54,7 @@ clean :
 fclean : clean
 	@rm -rf $(NAME)
 	@rm -rf $(LIB)
+	@rm -f payload
 
 re : fclean $(NAME)
 
@@ -61,6 +62,6 @@ payload :
 	nasm -f elf64 $(SRCPAYLOAD) -o payload.o
 	objcopy -O binary payload.o payload.bin
 	xxd -p payload.bin | tr -d '\n' > payload
-	#rm payload.o payload.bin
+	rm payload.o payload.bin
 
 .PHONY: all clean fclean re

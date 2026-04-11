@@ -8,7 +8,6 @@ int copy_into_woody(t_woody *w)
 	if (woody_fd == -1)
 		return (1);
 	write(woody_fd, w->elf.file_map, w->elf.file_size);
-	munmap(w->elf.file_map, w->elf.file_size);
 	close(woody_fd);
 	return (0);
 }

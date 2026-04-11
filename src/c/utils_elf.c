@@ -9,14 +9,6 @@ void	*get_file_in_a_map_64(int fd, int file_size)
 	return (map);
 }
 
-// void	*get_file_in_a_map_write_64(int fd, int file_size)
-// {
-// 	void	*map = mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-// 	if (map == MAP_FAILED)
-// 		return (NULL);
-// 	return (map);
-// }
-
 Elf64_Ehdr	*get_elf_header_64(t_woody *w)
 {
 	Elf64_Ehdr	*elf_header;
@@ -28,9 +20,10 @@ Elf64_Ehdr	*get_elf_header_64(t_woody *w)
 
 Elf64_Shdr	*get_sections_header_64(t_woody *w)
 {
-	if (w->elf.elf_header->e_shoff + (w->elf.elf_header->e_shnum * sizeof(Elf64_Shdr)) > (unsigned long)w->elf.file_size)
+	if (w->elf.elf_header->e_shoff + (w->elf.elf_header->e_shnum * sizeof(Elf64_Shdr)) > (unsigned long)w->elf.file_size
+		|| w->elf.elf_header->e_phoff + (w->elf.elf_header->e_phnum * sizeof(Elf64_Phdr)) > (unsigned long)w->elf.file_size)
 	{
-		ft_dprintf(2, "nm: %s: file format not recognized\n", w->elf.filename);
+		ft_dprintf(2, "woody: %s: file format not recognized\n", w->elf.filename);
 		return (NULL);
 	}
 	return (w->elf.file_map + w->elf.elf_header->e_shoff);
@@ -69,9 +62,7 @@ Elf64_Shdr	*get_section_header_by_name_64(t_woody *w, const char *name)
 		i++;
 	}
 	if (i == w->elf.elf_header->e_shnum)
-	{
 		return (NULL);
-	}
 	return (&w->elf.sectionsHeader[i]);
 }
 

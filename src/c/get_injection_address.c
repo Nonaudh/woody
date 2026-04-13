@@ -50,11 +50,11 @@ uint64_t try_PT_NOTE_offset(t_woody *w, unsigned char *code, int size)
 	Elf64_Phdr *Phdr = (Elf64_Phdr *)(w->elf.file_map + w->elf.elf_header->e_phoff);
 	int found = 0;
 	int i;
-	int b = 0;
-	for (i = 0; !found && i < w->elf.elf_header->e_phnum - 1; i++)
+	printf("paysizee; %d\n", size);
+
+	for (i = 0; !found && i < w->elf.elf_header->e_phnum; i++)
 	{
-		b++;
-		if (segment_is_PT_NOTE(&Phdr[i]) && b == 2)
+		if (segment_is_PT_NOTE(&Phdr[i]))
 		{
 			
 			if(i < w->elf.elf_header->e_phnum )
@@ -65,7 +65,9 @@ uint64_t try_PT_NOTE_offset(t_woody *w, unsigned char *code, int size)
 			w->injection.segment = &Phdr[i];
 			found = 1;
 		}
+		printf("seg;  offset %lu  vaddr %lu  size %lu  type; %u  allign; %lu\n", Phdr[i].p_offset, Phdr[i].p_vaddr, Phdr[i].p_filesz, Phdr[i].p_type, Phdr[i].p_align);
 	}
+	found = 1;
 	return (found);
 }
 

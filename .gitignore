@@ -4,3 +4,5 @@ woody
 build/
 *.o
 *.a
+resources/
+payload.bin

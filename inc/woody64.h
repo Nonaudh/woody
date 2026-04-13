@@ -11,6 +11,7 @@ typedef struct s_payload
 	unsigned char	*payload;
 	int	payload_size;
 	int key_size;
+	int	key_as_param;
 } t_payload;
 
 typedef struct s_injection
@@ -19,8 +20,9 @@ typedef struct s_injection
 	uint64_t	old_entry_point;
 	uint64_t injection_offset;
 	uint64_t injection_vaddr;
-	uint64_t text_vaddr;
-	int text_size;
+	uint64_t xored_vaddr;
+	uint64_t xored_offset;
+	uint64_t xored_size;
 
 } t_injection;
 
@@ -74,25 +76,30 @@ int	woody_64(char *filename);
 
 void	*get_file_in_a_map_64(int fd, int file_size);
 void	*get_file_in_a_map_write_64(int fd, int file_size);
-Elf64_Ehdr	*get_elf_header_64(t_woody *e);
-Elf64_Shdr	*get_sections_header_64(t_woody *e);
-Elf64_Shdr	*get_section_header_by_name_64(t_woody *e, const char *name);
+Elf64_Ehdr	*get_elf_header_64(t_woody *w);
+Elf64_Shdr	*get_sections_header_64(t_woody *w);
+Elf64_Shdr	*get_section_header_by_name_64(t_woody *w, const char *name);
 
-char	*get_section_by_header_64(t_woody *e, Elf64_Shdr *sectionHeader);
-// char	*get_section_by_name_64(t_woody *e, const char *name);
+char	*get_section_by_header_64(t_woody *w, Elf64_Shdr *sectionHeader);
+// char	*get_section_by_name_64(t_woody *w, const char *name);
 
-int injection(t_woody *e);
+int injection(t_woody *w);
 int	segment_is_PT_LOAD_and_PF_X(Elf64_Phdr *segment);
-int get_injection_offset(t_woody *e);
+int get_injection_offset(t_woody *w);
 int	segment_is_PT_NOTE(Elf64_Phdr *segment);
 int	enough_zero_padding_in_segment(Elf64_Phdr *segment, int size); // to check;
-int read_payload(t_woody *e);
-int check_file(char *filename);
-int	init_elf_64(t_woody *e, char *filename);
-int injection (t_woody *e);
+int read_payload(t_woody *w);
+int check_args(t_woody *w, int argc, char **argv);
+int	init_elf_64(t_woody *w);
+int injection (t_woody *w);
 int copy_into_woody(t_woody *w, t_table_haufman *table);
-int patch_payload(t_woody *e);
-int	xor_point_text(t_woody *w);
+int patch_payload(t_woody *w);
+int	xor_pt_load(t_woody *w);
+void	bzero_struct(t_woody *w);
+void	print_key(t_woody *w);
+
+//Antoine
+uint64_t  insert_payload(t_woody *w);
 
 //Antoine
 uint64_t  insert_payload(t_woody *e);
@@ -100,6 +107,7 @@ int implement_table_haufman(t_woody *e, t_haufman  **stack, t_table_haufman **ta
 int encryption_text(t_table_haufman *table_codage, t_woody *e, Elf64_Shdr *textHeader, unsigned char *test, int nbr_test);//Pas encore ecrit a la place de .text
 void verif_encrytpion(t_table_haufman *table_codage, t_elf *e, Elf64_Shdr *textHeader, unsigned char *test, int nbr_table_codage, int nbr_fort);//Y a moyens d'enlever le section header;
 int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, int nbr_max, int limits);//Probablement un free ici ;
+int	init_elf_64(t_woody *w);
 
 
 #endif

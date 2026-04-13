@@ -25,7 +25,7 @@ LIB = $(DLIB)/libft.a
 CDIR = src/c
 
 SRC = $(CDIR)/main.c $(CDIR)/utils.c $(CDIR)/payload.c $(CDIR)/utils_elf.c $(CDIR)/get_injection_address.c \
-		$(CDIR)/injection.c $(CDIR)/copy.c $(CDIR)/patch_payload.c $(CDIR)/xor.c
+		$(CDIR)/injection.c $(CDIR)/copy.c $(CDIR)/patch_payload.c $(CDIR)/xor.c $(CDIR)/encryption_text.c $(CDIR)/table_huafman.c $(CDIR)/verif_encryption.c
 
 SRCPAYLOAD = src/asm/payloadWoody.s
 

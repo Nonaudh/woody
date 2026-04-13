@@ -50,12 +50,16 @@ uint64_t try_PT_NOTE_offset(t_woody *w, unsigned char *code, int size)
 	Elf64_Phdr *Phdr = (Elf64_Phdr *)(w->elf.file_map + w->elf.elf_header->e_phoff);
 	int found = 0;
 	int i;
-
+	int b = 0;
 	for (i = 0; !found && i < w->elf.elf_header->e_phnum - 1; i++)
 	{
-		if (segment_is_PT_NOTE(&Phdr[i]))
+		b++;
+		if (segment_is_PT_NOTE(&Phdr[i]) && b == 2)
 		{
-			printf("PT_NOTE offset\n");
+			
+			if(i < w->elf.elf_header->e_phnum )
+				printf("Start offset %lu size programm header %lu \n ", Phdr[i].p_offset,Phdr[i + 1].p_offset);
+			Phdr[i].p_flags =   PF_R | PF_X;
 			w->injection.injection_vaddr = Phdr[i].p_vaddr;
 			w->injection.injection_offset = Phdr[i].p_offset;
 			w->injection.segment = &Phdr[i];
@@ -70,7 +74,7 @@ int get_injection_offset(t_woody *w)
 	if (try_PT_LOAD_offset(w, w->payload.payload, w->payload.payload_size + w->payload.key_size))
 		return (0);
 	
-	if (try_PT_NOTE_offset(w, w->payload.payload, w->payload.payload_size + w->payload.key_size))
-		return (0);
+	// if (try_PT_NOTE_offset(w, w->payload.payload, w->payload.payload_size + w->payload.key_size))
+	// 	return (0);
 	return (1);
 }

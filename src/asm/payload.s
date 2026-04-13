@@ -55,7 +55,7 @@ _write:
 	mov rax, 1
 	mov rdi, 1
 	lea rsi, [rel msg]
-	mov rdx, 14
+	mov rdx, 15
 	syscall
 
 _reset_regis:
@@ -66,4 +66,4 @@ _reset_regis:
 _jmp:
 	jmp r10
 
-msg     db "....WOODY....", 10, 0
+msg	db "....WOODY....", 10, 0

@@ -6,3 +6,4 @@ build/
 *.a
 resources/
 payload.bin
+ls

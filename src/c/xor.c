@@ -1,4 +1,4 @@
-#include "woody64.h"
+#include "woody.h"
 
 void xor_xor(char *text, int size, unsigned char *key, int key_size)
 {
@@ -19,9 +19,9 @@ int get_pt_load(t_woody *w)
 	int found = 0;
 	int i;
 
-	for (i = 0; !found && i < w->elf.elf_header->e_phnum - 1; i++)
+	for (i = 0; !found && i < w->elf.elf_header->e_phnum; i++)
 	{
-		if (segment_is_PT_LOAD_and_PF_X(&Phdr[i]))
+		if (segment_is_PT_LOAD_and_PF_X(&Phdr[i]) && Phdr[i].p_offset >= w->elf.elf_header->e_ehsize)
 		{
 			w->injection.xored_vaddr = Phdr[i].p_vaddr;
 			w->injection.xored_size = Phdr[i].p_filesz;
@@ -31,25 +31,14 @@ int get_pt_load(t_woody *w)
 	}
 	if (found)
 		return (0);
+	ft_dprintf(2, "Can't found any segment to xor\n");
 	return (1);
 }
-
-
 
 int	xor_pt_load(t_woody *w)
 {
 	if (get_pt_load(w))
 		return (1);
-
-	// Elf64_Shdr *text = get_section_header_by_name_64(w, "text");
-	// if (!text)
-	// 	return (1);
-
-	// w->injection.xored_offset = text->sh_offset;
-	// w->injection.xored_vaddr = text->sh_addr;
-	// w->injection.xored_size = text->sh_size;
-
-	printf("xored_vaddr; %lu  xored_size; %lu  xored_offset; %lu\n", w->injection.xored_vaddr, w->injection.xored_size,  w->injection.xored_offset);
 	xor_xor(w->elf.file_map + w->injection.xored_offset, w->injection.xored_size, w->payload.payload + w->payload.payload_size, w->payload.key_size);
 	return (0);
 }

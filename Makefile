@@ -12,7 +12,7 @@
 
 CC = cc
 
-CFLAGS = -g #-Werror -Wextra -Wall
+CFLAGS = -g -Werror -Wextra -Wall
 
 DLIB = lib/libft
 

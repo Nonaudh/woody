@@ -1,11 +1,17 @@
-#include "woody64.h"
+#include "woody.h"
 #include <fcntl.h>
 
-int	not_an_elf(char *map, char *filename)
+int	not_an_elf(char *map, char *filename, long file_size)
 {
-	if (map[0] != 0x7f || map[1] != 'E' || map[2] != 'L' || map[3] != 'F')
+	
+	if (file_size < EI_NIDENT || map[0] != 0x7f || map[1] != 'E' || map[2] != 'L' || map[3] != 'F')
 	{
-		ft_dprintf(2, "nm: %s: file format not recognized\n", filename);
+		ft_dprintf(2, "woody: %s: file format not recognized\n", filename);
+		return (1);
+	}
+	if (map[EI_CLASS] != ELFCLASS64 || map[EI_DATA] != ELFDATA2LSB)
+	{
+		ft_dprintf(2, "woody: %s: bad file format\n", filename);
 		return (1);
 	}
 	return (0);
@@ -31,6 +37,8 @@ int	init_elf_64(t_woody *w)
 	w->elf.file_map = get_file_in_a_map_64(w->elf.fd, w->elf.file_size);
 	close (w->elf.fd);
 	if (!w->elf.file_map)
+		return (1);
+	if (not_an_elf(w->elf.file_map, w->elf.filename, w->elf.file_size))
 		return (1);
 	w->elf.elf_header = get_elf_header_64(w);
 	if (!w->elf.elf_header)

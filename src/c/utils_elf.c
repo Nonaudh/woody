@@ -1,4 +1,4 @@
-#include "woody64.h"
+#include "woody.h"
 #include <sys/mman.h>
 
 void	*get_file_in_a_map_64(int fd, int file_size)
@@ -52,7 +52,6 @@ char	*get_section_by_name_64(t_woody *w, const char *name)
 Elf64_Shdr	*get_section_header_by_name_64(t_woody *w, const char *name)
 {
 	int i = 1;
-	char *ptr;
 
 	while (i < w->elf.elf_header->e_shnum)
 	{

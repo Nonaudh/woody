@@ -1,5 +1,5 @@
-#ifndef WOODY64_HPP
-# define WOODY64_HPP
+#ifndef WOODY_HPP
+# define WOODY_HPP
 
 #include "elf.h"
 #include "libft.h"

@@ -1,13 +1,13 @@
-#include "woody64.h"
+#include "woody.h"
 #include "fcntl.h"
 #include <sys/mman.h>
 #include <stdio.h>
 
-int flag_key(int argc, char *argv)
+int flag_key(char *argv)
 {
 	int	i;
 	int wrong_flag = 0;
-	if (argv && ft_strchr(argv, '-') == argv)
+	if (argv && ft_strchr(argv, '-') == argv && ft_strlen(argv) != 1)
 	{
 		for (i = 1; i < ft_strlen(argv); i++)
 		{
@@ -37,7 +37,7 @@ int check_args(t_woody *w, int argc, char **argv)
 		return (1);
 	for (i = 1; i < argc; i++)
 	{
-		flag = flag_key(argc, argv[i]);
+		flag = flag_key(argv[i]);
 		if (flag == -1)
 			break ;
 		if (flag == 1)
@@ -74,8 +74,6 @@ void	bzero_struct(t_woody *w)
 
 void	print_key(t_woody *w)
 {
-	if (w->payload.key_as_param)
-		return ;
 	printf("KEY: ");
 	for (int i = w->payload.payload_size; i < w->payload.payload_size + w->payload.key_size; i++)
 		printf("%x ", w->payload.payload[i]);

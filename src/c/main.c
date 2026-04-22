@@ -1,4 +1,4 @@
-#include "woody64.h"
+#include "woody.h"
 #include <sys/mman.h>
 
 int safe_exit(t_woody *w)
@@ -48,7 +48,8 @@ int main(int argc, char **argv)
 	if (copy_into_woody(&w))	
 		return (safe_exit(&w));
 
-	print_key(&w);
+	if (!w.payload.key_as_param)
+		print_key(&w);
 	safe_exit(&w);
 	return (0);
 }

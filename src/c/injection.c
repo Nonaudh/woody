@@ -1,17 +1,10 @@
-#include "woody64.h"
+#include "woody.h"
 
 int	actualize_segment(t_woody *w)
 {
 	if (w->injection.segment->p_type == PT_LOAD)
 	{
 		w->injection.segment->p_flags = PF_W | PF_X;
-		w->injection.segment->p_filesz += w->payload.payload_size + w->payload.key_size;
-		w->injection.segment->p_memsz += w->payload.payload_size + w->payload.key_size;
-	}
-	else if (w->injection.segment->p_type == PT_NOTE)
-	{
-		w->injection.segment->p_type = PT_LOAD;
-		w->injection.segment->p_flags = PF_R | PF_X;
 		w->injection.segment->p_filesz += w->payload.payload_size + w->payload.key_size;
 		w->injection.segment->p_memsz += w->payload.payload_size + w->payload.key_size;
 	}

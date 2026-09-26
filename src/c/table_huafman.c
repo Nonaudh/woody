@@ -43,6 +43,9 @@ int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, t_woody **e, lon
 	int save = 0;
 	unsigned char table[limits];
 	table[0] = '\0';
+	
+	
+	int tests = 0;
 	//JUste verification que ca soit le bon 
 	// while(i< limits)//strlen
 	// {
@@ -50,7 +53,7 @@ int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, t_woody **e, lon
 	// 	i++;
 	// }
 
-	for(int i = 0; i < limits; i++)
+	for(int i = 0; i < limits; i++)//Permette de faire le malloc de mon tableau 
 	{ 
 		for(j = 0; j < nbr; j++)
 			if(test[i] == table[j])
@@ -63,18 +66,19 @@ int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, t_woody **e, lon
 			nbr++;
 		}
 	}
-	if(y == 1)
+	printf("\nnbr type 2 et nbr %d\n", nbr);
+	if(y == 1)//Permets d'implementer le bon type dans mon tableau 
 	{
-		printf("\nnbr type 2 et nbr %d\n", nbr);
 			for(k = 0; k<nbr; k++)
 			{
 				stack[0][k].type = table[k];
+
 				printf("\nJe suis le type %02x ", table[k]);
 			}
 			(*e)->elf.nbr_max_occurence = k;
-			printf("\nJe suis le nombre differents de type %d\n", k);
+			printf("\nJe suis le max occurence %d\n", k);
 	}
-	if(y == 2)
+	if(y == 2)//Permet de determiner le nbr d'occurence du meme type 
 	{
 		for(int g = 0; g < limits;g++)
 		{
@@ -86,8 +90,16 @@ int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, t_woody **e, lon
 				}
 			}
 		}
+
+		//Permette de verifier le nombre d'occurence	
+	// 	for(tests = 0; tests < nbr; tests++)
+	// 	{
+	// 		printf("\nJe suis le type = %02x, nbr occurence = %d", stack[0][tests].type, stack[0][tests].nbr_occurence);
+	// 	}
+	// 	printf("\n Nbr= %d", nbr);
+	// }
+	// printf("Je suis le nbr total de 02x differents, %d\n", nbr)
 	}
-	printf("Je suis le nbr total de 02x differents, %d\n", nbr);
 	return(nbr);
 }
 
@@ -105,6 +117,7 @@ int search_nbr_two(t_haufman *stack, int max, int save_one, int clef_one)
 
 void three_haufman(t_haufman **stack, int max , int x_hold)
 {
+	printf("\n x_hold = %d max = %d", x_hold, max);
 	if(max ==1)
 		return ;
 	int save_one = 999999999;
@@ -150,10 +163,11 @@ void three_haufman(t_haufman **stack, int max , int x_hold)
 
 int init_type_and_occurence_and_three_haufman(t_haufman **stack, unsigned char *test, int nbr_test,t_woody *e )
 {
-	ft_nbr_type(test, 1, stack, &e, nbr_test);//Implement les types	
-	// ft_nbr_type(test, 2, stack,&e , nbr_test);//Implementes les occurences de types
-	// ft_memcpy(stack[0 + 1], stack[0],(nbr_test + 1)* sizeof(t_haufman)); //Hesite a mettre le -1
-	// three_haufman(stack,nbr_test ,1);
+	ft_nbr_type(test, 1, stack, &e, e->elf.file_size);//Implement les types	
+	ft_nbr_type(test, 2, stack,&e ,e->elf.file_size);//Implementes les occurences de types
+	ft_memcpy(stack[0 + 1], stack[0],((e->size_t_haufman)+ 1)* sizeof(t_haufman)); //Hesite a mettre le -1
+	printf("\nelf.size = %d\n", e->elf.file_size);
+	three_haufman(stack,e->size_t_haufman ,1);
 	printf("\nJe suis a la fin de init type and occurence\n");
 	return(0);
 }
@@ -257,13 +271,13 @@ e->elf.all_elf = mmap(
 	}
 	if(init_type_and_occurence_and_three_haufman(stack, e->elf.all_elf , e->size_t_haufman, e) == 1)
 		return(1);	
-	// int iterateur_table_codage = 0;
-	// *table_codage = malloc(sizeof(t_table_haufman) * e->size_t_haufman);
-	// if (!*table_codage)
-	// {
-	// 	return (1);
-	// }
-	// implement_table(&stack[e->size_t_haufman][0], 0, 0, *table_codage, &iterateur_table_codage );
-	// print_all_table_haufman(*table_codage, e->size_t_haufman);
+	int iterateur_table_codage = 0;
+	*table_codage = malloc(sizeof(t_table_haufman) * e->size_t_haufman);
+	if (!*table_codage)
+	{
+		return (1);
+	}
+	implement_table(&stack[e->size_t_haufman][0], 0, 0, *table_codage, &iterateur_table_codage );
+	print_all_table_haufman(*table_codage, e->size_t_haufman);
 	return(0);
 }

@@ -107,8 +107,8 @@ uint64_t  insert_payload(t_woody *w);
 //Antoine
 uint64_t  insert_payload(t_woody *e);
 int implement_table_haufman(t_woody *e, t_haufman  **stack, t_table_haufman **table_codage, int fd);
-// encryption_text(t_table_haufman *table_codage, t_woodpriny *e, Elf64_Ehdr *textHeader, unsigned char *test, int nbr_test);//Pas encore ecrit a la place de .text
-void verif_encrytpion(t_table_haufman *table_codage, t_elf *e, Elf64_Ehdr *textHeader, unsigned char *test, int nbr_table_codage, int nbr_fort);//Y a moyens d'enlever le section header;
+int encryption_text(t_table_haufman *table_codage, t_woody *e, unsigned char *test, int nbr_test);//Pas encore ecrit a la place de .text
+void verif_encrytpion(t_table_haufman *table_codage, t_elf *e, unsigned char *test, int nbr_table_codage, int nbr_fort);
 int ft_nbr_type(unsigned char *test, int y , t_haufman **stack, t_woody **e, long int limits);//Probablement un free ici 
 int	init_elf_64(t_woody *w);
 void print_all_table_haufman(t_table_haufman *table, int nbr_fort);

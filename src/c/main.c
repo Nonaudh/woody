@@ -288,14 +288,14 @@ int main(int argc, char *argv[]) {
 	//}
 
 	//Il faut mettre la compression avant le xor
-	// w.nbr_boucle_haufman = encryption_text(table_codage, &w, w.textHeader, w.text_test, w.size_t_haufman);
-	return(0);
-}
-	
-	// //Verification mise en place de la desencryption 
-	// verif_encrytpion(table_codage, &w.elf ,w.textHeader, w.text_test, w.size_t_haufman, w.nbr_boucle_haufman);
-	
+	w.nbr_boucle_haufman = encryption_text(table_codage, &w, w.elf.all_elf, w.size_t_haufman);
 
+
+// //Verification mise en place de la desencryption 
+verif_encrytpion(table_codage, &w.elf, w.text_test, w.size_t_haufman, w.nbr_boucle_haufman);
+return(0);
+	
+}
 	//Ce sont toutes les securite
 	// if (xor_pt_load(&w))
 	// 	return (safe_exit(&w));

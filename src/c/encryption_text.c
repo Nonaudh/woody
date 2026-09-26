@@ -41,31 +41,31 @@ void implement_one_bits(t_table_haufman *table_codage,  int nbr_test, unsigned c
 }
 
 
-int encryption_text(t_table_haufman *table_codage, t_woody *e, Elf64_Shdr *textHeader, unsigned char *test, int nbr_test)//Pas encore ecrit a la place de .text
+int encryption_text(t_table_haufman *table_codage, t_woody *e, Elf64_Ehdr *textHeader, unsigned char *test, int nbr_test)//Pas encore ecrit a la place de .text
 {
 	int pourreturn = 0; 
-	printf("\nBefore\n");
+	printf("\nBefore\n");//Faire attention on passe par 8 bits 000000000
 	int len_tt1 = 0;//Iterater sur .text
 	int len__tt2 = 0;
 	int k  = 0;//
 	uint16_t save1 = 0;
 	int nbr_len = 0;
-	uint8_t *dest = (uint8_t *)e->elf.file_map + textHeader->sh_offset;
+	uint8_t *dest = (uint8_t *)e->elf.file_map ;
 
-	unsigned char *original = malloc(textHeader->sh_size);
+	unsigned char *original = malloc(e->elf.file_size);
 	if (!original)
 		return (-1);
-	ft_memcpy(original, dest, textHeader->sh_size);
+	ft_memcpy(original, dest, 0);
 	test = original; 
 	int dest_offset = 0;
-	for(int k = 0; k <textHeader->sh_size; k++)
+	for(int k = 0; k <e->elf.file_size; k++)
 	{
 		printf("%02x", dest[k]);
 	}
 	printf("\n");
 	k = 0;
 	int t5 = 0;
-	while(len_tt1 < (int)textHeader->sh_size )//Tant que len__tt1 != 8
+	while(len_tt1 < e->elf.file_size )//Tant que len__tt1 != 8
 	{
 		implement_one_bits(table_codage,   nbr_test,   test,  len_tt1,  &save1,  &k, &nbr_len);
 		
@@ -86,7 +86,7 @@ int encryption_text(t_table_haufman *table_codage, t_woody *e, Elf64_Shdr *textH
 			nbr_len = 0 ;
 		}
 	}
-	while(len_tt1 < (int)textHeader->sh_size)
+	while(len_tt1 < e->elf.file_size)
 	{
 		implement_one_bits(table_codage, nbr_test, test, len_tt1, &save1, &k, &nbr_len);
 		if(nbr_len == 0)
@@ -106,11 +106,11 @@ int encryption_text(t_table_haufman *table_codage, t_woody *e, Elf64_Shdr *textH
 		if (k > 8)
 			dest[dest_offset++] = (uint8_t)(save1 & 0xFF);
 	}
-	ft_memset(dest + dest_offset, 0, textHeader->sh_size - dest_offset);
+	ft_memset(&e->elf.file_size, 0, e->elf.file_size);
 	printf("Compresser\n");
-	for(int k = 0; k <textHeader->sh_size; k++)
-	{
-		printf("%02x", dest[k]);
-	}
+	// for(int k = 0; k <e->elf.file_size; k++) //IL faudrat le remettre pour permettre la verification de l'encryption	
+	// {
+	// 	printf("%02x", dest[k]);
+	// }
 	return(dest_offset);
 }

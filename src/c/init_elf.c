@@ -14,13 +14,15 @@ int	not_an_elf(char *map, char *filename)
 long get_file_size(t_woody *w)
 {
 	long file_size = lseek(w->elf.fd, 0, SEEK_END);
-	lseek(w->elf.fd, 0, SEEK_CUR);
+	// lseek(w->elf.fd, 0, SEEK_CUR);
+	printf("file_size = %d", file_size);
 	return (file_size);
 }
 
 int	init_elf_64(t_woody *w)
 {
 	w->elf.file_map = NULL;
+	 
 	w->elf.fd = open(w->elf.filename, O_RDWR);
 	if (w->elf.fd == -1)
 	{
@@ -29,7 +31,7 @@ int	init_elf_64(t_woody *w)
 	}
 	w->elf.file_size = get_file_size(w);
 	w->elf.file_map = get_file_in_a_map_64(w->elf.fd, w->elf.file_size);
-	close (w->elf.fd);
+	// close (w->elf.fd);
 	if (!w->elf.file_map)
 		return (1);
 	w->elf.elf_header = get_elf_header_64(w);

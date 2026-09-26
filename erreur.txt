@@ -1,0 +1,1 @@
+cc -g  -Iinc -Ilib/libft -c src/c/main.c -o build/src/c/main.o

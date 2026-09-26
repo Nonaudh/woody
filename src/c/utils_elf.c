@@ -1,8 +1,10 @@
 #include "woody64.h"
+#include <stdio.h>
 #include <sys/mman.h>
 
 void	*get_file_in_a_map_64(int fd, int file_size)
 {
+	lseek(fd, 0, SEEK_CUR);
 	void	*map = mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
 	if (map == MAP_FAILED)
 		return (NULL);

@@ -25,7 +25,7 @@ int patch_payload(t_woody *w)
 	
 	if (w->elf.elf_header->e_type == ET_EXEC)
 	{
-		printf("NOPIE\n");
+		printf("NOPIE\n");// 
 		w->elf.elf_header->e_entry = w->injection.injection_vaddr;
 		patch_marker(w, 0x6969696969696969, 1);
 		patch_marker(w, 0xDEADDEADDEADDEAD, w->injection.injection_offset);

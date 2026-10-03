@@ -37,6 +37,8 @@ typedef struct s_elf
 	unsigned char *all_elf;
 	int fd;
 
+	uint16_t *all_elf_to_hufman_encrypte;
+
 	int nbr_max_occurence;
 } t_elf;
 

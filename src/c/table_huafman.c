@@ -219,7 +219,7 @@ void print_all_table_haufman(t_table_haufman *table, int nbr_fort)
     printf("=== TABLE HUFFMAN (%d entrees) ===\n", nbr_fort);
     for (int i = 0; i < nbr_fort; i++)
     {
-        printf("[%2d] type=0x%02x ('%c') code=0x%04x len=%d  bits=",
+        printf("[%2d] type=%02x ('%c') code=%04x len=%d  bits=",
             i,
             table[i].type,
             (table[i].type >= 32 && table[i].type < 127)

@@ -49,9 +49,9 @@ void verif_encrytpion(t_table_haufman *table_codage, t_elf *e, unsigned char *te
     	dest_tab[occurence_tab] = '\0';
     	printf("\n");
     	ft_memcpy(dest, dest_tab, (size_t)e->file_size);
-    	for (int i = 0; i < e->file_size ; i++)
-    		printf("%02x", dest[i]);
-    	printf("\n");
+    	// for (int i = 0; i < e->file_size ; i++)
+    	// 	printf("%02x", dest[i]);
+    	// printf("\n");
     	//Il faut determiner la taille du tableau de huffman 
     	printf("/nHufman table = %d/n", sizeof(t_table_haufman) * nbr_fort );   
  }
